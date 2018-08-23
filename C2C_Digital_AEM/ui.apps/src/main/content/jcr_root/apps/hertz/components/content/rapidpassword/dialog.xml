@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    title="RAPID Password Form Field"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            hideMode="offsets"
+            title="Rapid Password Form Field"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <fieldlabel
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Field Label"
+                    name="./label"
+                    xtype="textfield"/>
+                <accessiblelabel
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Accessible Label"
+                    name="./ariaLabel"
+                    xtype="textfield"/>
+                <defaultvalue
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Default Value"
+                    name="./defaultValue"
+                    xtype="textfield"/>
+                <errormessage
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Error Message"
+                    name="./error"
+                    xtype="textfield"/>
+                <showtext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Show Text"
+                    name="./showtext"
+                    xtype="textfield"/>
+                <hidetext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Hide Text"
+                    name="./hidetext"
+                    xtype="textfield"/>
+                <lowerletterstext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Lowercase Letters Text"
+                    name="./lowercasetext"
+                    xtype="textfield"/>
+                <upperletterstext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Uppercase Letters Text"
+                    name="./upperletterstext"
+                    xtype="textfield"/>
+                <numberstext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Numbers Text"
+                    name="./numberstext"
+                    xtype="textfield"/>
+                <symbolstext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Symbols Text"
+                    name="./symbolstext"
+                    xtype="textfield"/>
+                <minchartext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Minimum Characters Text"
+                    name="./minchartext"
+                    xtype="textfield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

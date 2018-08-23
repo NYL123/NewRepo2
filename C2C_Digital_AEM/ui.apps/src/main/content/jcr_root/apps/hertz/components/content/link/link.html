@@ -1,0 +1,53 @@
+<div data-sly-test="${!properties.linkTitle && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please Configure the Link Component.
+</div>
+
+<div data-sly-test="${properties.linkStyle == 'normal'}" data-sly-unwrap>
+
+<sly data-sly-test="${!properties.openURLNewWindow}">
+<sly data-sly-test="${properties.internalLinkURL}">
+<a class='link-text' href="${properties.internalLinkURL}" >${properties.linkTitle}</a>
+</sly></sly>
+<sly data-sly-test="${ properties.openURLNewWindow}">
+<sly data-sly-test="${properties.internalLinkURL}">
+<a class='link-text' href="${properties.internalLinkURL}" target="_blank">${properties.linkTitle}</a>
+</sly></sly>
+
+
+<sly data-sly-test="${properties.externalLinkURL }">
+<sly data-sly-test="${ !properties.openURLNewWindow}">
+<sly data-sly-test="${properties.externalLinkURL}">
+<a class='link-text' href="${properties.externalLinkURL}" >${properties.linkTitle}</a>
+</sly></sly>
+
+<sly data-sly-test="${ properties.openURLNewWindow}">
+<sly data-sly-test="${properties.externalLinkURL}">
+<a class='link-text' href="${properties.externalLinkURL}" target="_blank">${properties.linkTitle}</a>
+</sly></sly>
+
+</sly>
+</div>
+
+
+
+<div data-sly-test="${properties.linkStyle == 'button'}" data-sly-unwrap>
+<button class='link-button'>
+<sly data-sly-test="${!properties.openURLNewWindow}">
+<sly data-sly-test="${properties.internalLinkURL}">
+    <a href="${properties.internalLinkURL}">${properties.linkTitle}</a>
+ </sly> </sly>
+ <sly data-sly-test="${properties.openURLNewWindow}">
+ <sly data-sly-test="${properties.internalLinkURL}">
+    <a href="${properties.internalLinkURL}" target="_blank">${properties.linkTitle}</a>
+ </sly></sly>
+ 
+    <sly data-sly-test="${!properties.openURLNewWindow}">
+    <sly data-sly-test="${properties.externalLinkURL}">
+    <a href="${properties.externalLinkURL}">${properties.linkTitle}</a>
+    </sly></sly>
+      <sly data-sly-test="${ properties.openURLNewWindow}">
+      <sly data-sly-test="${properties.externalLinkURL}">
+    <a href="${properties.externalLinkURL}" target="_blank">${properties.linkTitle}</a>
+    </sly></sly>
+</button>
+</div>

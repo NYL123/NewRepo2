@@ -1,0 +1,9 @@
+<p><b>Country Configuration Component</b></p>
+<div data-sly-test="${!(properties.pos||properties.isirac) && wcmmode.edit}" data-sly-unwrap>
+	Please Configure Country Configuration Component.
+</div>
+<div data-sly-test="${properties.pos||properties.isirac}" data-sly-unwrap>								
+	<b>POS Label:</b> ${properties.pos}<br>
+	<b>Is IRAC Label:</b> ${properties.isirac} <br>
+
+</div>

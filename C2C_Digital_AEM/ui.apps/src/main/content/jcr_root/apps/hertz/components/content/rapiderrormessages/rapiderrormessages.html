@@ -1,0 +1,13 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.all @ categories='hertz.authoring.rapid'}" data-sly-unwrap/> 
+
+<b> Rapid Error Messages Component</b> <br/>
+ <div data-sly-test="${!properties.key}" data-sly-unwrap>
+	Please provide content for the component
+</div>
+
+<div data-sly-test="${properties.key}" data-sly-unwrap>
+    Key::	${properties.key}<br/>
+    Value:: ${properties.value}<br/>
+    Error Message Count:: ${properties.errormessage}<br/>
+</div>
+

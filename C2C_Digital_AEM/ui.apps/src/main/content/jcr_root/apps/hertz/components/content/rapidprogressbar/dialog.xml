@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    title="RAPID Progress Bar Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            hideMode="offsets"
+            title="RAPID Progress Bar Tab"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <stepone
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Step 1"
+                    name="./stepone"
+                    xtype="textfield"/>
+                <steptwo
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Step 2"
+                    name="./steptwo"
+                    xtype="textfield"/>
+                <stepthree
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Step 3"
+                    name="./stepthree"
+                    xtype="textfield"/>
+                <stepfour
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldLabel="Step 4"
+                    name="./stepfour"
+                    xtype="textfield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

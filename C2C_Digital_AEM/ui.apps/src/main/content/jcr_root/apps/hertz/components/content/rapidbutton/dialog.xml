@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    title="RAPID Button"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            hideMode="offsets"
+            title="RAPID Button"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <buttontext
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Button Text"
+                    name="./content"
+                    xtype="textfield"/>
+                <linkurl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link URL Value"
+                    name="./href"
+                    xtype="pathfield"/>
+                <linktarget
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="No"
+                    fieldLabel="Selection"
+                    name="./target"
+                    type="select"
+                    xtype="selection">
+                    <No
+                        jcr:primaryType="nt:unstructured"
+                        text="No"
+                        value=""/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value=""/>
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="_blank"/>
+                    </options>
+                </linktarget>
+                <nofollow
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="No"
+                    fieldLabel="No Follow"
+                    name="./rel"
+                    type="select"
+                    xtype="selection">
+                    <No
+                        jcr:primaryType="nt:unstructured"
+                        text="No"
+                        value="no"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            text="No"
+                            value=""/>
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            text="Yes"
+                            value="nofollow"/>
+                    </options>
+                </nofollow>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

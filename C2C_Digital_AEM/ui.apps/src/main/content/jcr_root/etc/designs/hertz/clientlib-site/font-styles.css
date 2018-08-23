@@ -1,0 +1,232 @@
+
+.headline1 {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.headline1-light {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.headline2 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.headline2-light {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.headline3 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.headline3-light {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-bold {
+  color: #000;
+  font-family: 'RideBold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-bold-gray-2 {
+  color: #5c5f66;
+  font-family: 'RideBold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-light-gray-2 {
+  color: #5c5f66;
+  font-family: 'RideLight';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-light-dark {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-light-light {
+  color: #fff;
+  font-family: 'RideLight';
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.body2 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-extrabold {
+  color: #000;
+  font-family: 'RideExtrabold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-extrabold-gray-1 {
+  color: #252525;
+  font-family: 'RideExtrabold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-bold {
+  color: #000;
+  font-family: 'RideBold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-bold-gray-1 {
+  color: #252525;
+  font-family: 'RideBold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-semibold {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-light {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-light-gray-3 {
+  color: #9d9ea3;
+  font-family: 'RideLight';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-light-info {
+  color: #365ad8;
+  font-family: 'RideLight';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body3 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-gray-3 {
+  color: #9d9ea3;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-gray-2 {
+  color: #5c5f66;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-gray-1 {
+  color: #252525;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-bold {
+  color: #000;
+  font-family: 'RideBold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-bold-light {
+  color: #fff;
+  font-family: 'RideBold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-semibold {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-semibold-light {
+  color: #fff;
+  font-family: 'RideSemibold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-light {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-light-light {
+  color: #fff;
+  font-family: 'RideLight';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-light-gray-2 {
+  color: #5c5f66;
+  font-family: 'RideLight';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-italic-gray-2 {
+  color: #5c5f66;
+  font-family: 'RideItalic';
+  font-size: 14px;
+  line-height: 20px;
+}

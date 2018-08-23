@@ -1,0 +1,10 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.categoryId && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Category component.<br>
+    </div>
+    <div data-sly-test="${properties.categoryId}" data-sly-unwrap >
+        <b>Category Id: </b><sly data-sly-test="${properties.categoryId}">${properties.categoryId}</sly><br>
+    </div>
+</div>
+

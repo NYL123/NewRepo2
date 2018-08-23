@@ -1,0 +1,214 @@
+<sly data-sly-use.multipleImages="patternAComponent.js">
+   <sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !properties.patternAType}">
+      <p> Please select the pattern A view type</p>
+   </sly>
+   <sly data-sly-test="${properties.patternAType=='A1'}">
+	<a class="content-card-pattern-a1-link" href='${multipleImages.shortenedPath}' target="${properties.linkTargetType}">
+      <div class='content-card-pattern-a1'>
+         <div class='content-card-data-section'>
+            <sly data-sly-test="${multipleImages.strLogoFileReference}">
+               <div class='content-aaa-image'>
+                  <img src='${multipleImages.strLogoFileReference}' data-path="${multipleImages.logoResourcePath}" alt='AAA image' />
+               </div>
+            </sly>
+            <sly data-sly-test="${properties.badge}">
+               <div class='content-card-badge'>
+                  <span class='callout3'>${properties.badge}</span>
+               </div>
+            </sly>
+            <h2 class='content-card-headline headline1'>${properties.heading}</h2>
+            <sly data-sly-test="${properties.descriptionText}">
+               <p class='body2'>${properties.descriptionText @context='html'}</p>
+            </sly>
+            <sly data-sly-test="${properties.linkText}">
+               <sly data-sly-test="${properties.linkStyle == 'normal'}">
+                  <p class='content-card-learn-more-link'><span class='body3-bold'>${properties.linkText}</span><span class='icon-direction-arrow-right-thick'></span></p>
+               </sly>
+               <sly data-sly-test="${!properties.linkStyle}">
+                  <p class='content-card-learn-more-link'><span class='body3-bold'>${properties.linkText}</span><span class='icon-direction-arrow-right-thick'></span></p>
+               </sly>
+               <sly data-sly-test="${properties.linkStyle == 'button'}">
+                  <div class='content-card-button-section-a1'>
+                      <span class="content-card-button">${properties.linkText}</span>
+                  </div>
+               </sly>
+            </sly>
+         </div>
+         <sly data-sly-test="${multipleImages.strFileReference}">
+            <div class='content-card-image-section'>
+               <img src='${multipleImages.strFileReference}' data-path="${multipleImages.imageResourcePath}" alt='${multipleImages.strImageAltText}' />
+            </div>
+         </sly>
+      </div>
+    </a>
+   </sly>
+   <sly data-sly-test="${properties.patternAType=='A2'}">
+	<a class="content-card-pattern-a2-link" href='${multipleImages.shortenedPath}' target="${properties.linkTargetType}">
+      <div class='content-card-pattern-a2'>
+         <div class='content-card-data-section'>
+            <sly data-sly-test="${properties.badge}">
+               <div class='content-card-badge'>
+                  <span class='badge-details'>${properties.badge}</span>
+               </div>
+            </sly>
+            <div class='content-card-headline'>
+                <div class='display2 head1'>${properties.heading}</div>
+                <sly data-sly-test="${properties.subHeading}">
+                <div class='display2 head2'>${properties.subHeading}</div>
+                </sly>
+            </div>
+            <sly data-sly-test="${properties.descriptionText}">
+               <p class='body2 content'>${properties.descriptionText @context='html'}</p>
+            </sly>
+            <sly data-sly-test="${properties.linkText}">
+               <p class='content-card-learn-more-link2'><span>${properties.linkText}</span><span class='icon-direction-arrow-right-thick'></span></p>
+            </sly>
+         </div>
+         <sly data-sly-test="${multipleImages.strFileReference}">
+            <div class='content-card-image-section'>
+               <img src='${multipleImages.strFileReference}' data-path="${multipleImages.imageResourcePath}" alt='${multipleImages.strImageAltText}' />
+            </div>
+         </sly>
+      </div>
+	</a>
+   </sly>
+   <sly data-sly-test="${properties.patternAType=='A3'}">
+      <sly data-sly-test="${!multipleImages.strFileReference && (wcmmode.edit || wcmmode.design)}">
+         <p>Please choose the background image.</p>
+      </sly>
+      <sly data-sly-test="${multipleImages.strFileReference}">
+	  <a class='content-card-pattern-a3-link' href='${multipleImages.shortenedPath}' target="${properties.linkTargetType}">
+         <div class='content-card-pattern-a3'>
+		   <div class='content-card-image'>
+             <img class='card-image' data-path="${multipleImages.imageResourcePath}" src="${multipleImages.strFileReference @context='unsafe'}" alt='AAA image' />
+		   </div>
+            <div class='content-card-data-section'>
+               <sly data-sly-test="${properties.badge}">
+                  <div class='content-card-badge'>
+                     <span class='callout3'>${properties.badge}</span>
+                  </div>
+               </sly>
+               <div class='content-card-headline'>
+				     <p class='heading'><span class='heading-highlight'>${properties.heading} </span> 
+				     <sly data-sly-test="${properties.subHeading}">${properties.subHeading}</sly></p>
+				     <sly data-sly-test="${properties.linkText}">
+					 <p class="view-gpr">${properties.linkText}<span class="icon-direction-arrow-right-thick"></span></p>
+					 </sly>
+               </div>
+            </div>
+         </div>
+		 </a>
+      </sly>
+  </sly>
+   <sly data-sly-test="${properties.patternAType=='A4'}">
+      <sly data-sly-test="${!multipleImages.strFileReference && (wcmmode.edit || wcmmode.design)}">
+         <p>Please choose the background image.</p>
+      </sly>
+	  <a class='content-card-pattern-a4-link' href='${multipleImages.shortenedPath}' target="${properties.linkTargetType}">
+         <div class='content-card-pattern-a4'>
+			<div class='content-card-image'>
+				<img class='card-image' data-path="${multipleImages.imageResourcePath}" src="${multipleImages.strFileReference @context='unsafe'}" />
+			</div>
+            <div class='content-card-data-section'>
+                <div class='content-card-headline'>
+                  <p class='heading'>${properties.heading}</p>
+                  <p class="view-gpr">${properties.linkText}<span class='icon-direction-arrow-right-thick'></span></p>
+				</div>
+            </div>
+         </div>
+		</a>
+   </sly>
+   <sly data-sly-test="${properties.patternAType=='A5'}">
+    <sly data-sly-test.dataTest="${!properties.heading && !properties.descriptionText && !multipleImages.strFileReference}">
+	    <h3>Please configure the fields in the dialog.</h3>
+	</sly>
+	<sly data-sly-test="${!dataTest}">
+	    <div class="content-card-pattern-a5">
+	    <a class="content-card-pattern-a5-link" href='${multipleImages.shortenedPath}' target="${properties.linkTargetType}">
+            <div class='content-card-image'>
+                <img class='card-image' src='${multipleImages.strFileReference}' data-path="${multipleImages.imageResourcePath}" alt='${multipleImages.strImageAltText}' />
+            </div>
+            <div class="content-card-data-section">
+			    <div data-sly-test="${properties.badge}" class="content-card-badge">
+				    <span class="callout3">${properties.badge}</span>
+				</div>
+                <div class='content-card-headline'>
+					<span class="heading-lbl1">${properties.heading}</span>
+					<sly data-sly-test="${properties.subHeading}">
+					<span class="heading-lbl2">${properties.subHeading}</span>
+					</sly>
+                </div>
+			    <sly data-sly-test="${properties.descriptionText}">
+			    <p class="headline3">${properties.descriptionText @context='html'}</p>
+			    </sly>
+            </div>
+			<div class="content-card-button-section">
+				<div>
+				<button class="button">${properties.linkText}</button>
+				</div>
+			</div>
+		</a>
+		</div>
+	</sly>
+   </sly>
+   <sly data-sly-test="${properties.patternAType=='A6'}">
+       <a class='content-card-pattern-a6-link' href='${multipleImages.shortenedPath}' target="${properties.linkTargetType}">
+          <div class='content-card-pattern-a6'>
+	          <sly data-sly-test="${multipleImages.strFileReference}">
+                <div class='content-a6-image'>
+                    <img src='${multipleImages.strFileReference}' data-path="${multipleImages.imageResourcePath}" alt='${multipleImages.strImageAltText}' />
+                </div>
+              </sly>
+              <div class='content-card-text'>
+               ${properties.descriptionText @context='html'}
+              </div>
+         </div>
+	   </a>
+   </sly>
+   <sly data-sly-test="${properties.patternAType=='A7'}">
+	  <a class='content-card-pattern-a7-link' href='${multipleImages.shortenedPath}' target="${properties.linkTargetType}">
+         <div class='content-card-pattern-a7'>
+			<div class='content-card-image'>
+				<img class='card-image' data-path="${multipleImages.imageResourcePath}" src="${multipleImages.strFileReference @context='unsafe'}" />
+			</div>
+            <div class='content-card-data-section'>
+                <div class='content-card-headline'>
+                  <p class='heading'>
+				      <span class="heading-highlight"> ${properties.heading}</span> ${properties.subHeading}
+				  </p>
+				  <sly data-sly-test="${properties.descriptionText}">
+				  <p class="headline3">${properties.descriptionText}</p>
+				  </sly>
+				  <sly data-sly-test="${properties.linkText}">
+                  <p class="view-gpr">${properties.linkText}<span class='icon-direction-arrow-right-thick'></span></p>
+				  </sly>
+				</div>
+            </div>
+         </div>
+		</a>
+   </sly>
+   <sly data-sly-test="${properties.patternAType=='A8'}">
+	<a class="content-card-pattern-a8-link" href='${multipleImages.shortenedPath}' target="${properties.linkTargetType}">
+      <div class='content-card-pattern-a8'>
+	      <sly data-sly-test="${multipleImages.strFileReference}">
+            <div class='content-card-image'>
+               <img class="card-image" src='${multipleImages.strFileReference}' data-path="${multipleImages.imageResourcePath}" alt='${multipleImages.strImageAltText}' />
+            </div>
+         </sly>
+         <div class='content-card-data-section'>
+             <div class='content-card-attributes'>
+			 <sly data-sly-test="${properties.heading}">
+                 <span class='headline2'>${properties.heading}</span>
+			 </sly>
+			 <sly data-sly-test="${properties.linkText}">
+				 <span class="card-cta">${properties.linkText}
+				     <i class="icon-direction-arrow-right-thick"></i>
+                 </span>
+             </sly>				 
+             </div>
+		 </div>
+		 <div class="content-card-overlay"></div>
+	  </div>
+	</a>
+ </sly>
+</sly>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="cq.authoring.dialog1">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <footer
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Footer"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fieldset
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Legal Links Component"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <legaldescriptiontext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Please enter legal description text. Minimum 1 and maximum 35 characters allowed."
+                                                fieldLabel="Legal Description Text"
+                                                maxlength="{Long}35"
+                                                minlength="{Long}1"
+                                                name="./legalDescriptionText"/>
+                                            <legallinklabel1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Please enter legal link label"
+                                                fieldLabel="Legal Link Label (Required)"
+                                                minlength="{Long}1"
+                                                name="./firstLegalLinkLabel"/>
+                                            <iconurlexternal
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                fieldDescription="Please select legal link URL"
+                                                fieldLabel="Legal Link URL (Required)"
+                                                minlength="{Long}1"
+                                                name="./firstLegalLinkURL"
+                                                required="{Boolean}true"/>
+                                            <ctaActionType
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                                name="./openFirstLegalLinkURLInNewWindow@TypeHint"
+                                                value="Boolean"/>
+                                            <target
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldDescription="Please select if the link will open in a new window"
+                                                fieldLabel="Open Link In New Window"
+                                                name="./openFirstLegalLinkURLInNewWindow">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <no
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="No"
+                                                        value="{Boolean}false"/>
+                                                    <yes
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Yes"
+                                                        value="{Boolean}true"/>
+                                                </items>
+                                            </target>
+                                            <rel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldDescription="Please select SEO nofollow tag should be included for this link"
+                                                fieldLabel="No Follow"
+                                                name="./rel">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <no
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="No"
+                                                        value="{Boolean}false"/>
+                                                    <yes
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Yes"
+                                                        value="{Boolean}true"/>
+                                                </items>
+                                            </rel>
+                                            <seoNoFollowType
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:orderBefore="section1"
+                                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                                name="./rel@TypeHint"
+                                                value="Boolean"/>
+                                            <legallinklabel2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Please enter legal link label"
+                                                fieldLabel="Legal Link Label"
+                                                name="./secondLegalLinkLabel"/>
+                                            <iconurlexternal2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                fieldDescription="Please select legal link URL"
+                                                fieldLabel="Legal Link URL"
+                                                name="./secondLegalLinkURL"/>
+                                            <target2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldDescription="Please select if the link will open in a new window"
+                                                fieldLabel="Open Link In New Window"
+                                                name="./openSecondLegalLinkURLInNewWindow">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <no
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="No"
+                                                        value="{Boolean}false"/>
+                                                    <yes
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Yes"
+                                                        value="{Boolean}true"/>
+                                                </items>
+                                            </target2>
+                                            <rel2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                fieldDescription="Please select SEO nofollow tag should be included for this link"
+                                                fieldLabel="No Follow"
+                                                name="./rel2">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <no
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="No"
+                                                        value="{Boolean}false"/>
+                                                    <yes
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Yes"
+                                                        value="{Boolean}true"/>
+                                                </items>
+                                            </rel2>
+                                            <seoNoFollowType2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:orderBefore="section1"
+                                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                                name="./rel2@TypeHint"
+                                                value="Boolean"/>
+                                            <ctaAction2Type
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                                name="./openSecondLegalLinkURLInNewWindow@TypeHint"
+                                                value="Boolean"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldset>
+                        </items>
+                    </column>
+                </items>
+            </footer>
+            <accessibilityicon
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Accessibility Icon"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fieldset
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <accessibilityicon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldDescription="File upload field for the image"
+                                                fieldLabel="Accessibility Icon"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                mimeTypes="[image]"
+                                                multiple="{Boolean}false"
+                                                name="./image"
+                                                title="Accessibility Icon"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldset>
+                        </items>
+                    </column>
+                </items>
+            </accessibilityicon>
+        </items>
+    </content>
+</jcr:root>

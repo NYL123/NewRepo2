@@ -1,0 +1,15 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design}">    
+  	<h2><span>CDP Container component</span></h2>
+    <div class="container-fluid">
+        <div class="rowNew">
+            <sly data-sly-resource="${ @path='cpdParsys',resourceType='wcm/foundation/components/responsivegrid'}"></sly>               
+        </div>
+    </div>
+</sly>
+<sly data-sly-test="${!author}">    
+    <div class='cdp-slider'>
+        <div class='cdp-body'>
+            <sly data-sly-resource="${ @path='cpdParsys',resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+        </div>
+    </div> 
+</sly> 

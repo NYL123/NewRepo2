@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Configurable Text Checkbox Pair Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <checkboxpair
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Checkbox Pair "
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <key
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Enter the key field - the front end code references this value"
+                                fieldLabel="Key"
+                                name="./key"
+                                required="{Boolean}true"
+                                value=""/>
+                                value=""/>
+                            <label
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Enter label for the checkbox"
+                                fieldLabel="Checkbox Label"
+                                name="./label"
+                                required="{Boolean}false"
+                                value=""/>
+                            <ariaLabel
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Enter label used for accessible readers"
+                                fieldLabel="Accessible Label"
+                                name="./ariaLabel"
+                                required="{Boolean}false"
+                                value=""/>
+                            <checkedByDefault
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                fieldDescription="Indicates if the checkbox is checked by default"
+                                text="Checked by default?"
+                                name="./checkedByDefault"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <error
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Enter error message displayed if there is a validation issue with field"
+                                fieldLabel="Error Message"
+                                name="./error"
+                                required="{Boolean}false"
+                                value=""/>
+                        </items>
+                    </column>
+                </items>
+            </checkboxpair>
+        </items>
+    </content>
+</jcr:root>

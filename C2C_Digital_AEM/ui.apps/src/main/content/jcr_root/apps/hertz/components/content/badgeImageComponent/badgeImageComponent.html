@@ -1,0 +1,23 @@
+<div class="container-fluid">
+<div class="rowNew">
+<sly data-sly-use.multipleImages="badgeImageComponent.js">
+
+
+    <b>Badge Image Configuration component</b><br>
+<div >
+    <div data-sly-test="${  !properties.key && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Badge Image Configuration component.
+    </div>
+<div data-sly-test="${properties.key}" data-sly-unwrap>
+	<b>Member Tier Code Value : </b> ${properties.key}<br>
+	<b>Badge Image Tier Name:</b>  ${properties.tiername}<br>
+    <b>value: </b><sly data-sly-test="${multipleImages.strFileReference}"><img src="${multipleImages.strFileReference @context='uri'}"></sly><br>
+
+</div>
+<br>
+</div>
+
+</sly>
+</div>
+</div>
+

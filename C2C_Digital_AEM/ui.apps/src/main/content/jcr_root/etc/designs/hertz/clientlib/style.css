@@ -1,0 +1,384 @@
+.dialog-width-50rem{
+ width:50rem;
+}
+
+.coral--dark + .dialog-width-50rem{
+    width:100%;
+}
+
+.coral--dark + .dialog-width-50rem .column-full-width{
+    width:60%;
+}
+
+.column-full-width{
+    width:130%;
+}
+
+.column-full-width .coral-Form-fieldlabel{
+    width:18%;
+	line-height: 1.375rem !important;
+}
+
+.column-full-width-footerlinks{
+	width:110% !important;
+}
+
+.coral--dark + .dialog-width-50rem .column-full-width-footerlinks{
+    width:110% !important;
+}
+
+.coral-FixedColumn-column .coral-Form-fieldlabel{
+	line-height: 1.375rem !important;
+}
+
+
+.headline1 {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.headline1-light {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.headline2 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.headline2-light {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.headline3 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.headline3-light {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-bold {
+  color: #000;
+  font-family: 'RideBold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-bold-gray-2 {
+  color: #5c5f66;
+  font-family: 'RideBold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-light-gray-2 {
+  color: #5c5f66;
+  font-family: 'RideLight';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-light-dark {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body1-light-light {
+  color: #fff;
+  font-family: 'RideLight';
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.body2 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-extrabold {
+  color: #000;
+  font-family: 'RideExtrabold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-extrabold-gray-1 {
+  color: #252525;
+  font-family: 'RideExtrabold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-bold {
+  color: #000;
+  font-family: 'RideBold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-bold-gray-1 {
+  color: #252525;
+  font-family: 'RideBold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-semibold {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-light {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-light-gray-3 {
+  color: #9d9ea3;
+  font-family: 'RideLight';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body2-light-info {
+  color: #365ad8;
+  font-family: 'RideLight';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body3 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-gray-3 {
+  color: #9d9ea3;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-gray-2 {
+  color: #5c5f66;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-gray-1 {
+  color: #252525;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-bold {
+  color: #000;
+  font-family: 'RideBold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-bold-light {
+  color: #fff;
+  font-family: 'RideBold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-semibold {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-semibold-light {
+  color: #fff;
+  font-family: 'RideSemibold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-light {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-light-light {
+  color: #fff;
+  font-family: 'RideLight';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-light-gray-2 {
+  color: #5c5f66;
+  font-family: 'RideLight';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body3-italic-gray-2 {
+  color: #5c5f66;
+  font-family: 'RideItalic';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.accordian-tab-with-table-content .accordian-content {
+  padding: 0;
+  word-break: break-word; 
+  list-style: none;
+  padding-bottom: 16px;
+  display: inline-flex;
+}
+
+.accordian-tab-with-table-content .accordian-content::before{
+  content: '\e90a';
+  font-family: 'icomoon';
+  padding-right:12px; 
+  color: green;
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Ride';
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride/Ride.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride/Ride.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride/Ride.ttf") format("truetype"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride/Ride.svg#Ride") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideItalic';
+  font-style: italic;
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride/Ride-Italic.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride/Ride-Italic.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride/Ride-Italic.ttf") format("truetype"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride/Ride-Italic.svg#Ride-Italic") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideBold';
+  font-style: normal;
+  font-weight: bold;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Bold/Ride-Bold.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Bold/Ride-Bold.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Bold/Ride-Bold.ttf") format("truetype"), url("../assets/fonts/Ride/Webfont TT woff+eot+svg/Ride Bold/Ride-Bold.svg#Ride-Bold") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideBoldItatic';
+  font-style: italic;
+  font-weight: bold;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Bold/Ride-BoldItalic.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Bold/Ride-BoldItalic.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Bold/Ride-BoldItalic.ttf") format("truetype"), url("../assets/fonts/Ride/Webfont TT woff+eot+svg/Ride Bold/Ride-BoldItalic.svg#Ride-BoldItalic") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideCondensed';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Condensed/RideCondensed.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Condensed/RideCondensed.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Condensed/RideCondensed.ttf") format("truetype"), url("../assets/fonts/Ride/Webfont TT woff+eot+svg/Ride Condensed/RideCondensed.svg#RideCondensed") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideCondensedItalic';
+  font-style: italic;
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Condensed/RideCondensed-Italic.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Condensed/RideCondensed-Italic.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Condensed/RideCondensed-Italic.ttf") format("truetype"), url("../assets/fonts/Ride/Webfont TT woff+eot+svg/Ride Condensed/RideCondensed-Italic.svg#RideCondensed-Italic") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideExtrabold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Extrabold/RideExtrabold.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Extrabold/RideExtrabold.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Extrabold/RideExtrabold.ttf") format("truetype"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Extrabold/RideExtrabold.svg#RideExtrabold") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideExtraboldItalic';
+  font-style: italic;
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Extrabold/RideExtrabold-Italic.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Extrabold/RideExtrabold-Italic.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Extrabold/RideExtrabold-Italic.ttf") format("truetype"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Extrabold/RideExtrabold-Italic.svg#RideExtrabold-Italic") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Light/RideLight.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Light/RideLight.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Light/RideLight.ttf") format("truetype"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Light/RideLight.svg#RideLite") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideLightItalic';
+  font-style: italic;
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Light/RideLight-Italic.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Light/RideLight-Italic.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Light/RideLight-Italic.ttf") format("truetype"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride Light/RideLight-Italic.svg#RideLight-Italic") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideSemibold';
+  font-style: normal;
+  font-weight: bold;
+  src: url("/etc/designs/hertz/Ride/Webfont TT woff+eot+svg/Ride SemiBold/Ride-SemiBold.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride SemiBold/Ride-SemiBold.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride SemiBold/Ride-SemiBold.ttf") format("truetype"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride SemiBold/Ride-SemiBold.svg#Ride-SemiBold") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'RideSemiboldItalic';
+  font-style: italic;
+  font-weight: bold;
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride SemiBold/Ride-SemiBoldItalic.eot");
+  src: url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride SemiBold/Ride-SemiBoldItalic.woff") format("woff"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride SemiBold/Ride-SemiBoldItalic.ttf") format("truetype"), url("/etc/designs/hertz/fonts/Ride/Webfont TT woff+eot+svg/Ride SemiBold/Ride-SemiBoldItalic.svg#Ride-SemiBoldItalic") format("svg");
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/etc/designs/hertz/fonts/icomoon/icomoon.eot?4e35qh");
+  src: url("/etc/designs/hertz/fonts/icomoon/icomoon.eot?4e35qh#iefix") format("embedded-opentype"), url("/etc/designs/hertz/fonts/icomoon/icomoon.ttf?4e35qh") format("truetype"), url("/etc/designs/hertz/fonts/icomoon/icomoon.woff?4e35qh") format("woff"), url("/etc/designs/hertz/fonts/icomoon/icomoon.svg?4e35qh#icomoon") format("svg"); }
+

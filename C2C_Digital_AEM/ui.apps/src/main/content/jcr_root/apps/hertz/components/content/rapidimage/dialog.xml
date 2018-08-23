@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Image"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <imagetext
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                title="Image Text Tab"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <imagetext
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Image Text"
+                        name="./imagetext"
+                        xtype="textfield"/>
+                </items>
+            </imagetext>
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="{Boolean}false"
+                allowUpload="{Boolean}true"
+                cropParameter="./imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                mapParameter="./imageMap"
+                name="./file"
+                rotateParameter="./imageRotate"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="html5smartimage"/>
+        </items>
+    </items>
+</jcr:root>

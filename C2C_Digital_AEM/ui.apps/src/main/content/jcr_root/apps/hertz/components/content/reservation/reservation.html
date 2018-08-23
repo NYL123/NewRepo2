@@ -1,0 +1,68 @@
+   <sly data-sly-test.author="${!inheritedPageProperties.reservationConfigPagePath}" data-sly-unwrap>
+      Please Configure the Reservation Config Page Path on the locale config page.
+   </sly>
+   <sly data-sly-test="${!author}" data-sly-unwrap>
+		<sly data-sly-use.data="${'com.hertz.digital.platform.use.ReservationUse' @path=inheritedPageProperties.reservationConfigPagePath}">
+			 <hertz-pickup-location _ngcontent-c20="" _nghost-c21="">
+                           <hertz-location-select _ngcontent-c21="" listtype="pick-up" _nghost-c22="" ng-reflect-list-type="pick-up" ng-reflect-label-value="Pick-Up Location">
+                              <div _ngcontent-c22="" class="pickup-select-container">
+                                 <hertz-search-field _ngcontent-c22="" _nghost-c23="" ng-reflect-label-value="Pick-Up Location">
+                                    <div _ngcontent-c23="" class="pickup-location-component">
+                                       <div _ngcontent-c23="" class="pickup-location">
+                                          <div _ngcontent-c23="" class="pickup-location-input" ng-reflect-klass="pickup-location-input" ng-reflect-ng-class="[object Object]">
+                                             <div _ngcontent-c23="" class="pickup-location-input-icon">
+                                                <i _ngcontent-c23="" class="icon-location-pin"></i>
+                                             </div>
+                                             <div _ngcontent-c23="" class="pickup-location-input-box active-input hide-label">
+                                                <core-text-input _ngcontent-c23="" _nghost-c27="" ng-reflect-inp-class="form-control" ng-reflect-label-value="Pick-Up Location" ng-reflect-required="true">
+                                                   <div _ngcontent-c27="" class="form-group text-form-group has-feedback">
+                                                      <label _ngcontent-c27="" class="text-input-label core-text-label" for="input">${headerfooter.pickUpLocationPlaceholder}</label>
+                                                      <input _ngcontent-c27="" type="text" class="form-control" required="" maxlength="5000" minlength="0" placeholder="" pattern="undefined">
+                                                      <!--bindings={
+                                                         "ng-reflect-ng-if": "false"
+                                                         }-->
+                                                   </div>
+                                                   <core-error-panel _ngcontent-c27="" _nghost-c17="">
+                                                      <!--bindings={}-->
+                                                   </core-error-panel>
+                                                </core-text-input>
+                                             </div>
+											    
+														<div _ngcontent-c23="" class="pickup-location-input-action">
+														<span _ngcontent-c23="" class="pickup-location-input-action-seperator"></span>
+														
+														</div>
+												
+                                            
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </hertz-search-field>
+                                 <!--bindings={
+                                    "ng-reflect-ng-if": "false"
+                                    }-->
+                                 <!--bindings={
+                                    "ng-reflect-ng-if": "false"
+                                    }-->
+                                 <!--bindings={
+                                    "ng-reflect-ng-if": "false"
+                                    }-->
+                                 <hertz-location-list _ngcontent-c22="" _nghost-c25="" ng-reflect-ng-class="[object Object]" ng-reflect-list-type="pick-up">
+                                    <div _ngcontent-c25="" class="location-list">
+                                       <!--bindings={}-->
+                                       <!--bindings={}-->
+                                       <!--bindings={}-->
+                                    </div>
+                                 </hertz-location-list>
+                                 <!--bindings={
+                                    "ng-reflect-ng-if": null
+                                    }-->
+                              </div>
+                           </hertz-location-select>
+                           <!--bindings={
+                              "ng-reflect-ng-if": "false"
+                              }-->
+                        </hertz-pickup-location>
+						</sly>
+   </sly>
+

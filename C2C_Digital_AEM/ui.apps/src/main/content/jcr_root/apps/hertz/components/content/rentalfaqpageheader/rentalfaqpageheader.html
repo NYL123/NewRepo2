@@ -1,0 +1,14 @@
+<sly data-sly-test="${!properties.fileReference}">
+  <h2>Please configure Page Header component</h2>
+</sly>
+<sly data-sly-test="${properties.fileReference}">
+<div class='rental-rewards-faq'>
+  <img data-path="${currentNode.path}" src="${properties.fileReference @context='unsafe'}"/>
+    <div class='rental-rewards-faq-header-image-overlay'>
+        <div class='header-faq-label'>
+            <span class='white-header'>${properties.heading}</span>
+            <span class='yellow-header'>${properties.subHeading}</span>
+        </div>
+    </div>
+</div>
+</sly>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Credit Cards Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <creditcards
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Credit Cards"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <creditcardname
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text field for Credit Card Image Name"
+                                fieldLabel="Image Name"
+                                name="./imageName"/>
+                            <element
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text field for Credit Card Element"
+                                fieldLabel="Element "
+                                name="./element"/>
+                            <cardType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text field for Credit Card Type"
+                                fieldLabel="Credit Card Type"
+                                name="./cardType"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="File upload field for the Credit Card Image"
+                                fieldLabel="Credit Card Image"
+                                fileNameParameter="./fileName"
+                                fileReferenceParameter="./fileReference"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                name="./file"
+                                title="FTP Image"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <cmdrCode
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text field for CMDR Code."
+                                fieldLabel="CMDR Code"
+                                name="./cmdrCode"/>
+                            <seamlessCode
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text field for Seamless Code."
+                                fieldLabel="Seamless Code"
+                                name="./seamlessCode"/>
+                            <receiptCode
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text field for Receipt Code."
+                                fieldLabel="Receipt Code"
+                                name="./receiptCode"/>
+                            <isPrepaid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                cq-msm-lockable="isPrepaid"
+                                defaultChecked="{Boolean}false"
+                                name="./isPrepaid"
+                                text="Is Card Used For Prepaid Reservations ?"
+                                uncheckedValue="{Boolean}false"
+                                value="true"/>
+                            <isPrepaidTypeHint
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./isPrepaid@TypeHint"
+                                value="Boolean"/>
+                            <hertzIssued
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                defaultChecked="{Boolean}false"
+                                name="./hertzIssued"
+                                text="Hertz Issued (i.e. cards added to a profile at back-end) ?"
+                                uncheckedValue="{Boolean}false"
+                                value="true"/>
+                            <hertzIssuedTypeHint
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./hertzIssued@TypeHint"
+                                value="Boolean"/>
+                            <accountAndOrPayLater
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                defaultChecked="{Boolean}false"
+                                name="./accountAndOrPayLater"
+                                text="Account/Pay Later (when a cc is required) ?"
+                                uncheckedValue="{Boolean}false"
+                                value="true"/>
+                            <accountAndOrPayLaterTypeHint
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./accountAndOrPayLater@TypeHint"
+                                value="Boolean"/>
+                        </items>
+                    </column>
+                </items>
+            </creditcards>
+            <country
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Country"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <sourcecountry
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                emptyText="Select"
+                                fieldLabel="Source Country"
+                                multiple="{Boolean}true"
+                                name="./sourceCountry"
+                                renderReadOnly="{Boolean}true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hertz/components/content/datasources/countries"
+                                    addNone="{Boolean}true"/>
+                            </sourcecountry>
+                            <destinationcountry
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                emptyText="Select"
+                                fieldLabel="Destination Country"
+                                multiple="{Boolean}true"
+                                name="./destinationCountry"
+                                renderReadOnly="{Boolean}true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="hertz/components/content/datasources/countries"
+                                    addNone="{Boolean}true"/>
+                            </destinationcountry>
+                        </items>
+                    </column>
+                </items>
+            </country>
+        </items>
+    </content>
+</jcr:root>

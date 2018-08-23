@@ -1,0 +1,12 @@
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.key && !properties.value && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Link Pair component.
+    </div>
+    <div data-sly-test="${properties.key || properties.value}" data-sly-unwrap >
+        <b>key: </b><sly data-sly-test="${properties.key}">${properties.key}</sly><br>
+        <b>Link URL: </b><sly data-sly-test="${properties.href}">${properties.href}</sly><br>
+        <b>Link Text: </b><sly data-sly-test="${properties.content}">${properties.content}</sly><br>
+        <b>Open in New Window: </b><sly data-sly-test="${properties.target == '_blank'}">Yes</sly><sly data-sly-test="${properties.target != '_blank'}">No</sly><br>
+        <b>Include No Follow attribute: </b><sly data-sly-test="${properties.rel == 'nofollow'}">Yes</sly><sly data-sly-test="${properties.rel != 'nofollow'}">No</sly><br>
+    </div>
+</div>

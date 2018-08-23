@@ -1,0 +1,17 @@
+    <b>Promotion Card component</b><br>
+<div >
+    <div data-sly-test="${  !properties.descriptionText && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Promotion Card component.
+    </div>
+
+<div data-sly-test="${properties.descriptionText}" data-sly-unwrap>
+	<b>Description Text : </b> ${properties.descriptionText}<br>
+	<b>Promo Image : </b><sly data-sly-test="${properties.promotionImageReference}">${properties.promotionImageReference}<br><img src="${properties.promotionImageReference}"></sly><br>
+	<b>Promo Image Alt Txt:</b>  ${properties.promoImageAltText}<br>
+	<b>Target URL : </b>  ${properties.targetUrl}<br>
+</div>
+
+<br>
+
+</div>
+

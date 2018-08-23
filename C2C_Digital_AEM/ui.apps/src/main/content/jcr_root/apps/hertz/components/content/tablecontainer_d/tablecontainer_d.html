@@ -1,0 +1,59 @@
+<div data-sly-test="${wcmmode.edit || wcmmode.design }" >
+    <pre>Click here to edit Table Header D </pre>
+
+    <div class="container-fluid" >
+    	<div class="row">        
+    <div data-sly-use.grid="gridD.js" >
+    <table>
+          <tr>
+              <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                    <th>
+                                ${item}  &nbsp;&nbsp;&nbsp;
+                    </th>
+                </sly> 
+
+            </tr>
+		</table>
+      	<div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap>
+		</div>
+    
+  </div>
+  </div>
+  </div>
+</div>
+<div data-sly-test="${!(wcmmode.edit || wcmmode.design) }" data-sly-unwrap >
+  <div class='table-pattern-d-accordion' data-sly-use.grid="gridD.js">
+
+    <table>
+        <thead>
+          <tr class='table-pattern-d-accordion-toggle table-pattern-d-accordion-web-section' data-toggle='collapse' data-target='#${properties.id}'>
+              <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                  <sly data-sly-test="${itemList.first}">
+                    <th>
+                             <span class='table-pattern-d-accordion-icon'></span>  ${item}
+                    </th>
+                   </sly>
+
+                    <sly data-sly-test="${!itemList.first}">
+                        <th >
+                            ${item}<span class='table-pattern-d-info-icon' data-modalPath="${grid.link[itemList.index]}"></span>
+                        </th>
+                    </sly>
+
+                </sly>
+                 <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                  <sly data-sly-test="${itemList.first}">
+                  <th colspan='2'> <span class='table-pattern-d-accordion-icon'></span>  ${item}</th>
+
+                   </sly>
+
+                </sly>  
+            </tr>
+         </thead>
+         <tbody class='table-pattern-d-accordion-body collapse' id='${properties.id}'>
+             <div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap>
+             </div>
+         </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.linkElementGroup && !properties.linkElement && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Important information Links component.
+    </div>
+    <div data-sly-test="${properties.linkElementGroup || properties.linkElement}" data-sly-unwrap >
+        <b>Link Element Group: </b><sly data-sly-test="${properties.linkElementGroup}">${properties.linkElementGroup}</sly><br>
+        <b>Link Element: </b><sly data-sly-test="${properties.linkElement}">${properties.linkElement}</sly><br>
+        <b>Link Text: </b><sly data-sly-test="${properties.linkText}">${properties.linkText}</sly><br>
+        <b>Link Aria Label: </b><sly data-sly-test="${properties.linkAriaLabel}">${properties.linkAriaLabel}</sly><br>
+        <b>Link Target URL: </b><sly data-sly-test="${properties.linkTargetURL}">${properties.linkTargetURL}</sly><br>
+        <b>Link Target Type: </b>${properties.linkTargetType}<br>
+    </div>
+</div>
+

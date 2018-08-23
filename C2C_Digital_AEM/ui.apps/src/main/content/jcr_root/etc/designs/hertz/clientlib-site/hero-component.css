@@ -1,0 +1,33 @@
+.hero-component {
+  border: 1px solid #d7d8d8;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 4px rgba(0, 0, 0, .06);
+  display: flex;
+  flex-flow: row;
+  max-height: 278px;
+  max-width: 100%;
+  padding: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.heading {
+  padding: 180px 0 40px 238px;
+}
+
+.tag-line {
+  font-family: 'RideLight';
+  font-size: 36px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.sub-tag-line {
+  font-family: 'RideLight';
+  font-size: 36px;
+  line-height: 22px;
+  color: #fc0;
+}

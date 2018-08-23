@@ -1,0 +1,86 @@
+<div data-sly-use.vehicleResultsUse =com.hertz.digital.platform.use.VehicleResultsUse 	data-sly-unwrap>
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <p><b>Vehicle Result component</b></p>
+    <div data-sly-test="${vehicleResultsUse.empty && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Vehicle Result component.
+    </div>
+
+        <div data-sly-test="${properties.vehicleResultsPagePayLaterCTA}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Pay Later CTA: </b><sly data-sly-test="${properties.vehicleResultsPagePayLaterCTA}">${properties.vehicleResultsPagePayLaterCTA}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPagePayLaterTargetURL}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Pay Later CTA Target URL: </b><sly data-sly-test="${properties.vehicleResultsPagePayLaterTargetURL}">${properties.vehicleResultsPagePayLaterTargetURL}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPagePayLaterTargetType}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Pay Later Target Type: </b><sly data-sly-test="${properties.vehicleResultsPagePayLaterTargetType}">${properties.vehicleResultsPagePayLaterTargetType}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPagePayNowCTA}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Pay Now CTA: </b><sly data-sly-test="${properties.vehicleResultsPagePayNowCTA}">${properties.vehicleResultsPagePayNowCTA}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPagePayNowTargetURL}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Pay Now CTA Target URL: </b><sly data-sly-test="${properties.vehicleResultsPagePayNowTargetURL}">${properties.vehicleResultsPagePayNowTargetURL}</sly><br>
+       </div>
+       <div data-sly-test="${properties.vehicleResultsPagePayNowTargetType}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Pay Now CTA Target Type: </b><sly data-sly-test="${properties.vehicleResultsPagePayNowTargetType}">${properties.vehicleResultsPagePayNowTargetType}</sly><br>
+        </div>
+    	<div data-sly-test="${properties.vehicleResultsPageCallToBookCTA}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Call to Book CTA: </b><sly data-sly-test="${properties.vehicleResultsPageCallToBookCTA}">${properties.vehicleResultsPageCallToBookCTA}</sly><br>
+        </div>
+         <div data-sly-test="${properties.vehicleResultsPageCallToBookTargetURL}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Call to Book CTA Target URL: </b><sly data-sly-test="${properties.vehicleResultsPageCallToBookTargetURL}">${properties.vehicleResultsPageCallToBookTargetURL}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageCallToBookTargetType}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Call to Book CTA Target Type: </b><sly data-sly-test="${properties.vehicleResultsPageCallToBookTargetType}">${properties.vehicleResultsPageCallToBookTargetType}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageMessageSelectYourVehicle}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Select Your Vehicle Message: </b><sly data-sly-test="${properties.vehicleResultsPageMessageSelectYourVehicle}">${properties.vehicleResultsPageMessageSelectYourVehicle}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageMessageCarDetailsDisclaimer}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Car Details Disclaimer: </b><sly data-sly-test="${properties.vehicleResultsPageMessageCarDetailsDisclaimer}">${properties.vehicleResultsPageMessageCarDetailsDisclaimer}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageFilterIconClassName}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Filter Icon: </b><sly data-sly-test="${properties.vehicleResultsPageFilterIconClassName}">${properties.vehicleResultsPageFilterIconClassName}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageFilterNoResultsMessage}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>No Results Message: </b><sly data-sly-test="${properties.vehicleResultsPageFilterNoResultsMessage}">${properties.vehicleResultsPageFilterNoResultsMessage}</sly><br>
+       </div>
+        <div data-sly-test="${properties.vehicleResultsPageFilterClearFiltersCTA}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Clear Filters Button: </b><sly data-sly-test="${properties.vehicleResultsPageFilterClearFiltersCTA}">${properties.vehicleResultsPageFilterClearFiltersCTA}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageSeatsLabel}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Number of seats text: </b><sly data-sly-test="${properties.vehicleResultsPageSeatsLabel}">${properties.vehicleResultsPageSeatsLabel}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageSuitcasesLabel}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Number of Suitcases Text: </b><sly data-sly-test="${properties.vehicleResultsPageSuitcasesLabel}">${properties.vehicleResultsPageSuitcasesLabel}</sly><br>
+        </div>
+            <div data-sly-test="${properties.vehicleResultsPageMPGText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Average MPG text: </b><sly data-sly-test="${properties.vehicleResultsPageMPGText}">${properties.vehicleResultsPageMPGText}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageNumberofDoorsText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Number of Doors text: </b><sly data-sly-test="${properties.vehicleResultsPageNumberofDoorsText}">${properties.vehicleResultsPageNumberofDoorsText}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageTransmissionText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Transmission text: </b><sly data-sly-test="${properties.vehicleResultsPageTransmissionText}">${properties.vehicleResultsPageTransmissionText}</sly><br>
+        </div>
+          <div data-sly-test="${properties.vehicleResultsPageDriveTypeText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>DriveType text: </b><sly data-sly-test="${properties.vehicleResultsPageDriveTypeText}">${properties.vehicleResultsPageDriveTypeText}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageIncludedMileageText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Included Mileage Text: </b><sly data-sly-test="${properties.vehicleResultsPageIncludedMileageText}">${properties.vehicleResultsPageIncludedMileageText}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageAdditionalFeaturesText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Additional Features text: </b><sly data-sly-test="${properties.vehicleResultsPageAdditionalFeaturesText}">${properties.vehicleResultsPageAdditionalFeaturesText}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageVehicleCollectionText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Vehicle Collection text: </b><sly data-sly-test="${properties.vehicleResultsPageVehicleCollectionText}">${properties.vehicleResultsPageVehicleCollectionText}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageVehicleCollectionNoteText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Vehicle Collection Note Text: </b><sly data-sly-test="${properties.vehicleResultsPageVehicleCollectionNoteText}">${properties.vehicleResultsPageVehicleCollectionNoteText}</sly><br>
+        </div>
+        <div data-sly-test="${properties.vehicleResultsPageVehicleRateCodeText}" data-sly-unwrap="${!wcmmode.edit}">
+        <b>Vehicle Rate Code text: </b><sly data-sly-test="${properties.vehicleResultsPageVehicleRateCodeText}">${properties.vehicleResultsPageVehicleRateCodeText}</sly><br>
+        </div>
+     
+</div>
+</div>
+

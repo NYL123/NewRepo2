@@ -1,0 +1,113 @@
+import org.apache.sling.commons.osgi.PropertiesUtil
+import com.day.cq.commons.jcr.JcrConstants
+/* 
+*   Info    :-
+*       To translate the English content saved in page properties to French content.
+*   @author
+*       Deepak.parma
+*   How to Use the Script   :-
+*       pagePath        			<List of Page Url's to Modify the Content>
+*       componentPropertyList 		<List of component properties>
+*       pageComponentPropertyList   <List of Page component Properties>
+*	Translation API Info	:-
+*		URI		https://translate.yandex.net/api/v1.5/tr.json/translate
+*		key		trnsl.1.1.20171027T080341Z.0ace45285d8830a5.5665183964a23eebe45201d0894a174995d3b036	<Needs to be change if Limit is reached>
+*		lang	en-fr	<SourceLang-TargetLang>
+*		format	plain
+*		text	<Encoded Text needs to be translated>
+*   Translation API Error Codes :-
+*        401	Invalid API key
+*        402	Blocked API key
+*        404	Exceeded the daily limit on the amount of translated text
+*        413	Exceeded the maximum text size
+*        422	The text cannot be translated
+*        501	The specified translation direction is not supported
+*/
+def pagePath = ["/content/hertz-rac/rac-web/fr-ca/checkout"]
+def componentPropertyList = ["errorValue","titleText","bodyText","heading","value","textfield","alt","columnname","airlineTrainCarrierName","linkText","linkAriaLabel","specialServicesDesc","specialServices","hoursOfOperation2","hoursofoperationAriaLabel","hoursofoperation3AriaLabel","hoursofoperation2AriaLabel","hoursOfOperation3","hoursOfOperation1","specialNotesDesc","specialNotes","rowtitle","error","ariaLabel","label","legalDescriptionText","firstLegalLinkLabel","secondLegalLinkLabel","signupForEmailPlaceholderText","signupForEmailButtonText","signupForEmailSubtitle","signupForEmailTitle","altText","socialLinksSubtitle","linkTitle","imageAltText","subHeading","description","text","content","textValue","vehicleResultsPageMessageCarDetailsDisclaimer","vehicleResultsPageFilterClearFiltersCTA","vehicleResultsPageMessageSelectYourVehicle","vehicleResultsPageFilterNoResultsMessage","vehicleResultsPageVehicleCollectionText","vehicleResultsPageSeatsLabel","vehicleResultsPageAdditionalFeaturesText","vehicleResultsPageMPGText","vehicleResultsPageIncludedMileageText","vehicleResultsPageVehicleRateCodeText","vehicleResultsPageNumberofDoorsText","vehicleResultsPageTransmissionText","vehicleResultsPageSuitcasesLabel","vehicleResultsPageVehicleCollectionNoteText","vehicleResultsPageDriveTypeText","vehicleResultsPagePayLaterCTA","vehicleResultsPagePayNowCTA","vehicleResultsPageCallToBookCTA","bodyCopy","Text","AriaLabel","buttontext","sectionName","linkName","linkAltText","promoImageAltText","descriptionText","badge","logoImagealtText","countryLabel","updateMessage","languageLabel","buttonLabel","searchIconAltTxt","chatAltText","loginBtnTxt","loginPlaTxt","taglineText","defaultValue","optionDisplayText"]
+def pageComponentPropertyList=["jcr:description","subtitle","navTitle","pageTitle","pgeName","jcr:title","subhead","headline","actionCTA","configurableErrorMessageTextValue","configurableTextLabelValue","configurableTextErrorValue","configurableTextAriaLabelValue","ctaLabel"]
+def getTranslatedText(text){
+    def domainUrl = "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20171027T080341Z.0ace45285d8830a5.5665183964a23eebe45201d0894a174995d3b036&lang=en-fr&format=plain&text="
+    URLConnection connection = new URL(domainUrl+URLEncoder.encode(text, "UTF-8")).openConnection()
+    connection.requestMethod = 'GET'
+    if (connection.responseCode == 200) {
+        def json = new JsonSlurper().parse(new BufferedReader(new InputStreamReader(connection.getInputStream(),"UTF-8"))).text
+        println json
+        return json[0]
+    } else {
+        println 'An error occurred: '+connection.responseCode +' '+connection.responseMessage
+    }
+}
+def getChildNodes(parentNode, componentPropertyList){
+    parentNode.nodes.each { node ->
+        if(node.getName()!='cq:responsive'){
+            Resource resource = resourceResolver.getResource(node.path)
+            ModifiableValueMap map = resource.adaptTo(ModifiableValueMap.class)
+            map.each{ k, v -> 
+                    if(componentPropertyList.contains(k)){
+                        if(node.getProperty(k).isMultiple()){
+                           def tempList =[]
+                           Property propVal = node.getProperty(k);     
+                           Value[] values = propVal.getValues();  
+                           for(Value val: values){
+                               if(val.getString()){
+                                    tempList.add(getTranslatedText(val.getString()))   
+                                }else{
+                                    tempList.add("")
+                                }
+                           }
+                           map.put(k, tempList.toArray(new String[0]))   
+                       }else{
+                           if(node.getProperty(k).getString()){
+                                map.put(k, getTranslatedText(node.get(k)))
+                            }
+                       }
+                    }
+            }
+            resource.getResourceResolver().commit();
+            node.hasNodes() ? getChildNodes(node, componentPropertyList) : node
+        }
+    }
+}
+def updateContent(pagePath, pageComponentPropertyList, componentPropertyList){
+    pagePath.each{
+        resourcePath ->
+        try {
+            Page page = getPage(resourcePath);
+            def content = page.node
+            if (content) {
+                Resource resource = resourceResolver.getResource(content.path)
+                ModifiableValueMap map = resource.adaptTo(ModifiableValueMap.class)
+                map.each{ k, v -> 
+                    if(pageComponentPropertyList.contains(k)){
+                       if(content.getProperty(k).isMultiple()){
+                           def tempList =[]
+                           Property propVal = content.getProperty(k);     
+                           Value[] values = propVal.getValues();  
+                           for(Value val: values){
+                               if(val.getString()){
+                                    tempList.add(getTranslatedText(val.getString()))   
+                                }else{
+                                    tempList.add("")
+                                }
+                            }
+                            //println "$k:$tempList"
+                            map.put(k, tempList.toArray(new String[0]))   
+                       }else{
+                            if(content.getProperty(k).getString()){
+                                map.put(k, getTranslatedText(content.get(k)))
+                            }
+                       }
+                    }
+                }
+                resource.getResourceResolver().commit()
+            }
+            Node parentNode = getNode(resourcePath+"/"+JcrConstants.JCR_CONTENT)
+            getChildNodes(parentNode, componentPropertyList)
+            save()
+        } catch (IOException exception) {
+            println "Invalid URL: $resourcePath"
+        }
+    }
+}
+def node = updateContent(pagePath, pageComponentPropertyList, componentPropertyList)

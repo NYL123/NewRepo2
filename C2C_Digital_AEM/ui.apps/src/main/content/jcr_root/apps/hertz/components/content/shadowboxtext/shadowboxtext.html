@@ -1,0 +1,18 @@
+<sly data-sly-test.author="${!properties.heading && !properties.text && !properties.buttontext && wcmmode.edit}">
+    Please configure the shadow box text component.
+</sly>
+<sly data-sly-test="${!author}" data-sly-use.data="path.js">
+    <div class='missing-points-content'>
+        <div data-sly-test="${properties.heading}" class='missing-points-heading'>
+            ${properties.heading @ context='html'}
+        </div>
+        <div data-sly-test="${properties.text}" class='missing-points-content-section'>
+            ${properties.text @ context='html'}
+        </div>
+        <div data-sly-test.a="${properties.buttontext && data.shortenedPath}">
+            <button class='missing-points-button'>
+                <a href='${data.shortenedPath}'>${properties.buttontext}</a>
+            </button>
+        </div>
+    </div>
+</sly>

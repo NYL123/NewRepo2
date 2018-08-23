@@ -1,0 +1,10 @@
+<p><b>Language Configuration</b></p>
+<div data-sly-test="${!properties.languageName && wcmmode.edit}" data-sly-unwrap>
+	Please Configure Language.
+</div>
+<div data-sly-test="${properties.languageName}" data-sly-unwrap>								
+	<b>Language:</b> ${properties.languageName} <br>
+	<b>Language Code:</b> ${properties.languageCode}<br>
+	<b>Is Default Language:</b> ${properties.isDefaultLanguage} <br>
+	<b>Redirect URL:</b> ${properties.iracLink} <br>
+</div>

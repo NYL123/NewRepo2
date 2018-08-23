@@ -1,0 +1,13 @@
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.key && !properties.value && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Multifield Pair component.
+    </div>
+    <div data-sly-test="${properties.key || properties.value}" data-sly-unwrap >
+        <b>key: </b><sly data-sly-test="${properties.key}">${properties.key}</sly><br>
+        <b>value: </b>
+        <ul data-sly-list.values="${properties.value}" data-sly-unwrap>
+  			<li>${values}</li>
+		</ul><br>
+    </div>
+</div>
+

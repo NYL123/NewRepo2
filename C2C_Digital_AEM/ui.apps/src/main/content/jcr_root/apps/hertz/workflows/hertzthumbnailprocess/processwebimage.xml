@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Web Enabled Image">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <arguments
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            title="Web Enabled Image Arguments"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <width
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="1536"
+                    fieldDescription="The threshold width. It would decide how the business specific small renditions will be created with respect to the large ones."
+                    fieldLabel="Threshold Width (pixels)"
+                    name="./metaData/THRESHOLDWIDTH"
+                    xtype="textfield"/>
+                <maxwidth
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="3072"
+                    fieldDescription="The maximum width to which the large image will be auto scaled if the author uploads one"
+                    fieldLabel="Maximum Width (pixels)"
+                    name="./metaData/MAXWIDTH"
+                    xtype="textfield"/>
+                <quality
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="96"
+                    fieldDescription="Quality as percentage from optimal. This depends on the mimetype of the resulting image. For Gifs this reduces the amount of colors, for Jpgs this sets the compression rate, etc."
+                    fieldLabel="Quality"
+                    name="./metaData/QUALITY"
+                    xtype="textfield"/>
+                <mimetype
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="image/png"
+                    fieldDescription="The mimetype of the image tor create. Defaults to image/png."
+                    fieldLabel="Mimetype"
+                    name="./metaData/MIME_TYPE"
+                    xtype="textfield"/>
+            </items>
+        </arguments>
+    </items>
+</jcr:root>

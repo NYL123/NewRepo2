@@ -1,0 +1,31 @@
+<p><b>Menubar Component</b></p>
+<div data-sly-test="${ wcmmode.edit} ">
+</div>
+
+
+<div data-sly-use.menubar=com.hertz.digital.platform.use.MenuBarUse
+	data-sly-unwrap>
+	<!--START the Loop -->
+	<div data-sly-list="${menubar.menuItems}" data-sly-unwrap>
+		<b>Navigation Level One Heading:</b> ${item.heading.title} <br>
+		<b>Navigation Level One URL:</b> ${item.heading.url} <br>
+		<b>Navigation Level One Open URL in New Window?</b> ${item.heading.openUrlNewWindow} <br>
+		<b>Navigation Level One Include No Follow attribute:</b>${item.heading.seoNoFollow}<br/>
+		<b>Navigation Level One Display on Desktop:</b> ${item.heading.displayDesktop}<br>
+		<b>Navigation Level One Display on Tablet:</b> ${item.heading.displayTablet}<br>
+		<b>Navigation Level One Display on Mobile:</b> ${item.heading.displayMobile}<br>
+		<b>Navigation Level One Display in Apps:</b> ${item.heading.displayNative}<br>
+		<div data-sly-list.subMenus="${item.heading.items}" data-sly-unwrap>
+		<b>Navigation Level Two Heading:</b> ${subMenus.title} <br>
+		<b>Navigation Level Two URL:</b> ${subMenus.url} <br>
+		<b>Navigation Level Two Open URL in New Window?</b> ${subMenus.openUrlNewWindow}<br>
+		<b>Navigation Level Two Include No Follow attribute:</b>${subMenus.seoNoFollow}<br/>
+		<b>Navigation Level Two Display on Desktop:</b> ${subMenus.displayDesktop}<br>
+		<b>Navigation Level Two Display on Tablet:</b> ${subMenus.displayTablet}<br>
+		<b>Navigation Level Two Display on Mobile:</b> ${subMenus.displayMobile}<br>
+		<b>Navigation Level Two Display in Apps:</b> ${subMenus.displayNative}<br>
+		</div>
+		<br>
+	</div>
+</div>
+<!-- END the Loop -->

@@ -1,0 +1,48 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+    <sly data-sly-test.author="${!properties.heading || !properties.accordionId}">
+        <h2>Please configure Table Text Accordion Component</h2>    
+    </sly>
+    <div data-sly-test="${!author}">		        
+		<label for='${properties.accordionId}'>${properties.heading}</label>
+        <div>
+			<sly data-sly-test="${properties.bodyText}">
+        		${properties.bodyText @context='html'}
+			</sly>
+            <sly data-sly-test="${properties.tabletype == 'A'}"> 
+				<div data-sly-resource="${'tableA' @ resourceType='hertz/components/content/tablecontainer_a'}" data-sly-unwrap></div>
+            </sly>
+            <sly data-sly-test="${properties.tabletype == 'B'}"> 
+				<div data-sly-resource="${'tableB' @ resourceType='hertz/components/content/tablecontainer_b'}" data-sly-unwrap></div>
+            </sly>
+            <sly data-sly-test="${properties.tabletype == 'C'}"> 
+				<div data-sly-resource="${'tableC' @ resourceType='hertz/components/content/tablecontainer_c'}" data-sly-unwrap></div>
+            </sly>
+            <sly data-sly-test="${properties.tabletype == 'D'}"> 
+				<div data-sly-resource="${'tableD' @ resourceType='hertz/components/content/tablecontainer_d'}" data-sly-unwrap></div>
+            </sly>
+        </div>         
+    </div>
+</sly>
+<sly data-sly-test="${properties.heading && properties.accordionId && !(wcmmode.edit || wcmmode.design)}">
+    <div class='accordian-tab-with-table'>
+		<input id='${properties.accordionId}' type='checkbox' name='tabs' class='checkbox'>        
+		<label class='accordian-header' for='${properties.accordionId}'>${properties.heading}</label>
+        <div class='accordian-tab-with-table-content'>
+			<sly data-sly-test="${properties.bodyText}">
+        		${properties.bodyText @context='html'}
+			</sly>
+            <sly data-sly-test="${properties.tabletype == 'A'}"> 
+				<div data-sly-resource="${'tableA' @ resourceType='hertz/components/content/tablecontainer_a'}" data-sly-unwrap></div>
+            </sly>
+            <sly data-sly-test="${properties.tabletype == 'B'}"> 
+				<div data-sly-resource="${'tableB' @ resourceType='hertz/components/content/tablecontainer_b'}" data-sly-unwrap></div>
+            </sly>
+            <sly data-sly-test="${properties.tabletype == 'C'}"> 
+				<div data-sly-resource="${'tableC' @ resourceType='hertz/components/content/tablecontainer_c'}" data-sly-unwrap></div>
+            </sly>
+            <sly data-sly-test="${properties.tabletype == 'D'}"> 
+				<div data-sly-resource="${'tableD' @ resourceType='hertz/components/content/tablecontainer_d'}" data-sly-unwrap></div>
+            </sly>
+        </div>         
+    </div>
+</sly>

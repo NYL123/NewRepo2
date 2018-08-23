@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Footer page"
+    jcr:primaryType="cq:Template"
+    jcr:title="Footer Page"
+    allowedPaths="[/content/.*/.*/.*/footers(/.*)?,/content/.*/.*/.*/hertzlinks/.*(/.*)?,/content/.*/.*/.*/clublinks/.*(/.*)?]"
+     allowedParents="[/apps/hertz/templates/spa,/apps/hertz/templates/splash]"
+    ranking="{Long}120">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/hertz/components/pages/footer"/>
+</jcr:root>

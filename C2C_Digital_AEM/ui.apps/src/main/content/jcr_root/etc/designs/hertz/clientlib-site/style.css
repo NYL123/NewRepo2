@@ -1,0 +1,556 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2012 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+
+body {
+    font-family: Myriad, Lucida Grande, Lucida Sans Unicode, Tahoma, Geneva, Arial, Helvetica, sans-serif;
+    background-color: #FFF;
+    color: #1E1E1E;
+}
+
+.page-content {
+    background-color: #E9E9E2;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: old-standard, serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 5em;
+    line-height: 1em;
+    text-align: left;
+    display: inline;
+}
+
+h2, h3 {
+    font-size: 2.4em;
+    font-style: italic;
+    text-align: center;
+    background-image: url("/etc/designs/geometrixx-media/clientlibs/img/header-bar-h2.png");
+    background-repeat: repeat-x;
+    background-position: 0 50%;
+}
+
+h3 {
+    font-size: 2.5em;
+    background-image: url("/etc/designs/geometrixx-media/clientlibs/img/header-bar-h3.png");
+    line-height: inherit;
+}
+
+h2>span, h3>span {
+    background-color: #E9E9E2;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+}
+
+h4 {
+    padding: 20px 0 20px 20px;
+    margin-right: 70px;
+    font-size: 2.5em;
+    line-height: 35px;
+}
+
+h5 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+ul {
+    margin: 1em 0;
+}
+
+p {
+    margin: 1em 0;
+    font-size: 14px;
+    line-height: 20px;
+	word-wrap: break-word;
+}
+
+li {
+    line-height: 20px;
+}
+
+a {
+    color: #009cbd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h4.recommended {
+    font-size: 20px;
+}
+
+.media-page-content div[class*='profile'] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.media-page-content div[class*='profile'] h1 {
+    font-size: 3em;
+}
+
+.logo {
+    float: left;
+}
+
+div.login {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.login-form .label {
+    background: none;
+    font-size: 1.0em;
+    color: #000000;
+    text-shadow: none;
+}
+
+input[type='password'],
+form .form_field_text,
+form .form_field_select,
+form .form_field_text.form_field_multivalued,
+form .form_field_textarea,
+.geo.textinput {
+    min-height: 1.5em;
+    width: 95%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #666
+}
+
+label {
+    width: inherit;
+}
+
+form .form_field_textarea {
+    height: 3.5em;
+}
+
+.label {
+    font-weight: bold;
+}
+
+table.login-form .form_button_submit {
+    margin-bottom: 10px;
+}
+
+.media-page-header {
+    background-color: #ffffff;
+}
+
+.media-page-content {
+    background-color: #E9E9E2;
+}
+
+.media-page-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#controls {
+    line-height: 60px;
+}
+
+.spacer {
+    height: 20px;
+}
+
+div.carousel {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.hr-spacer {
+    background-color: #000;
+    height: 5px;
+}
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+}
+
+.footerHeading {
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-content {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.footer-content ul {
+    list-style: none;
+    float: left;
+}
+
+.footer-content li {
+    margin-left: 0;
+    border-left: 1px solid #636363;
+    padding-left: 10px;
+    padding-right: 55px;
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+hr.stripeHr {
+    height: 10px;
+    background-image: url('/etc/designs/geometrixx-media/clientlibs/img/stripes.png');
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+}
+
+.no-left-margin {
+    margin-left: 0;
+}
+
+.no-right-margin {
+    margin-right: 0;
+}
+
+div.social {
+    margin-top: 15px;
+    color: #929292;
+}
+
+div.social-right {
+    text-align: right;
+    position: relative;
+    top: -35px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #929292;
+}
+
+article {
+    float: left;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+}
+
+/* Article specific style */
+.sharing {
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%; /* Make images inherently responsive */
+    height: auto; /* Make images inherently responsive */
+    vertical-align: middle;
+    border: 0;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.media-page-content div.search {
+    padding: 30px 10px 0px 10px;
+}
+
+div.image {
+    overflow: visible;
+}
+
+/* Article Component Overrides */
+div.article > h2, div.article > h3 {
+    font-size: 2.4em;
+    font-style: italic;
+    text-align: left;
+    background-image: none;
+}
+
+div.article > h3 {
+    font-size: 2.5em;
+}
+
+/* Comment specific style */
+div.comments {
+    margin-top: 1.5em;
+    padding-top: .8em;
+    border-top: 2px solid #DADADA;
+    clear: both;
+}
+
+div.comments-count {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+div.comments-count.replies {
+    font-size: 1em;
+}
+
+div.comment {
+    margin-top: 14px;
+}
+
+div.comment-header {
+    font-size: 0.75em;
+    height: 30px;
+    line-height: 30px;
+    background-color: #efefef;
+    border-top: solid 1px #bcbcbc;
+}
+
+div.comment-header a {
+    color: #000;
+    text-decoration: none;
+}
+
+div.comment-header-avatar {
+    float: left;
+}
+
+div.comment-header-avatar img {
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+}
+
+div.comment-header cite {
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+div.comment-header cite a {
+    font-weight: bold;
+}
+
+div.comment-body {
+    clear: left;
+    margin-top: 5px;
+}
+
+div.comment-replies.tree {
+    padding-left: 20px;
+}
+
+form.comment {
+    text-align: left;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+div.comment-error {
+    font-weight: bold;
+    color: #f60;
+}
+
+div.comment-info {
+    width: 190px;
+    margin-bottom: 10px;
+}
+
+div.comment-block-author {
+    display: none;
+}
+
+div.comment-block-publish {
+    display: none;
+}
+
+div.submit-block input[type="submit"] {
+    margin-top: 10px;
+}
+
+label.comment-text-label {
+    font-weight: bold;
+}
+
+div.comment-signed-in-text {
+    display: none;
+}
+
+span.comment-signed-in-user {
+    font-weight: bold;
+    padding-left: 5px
+}
+
+input.comment-text {
+    margin: 0 10px 7px 0;
+    padding: 2px;
+    font-size: 95%;
+    color: #333;
+    display: block;
+}
+
+textarea.comment-text {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #888;
+    font-size: 12px;
+    width: 80%;
+    height: 100px;
+}
+
+/* Tag Cloud And Search Styles */
+ul.tagcloud{
+    text-align:left;
+    color:#666666
+}
+
+ul.tagcloud li.tag7{
+    color:#78984a;
+}
+
+ul.tagcloud li.tag10{
+    color:#80ae3e
+}
+
+.media-page-content div.search{
+    padding:0;
+    margin:10px 0   20px 0;
+}
+
+.media-page-content div.search center{
+    text-align:left;
+}
+
+.media-page-content div.search input[name*='q']{
+    border:0;
+    background:#e7e7e0;
+    font-size:20pt;
+    color:#333333;
+    width:70%;
+    border-bottom:#4d4d4d solid 1px;
+}
+
+.media-page-content div.search input[type*='submit']{
+    border:0;
+    background:#e7e7e0 url('/etc/designs/geometrixx-media/clientlibs/img/search.png') no-repeat center center;
+    width:40px;
+    height:40px;
+    font-size:0px;
+
+}
+/* end Tag And Search Style*/
+
+/* Search Results Styling */
+.search .searchRight{
+    display: none;
+}
+
+.search .comment:nth-child(even) {
+    background-color:#fff;
+}
+.search .comment-header{
+    background:#fff;
+    font-size:1.1em;
+    height:40px;
+    line-height:40px;
+    padding:10px;
+}
+
+.search .comment, .search .entrytext{
+    padding:0;
+    margin: 5px 0 5px 0;
+}
+
+.search .comment-header-meta{
+    line-height:40px;
+    padding:0;
+    margin:0;
+}
+
+
+.headline1 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.body2 {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.body3-bold {
+  color: #000;
+  font-family: 'RideBold';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.callout3 {
+  color: #fff;
+  font-family: 'RideSemibold';
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.container {
+  margin: 20px 60px;
+}
+.icon-arrow-right::before {
+  content: '\e918';
+}
+
+.accordian-tab-with-table-content .accordian-content {
+  padding: 0;
+  word-break: break-word; 
+  list-style: none;
+  padding-bottom: 16px;
+  display: inline-flex;
+}
+
+.accordian-tab-with-table-content .accordian-content::before{
+  content: '\e90a';
+  font-family: 'icomoon';
+  padding-right:12px; 
+  color: green;
+  font-size: 14px;
+}
+
+.linkbutton{
+    display: block;
+    background:#E9E9E2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    float:right;
+}
+
+.previewlinkdiv{
+	position:relative;
+	width:100%;
+    margin-bottom:50px;
+    overflow:hidden;
+    right:10px;
+    top:10px;
+}

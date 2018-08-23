@@ -1,0 +1,24 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <b>Select List/Radio Button Field Pair Component</b><br>
+    <div data-sly-test="${ !properties.key && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Select List/Radio Buttons Field Pair component.
+    </div>
+    <div data-sly-test="${properties.key}" data-sly-unwrap >
+        <b>Key: </b>${properties.key}<br>
+    </div>
+    <div data-sly-test="${properties.label}" data-sly-unwrap >
+        <b>Label: </b>${properties.label}<br>
+    </div>
+    <div data-sly-test="${properties.ariaLabel}" data-sly-unwrap >
+        <b>Accessible Label: </b>${properties.ariaLabel}<br>
+    </div>
+    <div data-sly-test="${properties.defaultValue}" data-sly-unwrap >
+        <b>Default Value: </b>${properties.defaultValue}<br>
+    </div>
+    <div data-sly-test="${properties.error}" data-sly-unwrap >
+        <b>Error Message: </b>${properties.error}<br>
+    </div>
+    <!-- Todo - print out multi-multi option values -->
+</div>
+

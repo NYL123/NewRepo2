@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title=" Sign Up for Email Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="cq.authoring.dialog1">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="dialog-width-50rem">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <signupforemail
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Sign Up for Email Form"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="column-full-width">
+                        <items jcr:primaryType="nt:unstructured">
+                            <signuptext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Please enter signup for email title. Maximum 35 characters alowed."
+                                fieldLabel="Sign Up for Email Title"
+                                maxlength="{Long}35"
+                                name="./signupForEmailTitle"/>
+                            <signupsubtitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Please enter signup for email subtitle. Maximum 35 characters alowed."
+                                fieldLabel="Sign Up for Email Subtitle"
+                                maxlength="{Long}35"
+                                name="./signupForEmailSubtitle"/>
+                            <emailplaceholdertext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Please enter signup for email placeholder text"
+                                fieldLabel="Sign Up for Email Placeholder Text"
+                                name="./signupForEmailPlaceholderText"/>
+                            <signupbuttontext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Please enter signup for email button text. Minimum 1 and maximum 12 characters allowed."
+                                fieldLabel="Sign Up for Email Button Text"
+                                maxlength="{Long}12"
+                                minlength="{Long}1"
+                                name="./signupForEmailButtonText"/>
+                            <targeturi
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Please enter target url. Please enter in the format https://www.sitename.com or http://www.sitename.com"
+                                fieldLabel="Target URL (External)"
+                                name="./targetURL"/>
+                            <target
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Please select if the link will open in a new window"
+                                fieldLabel="Open Link In New Window"
+                                name="./openURLNewWindow">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="{Boolean}false"/>
+                                    <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="{Boolean}true"/>
+                                </items>
+                            </target>
+                            <rel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Please select SEO nofollow tag should be included for this link"
+                                fieldLabel="No Follow"
+                                name="./rel">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="{Boolean}false"/>
+                                    <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="{Boolean}true"/>
+                                </items>
+                            </rel>
+                            <openUrlInNewWindowType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./openURLNewWindow@TypeHint"
+                                value="Boolean"/>
+                            <seoNoFollowType
+                                jcr:primaryType="nt:unstructured"
+                                sling:orderBefore="section1"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./rel@TypeHint"
+                                value="Boolean"/>
+                        </items>
+                    </column>
+                </items>
+            </signupforemail>
+        </items>
+    </content>
+</jcr:root>

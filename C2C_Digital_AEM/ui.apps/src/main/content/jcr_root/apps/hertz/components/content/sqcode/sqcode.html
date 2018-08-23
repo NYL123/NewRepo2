@@ -1,0 +1,12 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.imageAltText && !properties.fileReference && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the SQ Code component.
+    </div>
+    <div data-sly-test="${properties.imageAltText || properties.fileReference}" data-sly-unwrap >
+        <b>Image: </b><sly data-sly-test="${properties.fileReference}">${properties.fileReference}</sly><br>
+        <b>Image Alt Text: </b><sly data-sly-test="${properties.imageAltText}">${properties.imageAltText}</sly><br>
+        <b>Image Description: </b><sly data-sly-test="${properties.description}">${properties.description}</sly><br>
+    </div>
+</div>
+

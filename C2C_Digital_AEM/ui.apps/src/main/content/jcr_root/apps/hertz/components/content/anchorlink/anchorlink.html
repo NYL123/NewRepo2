@@ -1,0 +1,12 @@
+<sly data-sly-test="${ !properties.linkId && !properties.linkText && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+  <h2> Please configure Anchor Link component</h2>
+</sly>
+<sly data-sly-test="${properties.linkId && properties.linkText}">
+<a href='#${properties.linkId}'>${properties.linkText}</a>
+</sly>
+<sly data-sly-test="${properties.linkId && !properties.linkText}">
+<a id='${properties.linkId}'></a>
+</sly>
+<sly data-sly-test="${properties.linkId && !properties.linkText && wcmmode.edit}">
+<a id='${properties.linkId}'>Anchor Link</a>
+</sly>

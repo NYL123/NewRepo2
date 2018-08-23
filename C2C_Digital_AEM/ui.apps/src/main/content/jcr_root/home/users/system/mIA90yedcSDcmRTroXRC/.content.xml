@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    cq:lastReplicated="{Date}2017-10-30T13:02:21.248+05:30"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
+    jcr:primaryType="rep:SystemUser"
+    jcr:uuid="0d0a1598-f3e7-3623-9150-cb0706852802"
+    rep:authorizableId="hertz-service"
+    rep:principalName="hertz-service"
+    familyName="hertz-service"
+    memberAction="memberOf"
+    memberEntry="[everyone]"/>

@@ -1,0 +1,20 @@
+<div >
+<b>Credit Cards component</b>
+    <div data-sly-test="${!properties.imageName && !properties.element && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure Credit Cards component.
+    </div><br>
+      <b><sly data-sly-test="${properties.imageName}">Name </sly></b>${properties.imageName}<br>
+        <b><sly data-sly-test="${properties.cardType}">Code: </sly></b>${properties.cardType}<br>
+         <b><sly data-sly-test="${properties.element}">Element: </sly></b>${properties.element}<br>
+        <b><sly data-sly-test="${properties.fileReference}">Image: </sly></b><img src=${properties.fileReference}> <br>		
+		<b><sly data-sly-test="${properties.cmdrCode}">CMDR Code: </sly></b>${properties.cmdrCode} <br>
+		<b><sly data-sly-test="${properties.seamlessCode}">Seamless Code: </sly></b>${properties.seamlessCode} <br>
+		<b><sly data-sly-test="${properties.receiptCode}">Receipt Code: </sly></b>${properties.receiptCode}<br>
+		<b>Is Prepaid:</b>${properties.isPrepaid} <br>
+		<b>Hertz Issued:</b>${properties.hertzIssued} <br>
+		<b>Account/PayLater:</b>${properties.accountAndOrPayLater} <br>
+        <b><sly data-sly-test="${properties.sourceCountry}">Source Country: </sly></b>${properties.sourceCountry} <br>
+        <b><sly data-sly-test="${properties.destinationCountry}">Destination Country: </sly></b>${properties.destinationCountry} <br>
+</div>
+
+

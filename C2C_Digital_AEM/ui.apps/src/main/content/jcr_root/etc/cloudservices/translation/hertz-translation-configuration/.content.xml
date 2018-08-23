@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudservicename="translation"
+        cq:lastModified="{Date}2017-09-19T12:33:02.958+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/translation/templates/mt-servicepage"
+        jcr:lastModified="{Date}2017-09-19T12:33:02.908+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Hertz Translation Configuration"
+        sling:resourceType="cq/translation/components/mt-cloudconfig"
+        assets_defaultCategory="general"
+        assets_defaultTranslationProvider="microsoft"
+        assets_translationWorkflow="donottranslate"
+        defaultCategory="general"
+        defaultTranslationProvider="microsoft"
+        sites_defaultCategory="general"
+        sites_defaultTranslationProvider="microsoft"
+        sites_translateEmbeddedAssets="donottranslate"
+        sites_translationWorkflow="humanTranslation"/>
+</jcr:root>

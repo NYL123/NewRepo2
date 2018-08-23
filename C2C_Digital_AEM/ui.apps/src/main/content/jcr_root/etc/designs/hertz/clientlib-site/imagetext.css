@@ -1,0 +1,51 @@
+.image-text-component {
+  display: flex;
+  padding: 62px 0
+}
+
+.text-section {
+  padding-left: 36px;
+  color: #000;
+  font-family: 'Ride';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.text-points {
+  padding: 22px 40px 0 34px;
+}
+
+.text-heading {
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+
+.text-points ul {
+  margin: 0 !important;
+}
+
+.text-heading-divider {
+  border: 1px solid #d7d8d8;
+  margin: 12px 0;
+  width: 100%;
+}
+
+@media(max-width: 768px) {
+  .image-section {
+    display: none;
+  }
+
+  .text-content {
+    padding-top: 20px;
+  }
+
+  .text-points {
+    padding: 20px 0 16px 0;
+  }
+
+  .text-section {
+    padding-left: 20px;
+  }
+}

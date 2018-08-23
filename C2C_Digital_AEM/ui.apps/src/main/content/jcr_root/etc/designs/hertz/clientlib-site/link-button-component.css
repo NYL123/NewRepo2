@@ -1,0 +1,27 @@
+.link-text {
+  font-family: 'Ride';
+  font-size: 14px;
+  color: #3455DB;
+}
+
+.link-button {
+  padding: 16px;
+  border: 2px solid #365AD8;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #365AD8; 
+  cursor: pointer;
+  font-family: 'RideSemibold';
+}
+
+.link-button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-button a:hover,
+.link-button a:visited
+.link-button a:focus {
+  text-decoration: none;
+  color: #fff;
+}

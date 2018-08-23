@@ -1,0 +1,10 @@
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.key && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the External Splash component.<br>
+    </div>
+    <div data-sly-test="${properties.key}" data-sly-unwrap >
+        <b>Sequence Id: </b>${properties.key}</sly><br>
+        <b>Redirect URL: </b>${properties.value}<br>
+    </div>
+</div>
+

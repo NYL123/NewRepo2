@@ -1,0 +1,13 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.stateCode && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the State/Province List component.<br>
+    </div>
+    <div data-sly-test="${properties.stateCode}" data-sly-unwrap >
+        <b>Code: </b><sly data-sly-test="${properties.stateCode}">${properties.stateCode}</sly><br>
+        <b>Name: </b><sly data-sly-test="${properties.stateName}">${properties.stateName}</sly><br>
+        <b>Type: </b><sly data-sly-test="${properties.type}">${properties.type}</sly><br>
+        <b>Country Code: </b><sly data-sly-test="${properties.countryCode}">${properties.countryCode}</sly><br>
+    </div>
+</div>
+

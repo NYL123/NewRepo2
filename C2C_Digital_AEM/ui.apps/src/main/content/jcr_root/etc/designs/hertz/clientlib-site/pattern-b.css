@@ -1,0 +1,75 @@
+.content-card-pattern-b {
+    border: 1px solid #d7d8d8;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, .06);
+    display: flex;
+    flex-flow: row;
+    max-height: 278px;
+    padding: 0;
+    width: 100%;
+	overflow:hidden;
+}
+
+.content-card-pattern-b-link {
+    color: #000;
+    text-decoration:none !important;
+}
+
+  .content-card-pattern-b-link:hover {
+      color: #000;
+      text-decoration:none !important;
+  }
+
+.content-card-pattern-b h1,
+.content-card-pattern-b p {
+    margin: 0;
+}
+
+.content-card-pattern-b .content-card-data-section .content-card-headline {
+    padding: 4px 0 8px;
+}
+
+.content-card-pattern-b .content-card-data-section h1 {
+    padding: 0;
+}
+
+.content-card-divider{
+    border:1px solid #d7d8d8;
+    margin-bottom:12px;
+    width:100%;
+}
+
+.content-card-pattern-b .content-card-data-section {
+    padding: 24px 38px 24px 24px;
+    width:100%;
+}
+
+.content-card-pattern-b .content-card-imperdiet-link{
+    text-decoration: none;
+    color: #3455db;
+    cursor: pointer;
+}
+
+.content-card-pattern-b .content-card-paragrah{
+    font-family: 'Ride';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .content-card-pattern-b{
+      max-height: 500px;
+      max-width: 375px;
+  }
+  .content-card-pattern-b .content-card-paragrah{
+      padding-bottom:36px;
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+  .content-card-pattern-b{
+      max-height: 278px;
+  }
+}

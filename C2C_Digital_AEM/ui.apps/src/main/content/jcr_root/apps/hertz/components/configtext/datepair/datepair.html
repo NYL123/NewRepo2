@@ -1,0 +1,23 @@
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+	<b>Generic Date Pair Component</b><br>
+
+	<div data-sly-test="${ !properties.key && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+    	Please configure the Date Pair component.
+    </div>
+
+    <div data-sly-test="${properties.key}" data-sly-unwrap >
+	    <b>Key: </b>${properties.key}<br>
+    </div>
+
+    <div data-sly-test="${properties.label}" data-sly-unwrap >
+         <b>Label: </b>${properties.label}<br>
+    </div>
+
+    <div data-sly-test="${properties.ariaLabel}" data-sly-unwrap >
+	    <b>Accessible Label: </b>${properties.ariaLabel}<br>
+    </div>
+
+    <div data-sly-use.formatter="${'dateformatter.js' @ date=properties.datepair.time, mask='MM/dd/YYYY'}">
+    	<b>Date: </b>${formatter.formattedDate}
+	</div>
+</div>

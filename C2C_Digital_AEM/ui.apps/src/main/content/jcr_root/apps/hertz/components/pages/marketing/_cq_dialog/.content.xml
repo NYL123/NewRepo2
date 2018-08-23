@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,cq.siteadmin.admin.properties]"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="cq-dialog-content-page">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container"
+                class="dialog-width-50rem"
+                rel="cq-siteadmin-admin-properties-tabs">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <moblayout
+                        cq:showOnCreate="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Mobile Layout"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container"
+                                class="column-full-width">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fieldset
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <mobile
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        class="channel"
+                                                        cq-msm-lockable="jcr:language"
+                                                        emptyText="No"
+                                                        fieldLabel="Mobile layout for Marketing slot"
+                                                        name="./mobLayout"
+                                                        translateOptions="{Boolean}false">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <default
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Default"
+                                                                value="default"/>
+                                                            <slot1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Horizontal View for Mobile Web 4 Columns"
+                                                                value="grid-col-sm-4"/>
+                                                            <slot2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Horizontal View for Mobile Web 6 Columns"
+                                                                value="grid-col-sm-6"/>
+                                                        </items>
+                                                    </mobile>
+                                                    <mobile2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        class="channel"
+                                                        cq-msm-lockable="jcr:language"
+                                                        emptyText="No"
+                                                        fieldLabel="Mobile layout for Marketing slot 2"
+                                                        name="./mobLayout2"
+                                                        translateOptions="{Boolean}false">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <default
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Default"
+                                                                value="default"/>
+                                                            <slot1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Horizontal View for Mobile Web 4 Columns"
+                                                                value="grid-col-sm-4"/>
+                                                            <slot2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Horizontal View for Mobile Web 6 Columns"
+                                                                value="grid-col-sm-6"/>
+                                                        </items>
+                                                    </mobile2>
+                                                </items>
+                                            </column>
+                                        </items>
+                                    </fieldset>
+                                </items>
+                            </column>
+                        </items>
+                    </moblayout>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

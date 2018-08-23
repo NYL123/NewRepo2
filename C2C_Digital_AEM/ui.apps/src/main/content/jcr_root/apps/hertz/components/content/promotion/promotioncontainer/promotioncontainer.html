@@ -1,0 +1,21 @@
+<div data-sly-use.promotionContainerUse=com.hertz.digital.platform.use.PromotionContainerUse 	data-sly-unwrap>
+<div >
+<b>Promotion Container </b> <br>
+    <div data-sly-test="${  !properties.promocardnumber && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Promotion Container component.
+    </div>
+ <br>
+<div data-sly-test="${promotionContainerUse.promoCardArrayList}" data-sly-unwrap>
+
+    <div data-sly-list.promoCardArrayList="${promotionContainerUse.promoCardArrayList}" 
+    data-sly-unwrap>
+    <div>
+    <div data-sly-resource="${ @path=promoCardArrayList,resourceType='/apps/hertz/components/content/promotion/promotioncard'}" data-sly-unwrap></div>
+    </div>
+     
+    </div>
+</div>
+<br>
+
+</div>
+</div>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudserviceconfigs="[[]]"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:designPath="/etc/designs/hertz"
+        cq:lastModified="{Date}2017-09-05T09:00:19.621-04:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-09-19T02:53:25.389-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/hertz/templates/localeconfig"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:lastModified="{Date}2017-09-05T09:00:19.617-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en-us"
+        jcr:uuid="c1c396d9-94ef-4ef7-8054-81e075494bc2"
+        sling:resourceType="/apps/hertz/components/pages/localeconfig"/>
+    <importantinformation-config/>
+    <termsconditions-config/>
+    <ancillaries-display-configuration/>
+    <ancillarycategory-config/>
+    <rentalqualification-config/>
+    <locations/>
+    <errormessages-config/>
+    <totalverbiage-config/>
+    <country-config/>
+    <creditcards/>
+    <taxes-config/>
+    <statelist/>
+    <countrylist/>
+    <taxConfig/>
+    <airline-traincarrier/>
+    <frequenttravelerprogram/>
+</jcr:root>

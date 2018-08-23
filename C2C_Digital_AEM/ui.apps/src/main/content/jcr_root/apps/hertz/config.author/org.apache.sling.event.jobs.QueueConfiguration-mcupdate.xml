@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    queue.name="Hertz MC Update Job"
+    queue.retries="{Long}3"
+    queue.retrydelay="{Long}5000"
+    queue.topics="com/sling/hertz/microservices/update"
+    queue.type="ORDERED"/>

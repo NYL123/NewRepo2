@@ -1,0 +1,13 @@
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+<b>Frequent Traveler Program component</b>
+    <div data-sly-test="${!properties.ftpName && !properties.ftpCode && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure Frequent Traveler Program component.
+    </div><br>
+      <b><sly data-sly-test="${properties.ftpName}">Name </sly></b>${properties.ftpName}<br>
+        <b><sly data-sly-test="${properties.ftpCode}">Code: </sly></b>${properties.ftpCode}<br>
+         <b><sly data-sly-test="${properties.pointsIncrement}">Points: </sly></b>${properties.pointsIncrement}<br>
+          <b><sly data-sly-test="${properties.travelSector}">Travel Sector: </sly></b>${properties.travelSector}<br>
+           <b>Account selected: </b>${properties.account}<br>
+</div>
+
+

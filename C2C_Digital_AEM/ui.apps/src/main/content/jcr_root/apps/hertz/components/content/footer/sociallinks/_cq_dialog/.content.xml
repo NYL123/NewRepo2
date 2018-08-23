@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Social Links"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="cq.authoring.dialogsociallinks">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="dialog-width-50rem">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <sociallinks
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Social Links"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="column-full-width">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fieldset
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Social Links Component"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <socialicons
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                class="full-width"
+                                                eaem-nested=""
+                                                fieldDescription="Click '+' to add a Social Link. Maximum 5 can be added."
+                                                fieldLabel="Social Icons (Maximum 5)"
+                                                maxSections="5"
+                                                minSections="0">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                    name="./socialLinks">
+                                                    <layout
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                        method="absolute"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <socialicontype
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                    fieldDescription="Please select social Icon from drop down"
+                                                                    fieldLabel="Social Icon"
+                                                                    name="./socialIcon">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <default
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Please select"
+                                                                            value=""/>
+                                                                        <twitter
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Twitter"
+                                                                            value="icon-twitter"/>
+                                                                        <facebook
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                text="Facebook"
+                                                                                value="icon-facebook"/>
+                                                                        <instagram
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                text="Instagram"
+                                                                                value="icon-instagram"/>
+                                                                        <youtube
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                text="YouTube"
+                                                                                value="icon-youtube"/>
+                                                                        <GooglePlus
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                text="GooglePlus"
+                                                                                value="icon-google"/>
+                                                                    </items>
+                                                                </socialicontype>
+                                                                <iconurlexternal
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="Please enter social link url"
+                                                                    fieldLabel="Social Link"
+                                                                    name="./socialURL"/>
+                                                                <target
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                    fieldDescription="Please select if the link will open in a new window"
+                                                                    fieldLabel="Open In New Window"
+                                                                    name="./openIconNewWindow">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <no
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="No"
+                                                                            value="{Boolean}false"/>
+                                                                        <yes
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Yes"
+                                                                            value="{Boolean}true"/>
+                                                                    </items>
+                                                                </target>
+                                                                <targetType
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:orderBefore="section1"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                                                    name="./openIconNewWindow@TypeHint"
+                                                                    value="Boolean"/>
+                                                                <alttext
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="Please enter social icon alt text"
+                                                                    fieldLabel="Alt Text"
+                                                                    name="./altText"/>
+                                                                <rel
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                    fieldDescription="Please select SEO nofollow tag should be included for this link"
+                                                                    fieldLabel="No Follow"
+                                                                    name="./rel">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <no
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="No"
+                                                                            value="{Boolean}false"/>
+                                                                        <yes
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Yes"
+                                                                            value="{Boolean}true"/>
+                                                                    </items>
+                                                                </rel>
+                                                                <seoNoFollowType
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:orderBefore="section1"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                                                    name="./rel@TypeHint"
+                                                                    value="Boolean"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </socialicons>
+                                            <sociallinkssubtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Please enter social links subtitle.Minimum 1 and Maximum 50 characters alowed."
+                                                fieldLabel="Social Links Subtitle"
+                                                maxlength="{Long}50"
+                                                minlength="{Long}1"
+                                                name="./socialLinksSubtitle"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldset>
+                        </items>
+                    </column>
+                </items>
+            </sociallinks>
+        </items>
+    </content>
+</jcr:root>

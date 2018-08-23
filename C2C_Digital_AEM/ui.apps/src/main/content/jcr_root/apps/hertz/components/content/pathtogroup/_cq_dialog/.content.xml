@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Path to Group Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <pathtogroup
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Path To Group Component"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <sitepath
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                disabled="{Boolean}false"
+                                fieldDescription="Enter Site Base Path Here"
+                                fieldLabel="Site Path"
+                                name="./sitepath"
+                                value=""
+								rootPath="/content"/>
+                            <groupname
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/userpicker"
+                                disabled="{Boolean}false"
+                                fieldDescription="Group Name goes here"
+                                fieldLabel="Group Name"
+								groupsOnly="{Boolean}true"
+                                hideServiceUsers="{Boolean}true"
+                                name="./groupname"/>
+                        </items>
+                    </column>
+                </items>
+            </pathtogroup>
+        </items>
+    </content>
+</jcr:root>

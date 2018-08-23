@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Fees And Taxes Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <feesAndtaxes
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Fees And Taxes"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+ <country jcr:primaryType="nt:unstructured"
+			sling:resourceType="granite/ui/components/foundation/form/textfield"
+			fieldDescription="Text field for Country" fieldLabel="Country"
+			name="./country" />
+<radioGroup jcr:primaryType="nt:unstructured"
+    name="./groupType"
+    text="GroupType"
+    sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+    renderReadOnly="{Boolean}true">
+
+    <items jcr:primaryType="nt:unstructured">
+        <radioGrouping jcr:primaryType="nt:unstructured"
+            name="./groupType"
+            text="Grouping"
+            value="Grouping"
+            cq-msm-lockable="Grouping"
+            sling:resourceType="granite/ui/components/foundation/form/radio"
+            renderReadOnly="{Boolean}true"/>
+        <radioItemized jcr:primaryType="nt:unstructured"
+            name="./groupType"
+            text="Itemized"
+            value="Itemized"
+            cq-msm-lockable="Grouping"
+            sling:resourceType="granite/ui/components/foundation/form/radio"
+            renderReadOnly="{Boolean}true"/>
+        
+    </items>
+</radioGroup>
+                        </items>
+                    </column>
+                </items>
+            </feesAndtaxes>
+        </items>
+    </content>
+</jcr:root>

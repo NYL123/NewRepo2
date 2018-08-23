@@ -1,0 +1,12 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.key && !properties.value && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Image Pair component.
+    </div>
+    <div data-sly-test="${properties.key || properties.value}" data-sly-unwrap >
+        <b>key: </b><sly data-sly-test="${properties.key}">${properties.key}</sly><br>
+        <sly data-sly-test="${properties.alt}"><b>Alt Text: </b>${properties.alt}<br></sly>
+        <b>value: </b><sly data-sly-test="${properties.fileReference}"><img src="${properties.fileReference}"></sly><br>
+    </div>
+</div>
+

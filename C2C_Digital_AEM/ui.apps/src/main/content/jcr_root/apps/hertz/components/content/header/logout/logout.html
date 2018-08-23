@@ -1,0 +1,8 @@
+<p><b>Logout Component</b></p>
+<sly data-sly-test="${!properties.logoutButtonText && !properties.logoutURL && wcmmode.edit}">
+	Please Configure Logout Component.
+</sly>
+<sly data-sly-test="${properties.logoutButtonText && properties.logoutURL}">
+	<b>Logout Button Label:</b>  ${properties.logoutButtonText} <br>
+	<b>Logout URL:</b>	${properties.logoutURL} <br>
+</sly>

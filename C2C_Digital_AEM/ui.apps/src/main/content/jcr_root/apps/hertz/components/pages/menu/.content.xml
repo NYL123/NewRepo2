@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Used to author content for Navigation Level 1 and Navigation Level 2 pages of  Menu Navigation for a particular partner for a  given country and languages."
+    jcr:primaryType="cq:Component"
+    jcr:title="Menu Page Component"
+    sling:resourceSuperType="/apps/hertz/components/pages/presentation"
+    maxlength="(long)35"
+    componentGroup=".hidden"/>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Rapid Banner"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="{Boolean}false"
+                allowUpload="{Boolean}true"
+                cropParameter="./imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                mapParameter="./imageMap"
+                name="./file"
+                rotateParameter="./imageRotate"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="html5smartimage"/>
+            <imagetext
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                title="Image Text Fieds"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <banneralttext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Banner Alt Text"
+                        name="./alttext"
+                        xtype="textfield"/>
+                    <herotaglinetext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Hero Background Image Tagline Text"
+                        name="./taglineText"
+                        xtype="textfield"/>
+                </items>
+            </imagetext>
+        </items>
+    </items>
+</jcr:root>

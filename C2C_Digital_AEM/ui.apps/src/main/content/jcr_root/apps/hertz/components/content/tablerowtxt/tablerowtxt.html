@@ -1,0 +1,68 @@
+<div data-sly-test="${wcmmode.edit || wcmmode.design }" data-sly-unwrap>
+
+<pre>Click here to edit Table row  </pre>
+  <sly  data-sly-use.row="rows.js">
+
+		<table class="comparison-grid-desktop">
+            <tr><th></th><th></th>
+            <sly data-sly-list="${row.header}">
+                <th>
+                    ${item} &nbsp;&nbsp;&nbsp;
+                </th>
+             </sly>
+
+
+            </tr>
+            <tr>
+
+             <!-- <sly data-sly-test="${properties.endsubgroup}" data-sly-unwrap>
+
+
+        				<p class="small comparison-grid-subgroups-row-header">${properties.grouptitle} &nbsp;&nbsp;&nbsp;&nbsp;</p> 
+					</td> 
+
+
+                </sly> 
+				<sly data-sly-test="${ !properties.endsubgroup}" data-sly-unwrap>
+
+                	<!-- <td class="empty">
+        				<p class="small comparison-grid-subgroups-row-header">${properties.grouptitle} &nbsp;&nbsp;&nbsp; </p>
+					</td> -->
+
+
+                </sly>
+
+             <div data-sly-list="${row.col}" data-sly-unwrap>
+				<td>
+                    <p class="smallest"><span data-sly-text="${item}"></span></p>
+				</td>
+ 			 </div>
+			
+            </table>
+ </sly>
+</div>
+<div data-sly-test="${!(wcmmode.edit || wcmmode.design)}" data-sly-unwrap>
+<sly  data-sly-use.row="rows.js">
+    <tr>	 
+        		<sly data-sly-test="${properties.endsubgroup}" data-sly-unwrap>
+
+                   <td>
+        				<p class="small comparison-grid-subgroups-row-header">${properties.grouptitle}</p>
+					</td> 
+
+                </sly>
+
+
+
+
+             <div data-sly-list="${row.col}" data-sly-unwrap>
+				<td>
+                    <p class="smallest"><span data-sly-text="${item}"></span></p>
+				</td>
+ 			 </div>
+
+			</tr>
+
+
+ </sly>
+</div>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    hertz.fed.basepath="rapid-author.c2c-prod.hertz.com"
+    hertz.fed.homepage.path="/reservations"
+    hertz.fed.passwordgrant="/api/token"
+    hertz.token.ingestion.path="/var/hertz/token"/>

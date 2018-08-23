@@ -1,0 +1,15 @@
+<sly data-sly-test="${!properties.heading}">
+  <h2> Please configure Accordion Card component</h2>
+</sly>
+<sly data-sly-test="${properties.heading}">
+	<div class='accordian-tab'>
+		<input id='${properties.accordionId}' type='checkbox' name='tabs' class='checkbox'>
+		<label class='accordian-header' for='${properties.accordionId}'>${properties.heading}</label>
+		<sly data-sly-test="${properties.bodyText}">
+  		<div class='accordian-tab-content'>
+    		<div class='accordian-content'>${properties.bodyText @context='html'}</div>
+  		</div>
+  		</sly>
+  	</div>
+</sly>
+<br>

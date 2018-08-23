@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Partner page"
+    jcr:primaryType="cq:Template"
+    jcr:title="Partner Page"
+    allowedPaths="[/content/+[^/]+[/]+[^/]+[/]+[^/]+[/]+[^/]+[/]?]"  
+     allowedParents="[/apps/hertz/templates/headerfooter]"
+     allowedChildren="[/apps/hertz/templates/header,/apps/hertz/templates/footer]"
+    ranking="{Long}97">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/hertz/components/pages/partner"/>
+</jcr:root>

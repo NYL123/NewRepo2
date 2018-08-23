@@ -1,0 +1,135 @@
+.location-heading {
+  color: #5c5f66;
+  font-family: 'RideLight';
+  font-size: 18px;
+  line-height: 22px;
+  margin: 52px 0 24px;
+}
+
+.location-heading-margin {
+	margin: 20px 0 20px;
+}
+
+.location-style {
+  color: #365ad8 !important;
+}
+
+.location .table-pattern-c table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  min-width: 1172px;
+  background: #f3f4f8;
+  border: 1px solid #d7d8d8;
+}
+
+.location table tr.odd{
+  background-color: #fff;
+}
+
+.location .table-pattern-c td {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.location .table-pattern-c th, td{
+  padding: 24px 0 24px 30px;
+  border: none;
+  text-align: left;
+}
+
+.location .table-pattern-c td{
+  padding: 20px 0 20px 30px;
+  border: none;
+  text-align: left;
+}
+
+.location .table-pattern-c th:first-child, td:first-child {
+  max-width: 144px;
+}
+
+.location .table-pattern-c th {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.location .table-mobile-row,
+.location .row-heading {
+  display: none;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .location-heading {
+    color: #000;
+    font-family: 'RideLight';
+    font-size: 24px;
+    line-height: 30px;
+    margin: 20px 0;
+  }
+
+  .location .row-heading {
+    background: #f3f4f8;
+    background-color: #f3f4f8;
+    color: #000;
+    font-family: 'RideSemibold';
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #d7d8d8;
+    border-bottom: 0;
+    padding-bottom: 5px;
+    display:block;
+  }
+
+  .location .title {
+    display: block;
+    padding-left: 20px;
+  }
+
+  .city-style {
+    color: #000;
+    font-family: 'RideLight';
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 20px;
+  }
+
+  .location-style {
+    padding-left: 20px;
+  }
+
+  .location .table-pattern-c-web-section table{
+    display: none;
+  }
+
+  .location .table-mobile-row {
+    display: block;
+  }
+
+  .table-mobile-row.even {
+    background: #f3f4f8;
+    padding:10px 0;
+  }
+
+  .table-mobile-row.odd {
+    padding:10px 0;
+  } 
+
+  .location{
+    margin-bottom:10px;
+  }
+
+  .location .table-pattern-c {
+    border: 1px solid #d7d8d8;
+    border-top: 0;
+  }
+
+  .location .table-pattern-c-web-section{
+    padding:0;
+    border: 0;
+  } 
+}  

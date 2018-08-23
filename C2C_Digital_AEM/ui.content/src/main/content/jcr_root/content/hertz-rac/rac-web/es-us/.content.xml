@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/hertz"
+        cq:lastModified="{Date}2017-09-11T05:22:33.272-04:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-09-19T02:21:19.511-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/hertz/templates/localeconfig"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="es-us"
+        jcr:uuid="547c8233-782f-4ce1-906e-9fb2c5a062ad"
+        sling:resourceType="/apps/hertz/components/pages/localeconfig"/>
+    <header-footer/>
+    <reservations/>
+    <ancillaries/>
+    <itinerary-details/>
+    <landing/>
+    <login/>
+    <checkout/>
+    <locationinformation/>
+    <registration/>
+    <account/>
+    <reservation-widget-config/>
+</jcr:root>

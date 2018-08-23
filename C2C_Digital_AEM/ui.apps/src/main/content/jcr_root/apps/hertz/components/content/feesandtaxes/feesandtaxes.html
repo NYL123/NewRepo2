@@ -1,0 +1,10 @@
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+<b>Fees and Taxes component</b><br>
+    <div data-sly-test="${!properties.country && !properties.itemized && !properties.grouping && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Fees and Taxes component.
+    </div><br>
+      <b><sly data-sly-test="${properties.country}">Country: </sly></b>${properties.country}<br>
+        <b><sly data-sly-test="${properties.groupType}">GroupType: </sly></b>${properties.groupType}<br>
+</div>
+
+

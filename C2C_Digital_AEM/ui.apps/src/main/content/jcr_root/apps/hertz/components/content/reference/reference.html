@@ -1,0 +1,11 @@
+<sly data-sly-use.ref="reference.js">
+	<sly  data-sly-test="${wcmmode.edit || wcmmode.design}">
+        <sly data-sly-test="${! ref.resourcePath }">
+          <pre> ${ref.message}</pre>
+        </sly>
+    </sly>
+	<sly data-sly-test="${ref.resourcePath}">
+        <div data-sly-resource="${ref.resourcePath}"></div>
+    </sly>
+
+</sly>

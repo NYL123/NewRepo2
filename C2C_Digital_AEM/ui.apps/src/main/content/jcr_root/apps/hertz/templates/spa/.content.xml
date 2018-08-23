@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Template for spa page"
+    jcr:primaryType="cq:Template"
+    jcr:title="Responsive SPA Page"
+    allowedParents="[/apps/hertz/templates/localeconfig,/apps/hertz/templates/spa,/apps/hertz/templates/home,/apps/hertz/templates/rapid,/apps/hertz/templates/goldplusrewards,/apps/hertz/templates/marketing,/apps/hertz/templates/generichybridpage,/apps/hertz/templates/partnerlanding,/apps/hertz/templates/offerslandingpage]"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}32">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/hertz/components/pages/spa"/>
+</jcr:root>

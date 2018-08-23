@@ -1,0 +1,10 @@
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+group.expirationTime="1d"
+user.membershipExpTime="1h"
+user.propertyMapping="[rep:fullname=cn,profile/email=uid,profile/givenName=givenName,profile/gidNumber=gidNumber,profile/lastName=sn,profile/mobile=mobile]"
+handler.name="default"
+user.autoMembership="[dam-author]"
+user.expirationTime="1h"
+group.autoMembership="[dam-author]"
+user.membershipNestingDepth="{Long}0" />

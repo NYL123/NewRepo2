@@ -1,0 +1,75 @@
+ <div data-sly-test="${wcmmode.edit || wcmmode.design }" data-sly-unwrap>
+    <pre>Click here to edit Table B</pre>
+   <div class="row">
+	  <div class="comparison-grid" data-sly-use.grid="grid.js">
+		<div class="container-fluid">
+			<table class="comparison-grid-desktop">
+				<tr>
+					
+	                <div data-sly-list="${grid.headers}" data-sly-unwrap>
+						<th>
+							<p class="smallest">${item}</p>
+						</th>
+					</div> 
+				</tr>
+			</table>
+          <div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap>
+          </div> 
+		</div>
+	  </div>
+  </div>
+ </div>
+ 
+<div data-sly-test="${!(wcmmode.edit || wcmmode.design)}" data-sly-unwrap>
+	<div class="row">
+		<div class="comparison-grid" data-sly-use.grid="grid.js">
+			<div class="container-fluid">
+				<table class="comparison-grid-desktop">
+					<tr>
+		                <div data-sly-list="${grid.headers}" data-sly-unwrap>
+							<th>
+								<p class="smallest">${item}</p>
+							</th>
+						</div> 
+		             </tr>
+		 			<div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap>
+	                </div>  
+				</table>
+		        <div class="comparison-grid-mobile">
+					<h4 class="comparison-grid-mobile-header">${properties.headtitle}</h4>
+		            <sly  data-sly-list.head="${grid.headers}">
+					<div class="comparison-grid-mobile-accordian" >
+						<label class="text-link small data-accordion comparison-grid-accordion">${head}<span></span></label>
+		                  <div data-sly-list="${resource.children}" data-sly-unwrap> 
+		                     <div class="comparison-grid-panel" >
+		                      	<sly data-sly-list.rows="${item.children}" data-sly-unwrap>
+		                            <div data-sly-use.parName="${'parvalue.js' @ comp=rows.name , count=headList.index}" data-sly-unwrap>
+		                                <sly data-sly-test="${parName.name != ''}">
+		                                    <sly data-sly-test="${parName.hasText}">
+		                                        <div class="comparison-grid-panel-data">
+		                                                <span class="comparison-grid-panel-icon"><p class="glyphicon"></p></span>
+		                                                <span><p class="small">   ${parName.name}</p></span>
+		                                        </div>
+											</sly>
+											
+											<sly data-sly-test="${! parName.hasText}">
+		                                        <div class="comparison-grid-panel-data">
+		                                                <span class="comparison-grid-panel-icon"><p class="glyphicon ${parName.class}"></p></span>
+		                                                <span><p class="small">${parName.name}</p></span>
+		                                        </div>
+											</sly>
+											
+										</sly>
+							   		</div>
+		                         </sly>
+		         				</div>
+						  	</div>
+		             	</div>
+		        	</sly>
+		   		</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

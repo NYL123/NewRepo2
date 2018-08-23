@@ -1,0 +1,26 @@
+<div data-sly-test="${(wcmmode.edit || wcmmode.design)}" data-sly-unwrap>
+    <pre>Click here to edit Table - D row  </pre>
+<sly  data-sly-use.row="rowsD.js">
+    <table >
+    <tr>	 
+			<table> <sly data-sly-list="${row.header}">
+              <th>
+                    ${item} &nbsp;&nbsp;&nbsp;
+               </th>
+             </sly></table>
+                 <div data-sly-list="${row.col}" data-sly-unwrap>
+                            <td>${item} &nbsp;&nbsp;&nbsp;</td>
+                 </div>
+			</tr>
+	</table>
+ </sly>
+</div>
+<div data-sly-test="${!(wcmmode.edit || wcmmode.design)}" data-sly-unwrap>
+<sly  data-sly-use.row="rowsD.js">
+    <tr>	 
+             <div data-sly-list="${row.col}" data-sly-unwrap>
+                        <td>${item}</td>
+ 			 </div>
+	 </tr>
+ </sly>
+</div>

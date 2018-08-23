@@ -1,0 +1,28 @@
+<div data-sly-use.checkboxesUse=com.hertz.digital.platform.use.CheckboxesUse 	data-sly-unwrap>
+
+<div style="margin-top:10px;margin-left:20px">
+<b>Checkboxes component</b>
+    <div data-sly-test="${!properties.ElementGroup && !properties.Order && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure  CheckBoxes component.
+    </div><br>
+      <b><sly data-sly-test="${properties.Order}">Order : </sly></b>${properties.Order}<br>
+      <b><sly data-sly-test="${properties.ElementGroup}">ElementGroup : </sly></b>${properties.ElementGroup}<br>
+      <b><sly data-sly-test="${properties.Element}">Element : </sly></b>${properties.Element}<br>
+		<b><sly data-sly-test="${properties.Text}">Text : </sly></b>${properties.Text}<br>
+ 		<b><sly data-sly-test="${properties.Order}">Default Selection : </sly></b>${properties.DefaultSelection}<br>
+ 	<b><sly data-sly-test="${properties.AriaLabel}">Aria Label : </sly></b>${properties.AriaLabel}<br>
+ 	
+ 	<div data-sly-list="${checkboxesUse.checkBoxBeans}">
+ 	<b><sly data-sly-test="${item.elementGroup}">elementGroup : </sly></b>${item.elementGroup}<br>
+	<b><sly data-sly-test="${item.element}">Element : </sly></b>${item.element}<br>
+	<b><sly data-sly-test="${item.linkText}">Link Text : </sly></b>${item.linkText}<br>
+	<b><sly data-sly-test="${item.ariaLabel}">Aria Label : </sly></b>${item.ariaLabel}<br>
+	<b><sly data-sly-test="${item.targetType}">Target Type : </sly></b>${item.targetType}<br>
+	<b><sly data-sly-test="${item.targetURL}">Target URL : </sly></b>${item.targetURL}<br>
+ 					
+ 	</div>
+	</div>
+
+</div>
+
+

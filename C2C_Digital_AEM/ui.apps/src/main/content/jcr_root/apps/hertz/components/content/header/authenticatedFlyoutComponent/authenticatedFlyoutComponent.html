@@ -1,0 +1,19 @@
+<sly data-sly-use.flyoutLinks="com.hertz.digital.platform.use.FlyoutUse" data-sly-unwrap/>
+<br>
+    <p><b> Authenticated Flyout Component</b></p>
+
+<div data-sly-test.author="${!flyoutLinks.flyoutBeanList && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please Configure Authenticated Flyout Component.
+</div>
+
+	<div data-sly-test="${flyoutLinks.flyoutBeanList}" data-sly-list.items="${flyoutLinks.flyoutBeanList}" data-sly-unwrap>
+    	<br><b>Heading: </b><sly data-sly-test="${items.heading}">${items.heading}</sly><br>
+    
+        <b>Link URL: </b>${items.linkurl}<br>
+        
+        <b>Open Url in New Window: </b>${items.openLegalLinkURLInNewWindow}<br>
+        
+        <b>No Follow: </b>${items.seoNoFollow}
+       
+
+</div>

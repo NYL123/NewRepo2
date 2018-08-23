@@ -1,0 +1,6 @@
+<sly data-sly-test="${!properties.value}">
+	Please edit the rich text pair component
+</sly>
+<sly data-sly-test="${properties.value}">
+	${properties.key} : ${properties.value @context='html'}
+</sly>

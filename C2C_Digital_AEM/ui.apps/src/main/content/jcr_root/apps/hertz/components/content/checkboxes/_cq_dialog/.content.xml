@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Checkboxes Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <checkbox
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Checkboxes"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <order jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/textfield"
+							fieldDescription="Text field for Checkboxes Order" fieldLabel="Checkboxes Order"
+							name="./Order" />	
+							<elementgroup jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/textfield"
+							fieldDescription="Text field for Checkboxes Element Group" fieldLabel="Element Group"
+							name="./ElementGroup" />
+							<element jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/textfield"
+							fieldDescription="Text field for Checkboxes Element" fieldLabel="Element "
+							name="./Element" />
+							<text jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/textfield"
+							fieldDescription="Text field for Checkboxes" fieldLabel="Text"
+							name="./Text" />
+					    	<defaultselection jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/checkbox"
+							fieldDescription="Default Selection value is true or false"
+							fieldLabel="Default Selection" text="Default Selection" uncheckedValue="false"
+							value="true" name="./DefaultSelection" />
+							<ariaLabel jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/textfield"
+							fieldDescription="Text field for Aria Label" fieldLabel="Aria Label"
+							name="./AriaLabel" />
+							
+							<fieldset
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <links
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                class="full-width"
+                                                fieldDescription="Click '+' to add links."
+                                                fieldLabel="Links">
+                                                <field
+                                                	jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                    eaem-nested="1"
+                                                    name="./links">
+                                                    <layout
+                                                    	jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                        margin="{Boolean}false"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                        	<column
+                                                            	jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+					                                                <elementGroup
+					                                                    jcr:primaryType="nt:unstructured"
+					                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+					                                                    fieldDescription="Element"
+					                                					fieldLabel="Element Group"
+					                                                    name="./elementGroup"/>
+					                                                    <element
+					                                                    jcr:primaryType="nt:unstructured"
+					                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+					                                                    fieldDescription="Element"
+					                                					fieldLabel="Element"
+					                                                    name="./element"/>
+					                                                     <linkText
+					                                                    jcr:primaryType="nt:unstructured"
+					                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+					                                                    fieldDescription="Link Text"
+					                                					fieldLabel="Link Text"
+					                                                    name="./linkText"/>
+					                                                    
+					                                                    <ariaLabel
+					                                                    jcr:primaryType="nt:unstructured"
+					                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+					                                                    fieldDescription="Aria Label"
+					                                					fieldLabel="Aria Label"
+					                                                    name="./ariaLabel"/>
+					                                            				                                           
+					                                                 	<targetType
+					                                                    jcr:primaryType="nt:unstructured"
+					                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+					                                                    fieldDescription="Target Type"
+					                                					fieldLabel="Target Type"
+					                                                    name="./targetType"/>
+					                                                    
+					                                                    <targetURL
+					                                                    jcr:primaryType="nt:unstructured"
+					                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+					                                                    fieldDescription="Target URL"
+					                                					fieldLabel="Target URL"
+					                                					name="./targetURL"
+					                                					rootPath="/content"/>
+					                                            </items>
+					                                        </column>
+					                                    </items>
+					                            </field>
+                                            </links>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldset>
+							
+								<!-- <links
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                class="foundation-layout-util-maximized-alt"
+                                                fieldDescription="Click 'Add Field' to add a template or a list of templates to be allowed as child pages.                                                 Each value in the list must be an absolute path to a template or use '/.*' to allow all templates below this path."
+                                                fieldLabel="Links"
+                                                renderReadOnly="{Boolean}true">
+                                                    <elementGroup
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Text field for Links Element Group" fieldLabel="Element Group"
+                                                    name="./lelementGroup"/>
+                                                <element
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Text field for Links Element " fieldLabel="Element "
+                                                    name="./lelement"/>
+                                                    <linkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Text field for Link Text" fieldLabel="Link Text "
+                                                    name="./llinkText"/>
+                                                     <ariaLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Text field for Aria Label" fieldLabel="Aria Label"
+                                                    name="./lariaLabel"/>
+                                                    <targetType
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Text field for Target Type" fieldLabel="Target Type"
+                                                    name="./ltargetType"/>
+                                                    <targetURL
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Text field for Target URL" fieldLabel="Target URL"
+                                                    name="./ltargetURL"/> 
+                                            </links>  -->
+								
+                        </items>
+                    </column>
+                </items>
+            </checkbox>
+        </items>
+    </content>
+</jcr:root>

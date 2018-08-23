@@ -1,0 +1,194 @@
+.rewards-calendar {
+  margin: 66px 50px;
+}
+
+.header-section {
+  display: flex;
+}
+
+.header-left-column {
+  width: 788px;
+  margin-right: 32px;
+}
+
+.header-right-column {
+  width: 335px;
+}
+
+.header {
+  color: #5c5f66;
+  font-family: 'RideLight';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header-text {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header-section-divider {
+  background-color: #d7d8d8;
+  border: 0;
+  width: 788px;
+  height: 1px;
+  margin: 6px 0 20px;
+}
+
+.sub-heading {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+  margin: 40px 0 30px;
+}
+
+.country-section {
+  display: flex;
+}
+
+.country-section-left {
+  margin-right: 32px;
+  min-width: 788px;
+}
+
+.country-section-right {
+  width: 335px;
+}
+
+.country-section-heading {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.country-section-divider {
+  background-color: #000;
+  border: 0;
+  height: 2px;
+  margin: 12px 0 16px;
+}
+
+.country-section-content {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.country-row {
+  margin-bottom: 15px;
+}
+
+.left-column {
+  display: inline-block;
+  width: 50%;
+}
+
+.right-column {
+  display: inline-block;
+}
+
+.country-section-bottom {
+  margin-top: 60px;
+}
+
+.click-here {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.country-link {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.click-here:hover {
+  border-bottom: 2px solid #fc0;
+}
+
+.country-link:hover {
+  border-bottom: 2px solid #fc0;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .rewards-calendar {
+    min-width: 335px;
+    margin: 0;
+  }
+
+  .header-section, .country-section  {
+    flex-direction: column;
+    width: 335px;
+  }
+
+  .left-column, .right-column {
+    display: block;
+    width: 335px;
+  }
+
+  .header {
+    color: #000;
+    font-family: 'RideLight';
+    font-size: 24px;
+    line-height: 30px;
+    width: 335px;
+  }
+
+  .header-left-column {
+    width: 335px;
+  }
+
+  .header-right-column {
+    display: none;
+  }
+
+  .header-section-divider {
+    color: #d7d8d8;
+    width: 335px;
+    height: 1px;
+    margin: 16px 0 20px;
+  }
+
+  .sub-heading {
+    margin: 30px 0 45px;
+    width: 335px;
+  }
+
+  .country-section-left, .country-section-heading {
+    min-width: 335px;
+  }
+
+  .country-section-divider {
+    min-width: 335px;
+    margin: 12px 0 20px;
+  }
+
+  .left-column, .right-column {
+    margin-bottom: 16px;
+  }
+
+  .country-section-right {
+    min-width: 335px;
+    margin-top: 60px;
+  }
+
+  .click-here:hover {
+    border-bottom: none;
+  }
+
+  .country-link:hover {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,55 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+<!-- <sly data-sly-test="${wcmmode.edit || wcmmode.preview}">
+
+        <hertz-app-root>
+            <sly data-sly-include="partials/header.html" data-sly-unwrap/>
+			
+            <div class="content">
+              <router-outlet></router-outlet>
+               <hertz-homepage _nghost-c20="">-->
+<div>
+    <h2><span>Hero Image Component</span></h2>
+    <div data-sly-resource="${ @path='hero',resourceType='hertz/components/content/hero'}" data-sly-unwrap></div>
+</div>
+<!-- </hertz-homepage> -->
+<div>
+    <h2><span>Configurable Text Paragaph System</span></h2>
+    <div data-sly-resource="${ @path='configtext-parsys',resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap></div>
+</div>
+
+<div>
+    <h2><span>#1 Fixed Content Slot</span></h2>
+    <div data-sly-resource="${ @path='homeFixedContentSlot1',resourceType='hertz/components/content/fixedcontentslot'}" data-sly-unwrap></div>
+</div>
+
+<div>
+    <h2><span>#2 Fixed Content Slot</span></h2>
+    <div data-sly-resource="${ @path='homeFixedContentSlot2',resourceType='hertz/components/content/fixedcontentslot'}" data-sly-unwrap></div>
+</div>
+
+<div>
+    <h2><span>#3 Fixed Content Slot</span></h2>
+    <div data-sly-resource="${ @path='homeFixedContentSlot3',resourceType='hertz/components/content/fixedcontentslot'}" data-sly-unwrap></div>
+</div>
+
+<!-- </div>
+
+  <sly data-sly-include="partials/footer.html" data-sly-unwrap/>
+</hertz-app-root
+</sly>
+</sly>>-->

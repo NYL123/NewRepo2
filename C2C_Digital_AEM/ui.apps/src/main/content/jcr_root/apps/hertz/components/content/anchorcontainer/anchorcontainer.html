@@ -1,0 +1,19 @@
+<sly data-sly-test="${!properties.anchorType}">
+  <h2><span> Please configure Anchor Container component</span></h2>
+</sly>
+<div class='rental-rewards-left-padding'>
+	<div class='anchor-section'>
+		<sly data-sly-test="${properties.anchorType=='image'}">
+			<div class='anchor-sliders'>
+				<div class='anchor-container'>
+					<div data-sly-resource="${ @path='par',resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+				</div>
+			</div>
+		</sly>
+		<sly data-sly-test="${properties.anchorType=='link'}">
+			<div class= 'anchor-link'>
+				<div data-sly-resource="${ @path='par',resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap></div>
+			</div>
+		</sly>
+	</div>
+</div>

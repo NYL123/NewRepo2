@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Text &amp; Image"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <componentstyles
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Styles"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <alignment
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                defaultValue="left"
+                                emptyText="Left"
+                                fieldLabel="Image alignment"
+                                name="./alignment"
+                                translateOptions="{Boolean}true"
+                                value="left">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <left
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="{Boolean}true"
+                                        text="Left"
+                                        value="left"/>
+                                    <right
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right"
+                                        value="right"/>
+                                </items>
+                            </alignment>
+                        </items>
+                    </column>
+                </items>
+            </componentstyles>
+            <image
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Image Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="File upload field for the image"
+                                fieldLabel="Image"
+                                fileNameParameter="./fileName"
+                                fileReferenceParameter="./fileReference"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                name="./file"
+                                title="Image"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <alt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Alternative Text for the image"
+                                fieldLabel="Alt Text"
+                                name="./alt"/>
+                        </items>
+                    </column>
+                </items>
+            </image>
+            <heading
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Heading"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Text field for the Heading Text"
+                                fieldLabel="Heading Text"
+                                name="./heading"/>
+                                <underline jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/foundation/form/checkbox"
+							fieldDescription="Underline value is true or false"
+							fieldLabel="Underline" text="Underline" uncheckedValue="false"
+							value="true" name="./underline" />
+                        </items>
+                    </column>
+                </items>
+            </heading>
+            <content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Content"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <content
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                fieldDescription="Text field for the Content Text"
+                                fieldLabel="Content Text"
+                                name="./content"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <subsuperscript
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <format jcr:primaryType="nt:unstructured">
+                                            <p
+                                                jcr:primaryType="nt:unstructured"
+                                                description="This is my Paragraph"
+                                                tag="p"/>
+                                            <h1
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Header 1"
+                                                tag="h1"/>
+                                            <h2
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Header 2"
+                                                tag="h2"/>
+                                            <h3
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Header 3"
+                                                tag="h3"/>
+                                        </format>
+                                    </paraformat>
+                                    <misctools
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                            <chars jcr:primaryType="nt:unstructured">
+                                                <copyright
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#169;"/>
+                                                <trademark
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#8482;"/>
+                                                <registered
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#174;"/>
+                                                <emDash
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#8212;"/>
+                                                <pound
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#163;"/>
+                                                <nbsp
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#160;"/>
+                                            </chars>
+                                        </specialCharsConfig>
+                                    </misctools>
+                                    <links jcr:primaryType="nt:unstructured">
+                                        <linkDialogConfig
+                                            jcr:primaryType="nt:unstructured"
+                                            height="{Long}316">
+                                            <linkAttributes
+                                                jcr:primaryType="cq:WidgetCollection"
+                                                linkPattern="\{0}.html"/>
+                                        </linkDialogConfig>
+                                    </links>
+                                    <edit
+                                        jcr:primaryType="nt:unstructured"
+                                        defaultPasteMode="plaintext"
+                                        stripHtmlTags="{Boolean}true"/>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <findreplace
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <styles
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <styles jcr:primaryType="cq:WidgetCollection">
+                                            <headline1
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline1"
+                                                text="Headline 1"/>
+                                            <headline1light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline1-light"
+                                                text="Headline 1 - Light"/>
+                                            <headline2
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline2"
+                                                text="Headline 2"/>
+                                            <headline2light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline2-light"
+                                                text="Headline 2 Light"/>
+                                            <headline3
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline3"
+                                                text="Headline 3"/>
+                                            <headline3light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline3-light"
+                                                text="Headline 3 Light"/>
+                                            <body1
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1"
+                                                text="Body1"/>
+                                            <body1bold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-bold"
+                                                text="Body1 Bold"/>
+                                            <body1boldgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-bold-gray-2"
+                                                text="Body1 Bold Gray"/>
+                                            <body1lightgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-light-gray-2"
+                                                text="Body1 Light Gray"/>
+                                            <body1lightdark
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-light-dark"
+                                                text="Body1 Light Dark"/>
+                                            <body1lightlight
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-light-light"
+                                                text="Body1 Light Light"/>
+                                            <body2
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2"
+                                                text="Body2"/>
+                                            <body2extrabold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-extrabold"
+                                                text="Body2 Extra Bold"/>
+                                            <body2extraboldgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-extrabold-gray-1"
+                                                text="Body2 Extra Bold Gray"/>
+                                            <body2bold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-bold"
+                                                text="Body2 Bold"/>
+                                            <body2boldgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-bold-gray-1"
+                                                text="Body2 Bold Gray"/>
+                                            <body2semibold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-semibold"
+                                                text="Body2 Semi Bold"/>
+                                            <body2light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-light"
+                                                text="Body2 Light"/>
+                                            <body2lightgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-light-gray-3"
+                                                text="Body2 Light Gray"/>
+                                            <body2lightinfo
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-light-info"
+                                                text="Body2 Light Info"/>
+                                            <body3
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3"
+                                                text="Body3"/>
+                                            <body3gray1
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-gray-1"
+                                                text="Body3 Gray-1"/>
+                                            <body3gray2
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-gray-2"
+                                                text="Body3 Gray-2"/>
+                                            <body3gray3
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-gray-3"
+                                                text="Body3 Gray-3"/>
+                                            <body3bold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-bold"
+                                                text="Body3 Bold"/>
+                                            <body3boldlight
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-bold-light"
+                                                text="Body3 Bold Light"/>
+                                            <body3semibold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-semibold"
+                                                text="Body3 Semi-Bold"/>
+                                            <body3semibodylight
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-semibold-light"
+                                                text="Body3 Semibold Light"/>
+                                            <body3light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-light"
+                                                text="Body3 Light"/>
+                                            <body3lightlight
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-light-light"
+                                                text="Body3 Light Light"/>
+                                            <body3lightgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-light-gray-2"
+                                                text="Body3 Light Gray"/>
+                                            <body3italicgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-italic-gray-2"
+                                                text="Body3 Italic Gray"/>
+                                            <greenbullet
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="accordian-content"
+                                                text="Green Bullet"/>
+                                        </styles>
+                                    </styles>
+                                </rtePlugins>
+                                <uiSettings jcr:primaryType="nt:unstructured">
+                                    <cui jcr:primaryType="nt:unstructured">
+                                        <inline
+                                            jcr:primaryType="nt:unstructured"
+                                            toolbar="[format#bold,format#italic,format#underline,#paraformat,subsuperscript#subscript,subsuperscript#superscript,links#modifylink,links#unlink,links#anchor,findreplace#find,findreplace#replace,undo#undo,undo#redo,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#ordered,lists#unordered,lists#indent,lists#outdent,misctools#specialchars,misctools#sourceedit,spellcheck#checktext,#styles,fullscreen#start]">
+                                            <popovers jcr:primaryType="nt:unstructured">
+                                                <justify
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                    ref="justify"/>
+                                                <lists
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                    ref="lists"/>
+                                                <paraformat
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                    ref="paraformat"/>
+                                                <styles
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="styles:getStyles:styles-pulldown"
+                                                    ref="styles"/>
+                                            </popovers>
+                                        </inline>
+                                        <fullscreen
+                                            jcr:primaryType="nt:unstructured"
+                                            toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,image#imageProps,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,misctools#sourceedit,#styles,fullscreen#finish]">
+                                            <popovers jcr:primaryType="nt:unstructured">
+                                                <styles
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="styles:getStyles:styles-pulldown"
+                                                    ref="styles"/>
+                                                <paraformat
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                    ref="paraformat"/>
+                                            </popovers>
+                                        </fullscreen>
+                                    </cui>
+                                </uiSettings>
+                            </content>
+                        </items>
+                    </column>
+                </items>
+            </content>
+            <bulletpoints
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Bullet Points"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <bulletpoints
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                fieldDescription="Text field for Bullet Points"
+                                fieldLabel="Bullet Points"
+                                name="./bulletpoints"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <subsuperscript
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <format jcr:primaryType="nt:unstructured">
+                                            <p
+                                                jcr:primaryType="nt:unstructured"
+                                                description="This is my Paragraph"
+                                                tag="p"/>
+                                            <h1
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Header 1"
+                                                tag="h1"/>
+                                            <h2
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Header 2"
+                                                tag="h2"/>
+                                            <h3
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Header 3"
+                                                tag="h3"/>
+                                        </format>
+                                    </paraformat>
+                                    <misctools
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                            <chars jcr:primaryType="nt:unstructured">
+                                                <copyright
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#169;"/>
+                                                <trademark
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#8482;"/>
+                                                <registered
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#174;"/>
+                                                <emDash
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#8212;"/>
+                                                <pound
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#163;"/>
+                                                <nbsp
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;#160;"/>
+                                            </chars>
+                                        </specialCharsConfig>
+                                    </misctools>
+                                    <links jcr:primaryType="nt:unstructured">
+                                        <linkDialogConfig
+                                            jcr:primaryType="nt:unstructured"
+                                            height="{Long}316">
+                                            <linkAttributes
+                                                jcr:primaryType="cq:WidgetCollection"
+                                                linkPattern="\{0}.html"/>
+                                        </linkDialogConfig>
+                                    </links>
+                                    <edit
+                                        jcr:primaryType="nt:unstructured"
+                                        defaultPasteMode="plaintext"
+                                        stripHtmlTags="{Boolean}true"/>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <findreplace
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <styles
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                        <styles jcr:primaryType="cq:WidgetCollection">
+                                            <headline1
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline1"
+                                                text="Headline 1"/>
+                                            <headline1light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline1-light"
+                                                text="Headline 1 - Light"/>
+                                            <headline2
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline2"
+                                                text="Headline 2"/>
+                                            <headline2light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline2-light"
+                                                text="Headline 2 Light"/>
+                                            <headline3
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline3"
+                                                text="Headline 3"/>
+                                            <headline3light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="headline3-light"
+                                                text="Headline 3 Light"/>
+                                            <body1
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1"
+                                                text="Body1"/>
+                                            <body1bold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-bold"
+                                                text="Body1 Bold"/>
+                                            <body1boldgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-bold-gray-2"
+                                                text="Body1 Bold Gray"/>
+                                            <body1lightgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-light-gray-2"
+                                                text="Body1 Light Gray"/>
+                                            <body1lightdark
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-light-dark"
+                                                text="Body1 Light Dark"/>
+                                            <body1lightlight
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body1-light-light"
+                                                text="Body1 Light Light"/>
+                                            <body2
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2"
+                                                text="Body2"/>
+                                            <body2extrabold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-extrabold"
+                                                text="Body2 Extra Bold"/>
+                                            <body2extraboldgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-extrabold-gray-1"
+                                                text="Body2 Extra Bold Gray"/>
+                                            <body2bold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-bold"
+                                                text="Body2 Bold"/>
+                                            <body2boldgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-bold-gray-1"
+                                                text="Body2 Bold Gray"/>
+                                            <body2semibold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-semibold"
+                                                text="Body2 Semi Bold"/>
+                                            <body2light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-light"
+                                                text="Body2 Light"/>
+                                            <body2lightgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-light-gray-3"
+                                                text="Body2 Light Gray"/>
+                                            <body2lightinfo
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body2-light-info"
+                                                text="Body2 Light Info"/>
+                                            <body3
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3"
+                                                text="Body3"/>
+                                            <body3gray1
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-gray-1"
+                                                text="Body3 Gray-1"/>
+                                            <body3gray2
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-gray-2"
+                                                text="Body3 Gray-2"/>
+                                            <body3gray3
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-gray-3"
+                                                text="Body3 Gray-3"/>
+                                            <body3bold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-bold"
+                                                text="Body3 Bold"/>
+                                            <body3boldlight
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-bold-light"
+                                                text="Body3 Bold Light"/>
+                                            <body3semibold
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-semibold"
+                                                text="Body3 Semi-Bold"/>
+                                            <body3semibodylight
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-semibold-light"
+                                                text="Body3 Semibold Light"/>
+                                            <body3light
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-light"
+                                                text="Body3 Light"/>
+                                            <body3lightlight
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-light-light"
+                                                text="Body3 Light Light"/>
+                                            <body3lightgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-light-gray-2"
+                                                text="Body3 Light Gray"/>
+                                            <body3italicgray
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="body3-italic-gray-2"
+                                                text="Body3 Italic Gray"/>
+                                            <greenbullet
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="accordian-content"
+                                                text="Green Bullet"/>
+                                        </styles>
+                                    </styles>
+                                </rtePlugins>
+                                <uiSettings jcr:primaryType="nt:unstructured">
+                                    <cui jcr:primaryType="nt:unstructured">
+                                        <inline
+                                            jcr:primaryType="nt:unstructured"
+                                            toolbar="[format#bold,format#italic,format#underline,#paraformat,subsuperscript#subscript,subsuperscript#superscript,links#modifylink,links#unlink,links#anchor,findreplace#find,findreplace#replace,undo#undo,undo#redo,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#ordered,lists#unordered,lists#indent,lists#outdent,misctools#specialchars,misctools#sourceedit,spellcheck#checktext,#styles,fullscreen#start]">
+                                            <popovers jcr:primaryType="nt:unstructured">
+                                                <justify
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                    ref="justify"/>
+                                                <lists
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                    ref="lists"/>
+                                                <paraformat
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                    ref="paraformat"/>
+                                                <styles
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="styles:getStyles:styles-pulldown"
+                                                    ref="styles"/>
+                                            </popovers>
+                                        </inline>
+                                        <fullscreen
+                                            jcr:primaryType="nt:unstructured"
+                                            toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,image#imageProps,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,misctools#sourceedit,#styles,fullscreen#finish]">
+                                            <popovers jcr:primaryType="nt:unstructured">
+                                                <styles
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="styles:getStyles:styles-pulldown"
+                                                    ref="styles"/>
+                                                <paraformat
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                    ref="paraformat"/>
+                                            </popovers>
+                                        </fullscreen>
+                                    </cui>
+                                </uiSettings>
+                            </bulletpoints>
+                        </items>
+                    </column>
+                </items>
+            </bulletpoints>
+        </items>
+    </content>
+</jcr:root>

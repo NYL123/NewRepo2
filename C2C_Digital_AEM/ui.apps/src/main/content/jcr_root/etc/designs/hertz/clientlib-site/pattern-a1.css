@@ -1,0 +1,194 @@
+.content-card-pattern-a1 {
+  border: 1px solid #d7d8db;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+.content-card-pattern-a1-link {
+  color: #000;
+}
+.content-card-pattern-a1-link:hover {
+  text-decoration: none;
+}
+.content-card-pattern-a1 h2,
+.content-card-pattern-a1 p {
+  margin: 0;
+}
+.content-card-pattern-a1 .content-logo-image {
+  max-width: 60px;
+}
+.content-card-pattern-a1 .content-logo-image img {
+  width: 100%;
+}
+.content-card-pattern-a1 .content-card-data-section {
+  min-width: 50%;
+  order: 1;
+  padding: 24px;
+}
+.content-card-pattern-a1 .content-card-data-section h2 {
+  padding: 0;
+}
+.content-card-pattern-a1 .content-card-data-section .content-card-badge {
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 6px;
+  color: #fff;
+  display: inline;
+  font-family: "RideSemibold";
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  max-height: 22px;
+  padding: 1px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.content-card-pattern-a1 .content-card-data-section .content-card-headline {
+  color: #fff;
+  font-family: "RideLight";
+  font-size: 3rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  color: #000;
+  display: block;
+  padding: 4px 0 12px;
+  text-transform: capitalize;
+}
+.content-card-pattern-a1 .content-card-data-section .content-card-learn-more-link {
+  align-content: center;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  font-family: bold;
+  margin-top: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.content-card-pattern-a1 .content-card-data-section .content-card-learn-more-link .icon-direction-arrow-right-thick {
+  color: #000;
+  font-size: 10px;
+  padding-left: 10px;
+  position: relative;
+  top: 1px;
+}
+.content-card-pattern-a1 .content-card-data-section .content-card-learn-more-link .icon-direction-arrow-right-thick:before {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.content-card-pattern-a1 .content-card-image-section {
+  order: 2;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.content-card-pattern-a1 .content-card-button-section-a1 {
+  padding-top: 24px;
+}
+.content-card-pattern-a1 .content-card-button {
+  color: #000;
+  font-family: "RideSemibold";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 16px;
+}
+.content-card-pattern-a1 .content-card-button:hover, .content-card-pattern-a1 .content-card-button:visited, .content-card-pattern-a1 .content-card-button:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.grid-col-lg-4 .content-card-pattern-a1 {
+  flex-flow: column;
+  max-width: 100%;
+}
+.grid-col-lg-4 .content-card-pattern-a1 .content-card-data-section {
+  max-width: 100%;
+  order: 2;
+}
+.grid-col-lg-4 .content-card-pattern-a1 .content-card-image-section {
+  max-width: 100%;
+  order: 1;
+  position: static;
+}
+.grid-col-lg-4 .content-card-pattern-a1 .content-card-image-section img {
+  height: auto;
+  position: static;
+  width: 100%;
+}
+.grid-col-lg-4 .content-card-pattern-a1 .content-card-button {
+  width: 100%;
+}
+
+.grid-col-lg-12 .content-card-pattern-a1 .content-card-image-section img,
+.grid-col-lg-8 .content-card-pattern-a1 .content-card-image-section img,
+.grid-col-lg-6 .content-card-pattern-a1 .content-card-image-section img {
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 9999px) and (min-width: 768px) {
+  .grid-col-lg-6 .content-card-pattern-a1 .content-card-data-section {
+    min-width: 100%;
+    width: 100%;
+  }
+  .grid-col-lg-6 .content-card-pattern-a1 .content-card-image-section {
+    display: none;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .content-card-pattern-a1 {
+    height: 100%;
+    max-height: 500px;
+    max-width: 100%;
+  }
+  .content-card-pattern-a1 > a {
+    flex-flow: column;
+  }
+  .content-card-pattern-a1 > a:hover {
+    text-decoration: none;
+  }
+  .content-card-pattern-a1 .content-card-data-section {
+    max-width: 100%;
+    order: 2;
+  }
+  .content-card-pattern-a1 .content-card-image-section {
+    max-width: 100%;
+    min-height: 200px;
+    order: 1;
+    position: relative;
+  }
+  .content-card-pattern-a1 .content-card-image-section img {
+    position: absolute;
+    width: auto;
+  }
+  .content-card-pattern-a1 .content-card-button {
+    width: 100%;
+  }
+
+  .grid-col-lg-12 .content-card-pattern-a1,
+.grid-col-lg-8 .content-card-pattern-a1,
+.grid-col-lg-6 .content-card-pattern-a1 {
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+  }
+  .grid-col-lg-12 .content-card-pattern-a1 .content-card-image-section img,
+.grid-col-lg-8 .content-card-pattern-a1 .content-card-image-section img,
+.grid-col-lg-6 .content-card-pattern-a1 .content-card-image-section img {
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+}

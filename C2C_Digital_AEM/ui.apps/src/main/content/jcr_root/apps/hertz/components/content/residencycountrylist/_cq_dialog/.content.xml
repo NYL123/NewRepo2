@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Residency Country List Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <countrylist
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Country List"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <countrycode
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Text field for Country Code"
+                                fieldLabel="Country Code"
+                                name="./countryCode"
+                                value=""/>
+                            <countryname
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Text field for Country Name"
+                                fieldLabel="Country Name"
+                                name="./countryName"
+                                value=""/>
+                            <optin
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="channel"
+                                cq-msm-lockable="jcr:language"
+                                emptyText="No"
+                                fieldLabel="Residency option"
+                                name="./optin"
+                                translateOptions="{Boolean}false">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <precheckoptin
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Pre-checked opt-in"
+                                        value="pre-checked-opt-in"/>
+                                    <uncheckedoptin
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Unchecked opt-in"
+                                        value="unchecked-opt-in"/>
+                                    <uncheckedoptout
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Unchecked opt-out"
+                                        value="unchecked-opt-out"/>
+                                    <precheckedoptout
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Pre-checked opt-out"
+                                        value="pre-checked-opt-out"/>
+                                </items>
+                            </optin>
+                        </items>
+                    </column>
+                </items>
+            </countrylist>
+        </items>
+    </content>
+</jcr:root>

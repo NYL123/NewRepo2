@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="CreateAccount"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <CreateAccount
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Create Account"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <personalinfoheader
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Label preceeding the personal info section"
+                                fieldLabel="Personal Info Header Label"
+                                name="./personalinfoheader"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Please enter your information"/>
+                            <personalinfovalidation
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Validation sub text"
+                                fieldLabel="Personal Info Validation Label"
+                                name="./personalinfovalidation"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="All fields are required."/>
+                            <lastname
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Text field with default text for Last Name"
+                                fieldLabel="Last Name Label"
+                                name="./lastname"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Last Name"/>
+                            <phonenumber
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Phone Number"
+                                fieldLabel="Phone Number Label"
+                                name="./phonenumber"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Phone Number"/>
+                            <gender
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Label preceeding the drop-down"
+                                fieldLabel="Gender Label"
+                                name="./gender"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Gender"/>
+                            <birthmonth
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Drop-down prepopulated with months"
+                                fieldLabel="Birth Month Label"
+                                name="./birthmonth"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Birth Month"/>
+                            <birthday
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Drop-down prepopulated with numerals 1 through 31"
+                                fieldLabel="Birth Day Label"
+                                name="./birthday"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Birth Day"/>
+                            <birthyear
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Drop-down prepopulated with year range 1900 to current?"
+                                fieldLabel="Birth Year Label"
+                                name="./birthyear"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Birth Year"/>
+                            <addressstreet
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Address field - House number and street"
+                                fieldLabel="Street Address Label"
+                                name="./addressstreet"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Street Address"/>
+                            <addresscity
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Address field - city"
+                                fieldLabel="City Label"
+                                name="./addresscity"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="City"/>
+                            <addressstate
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Label preceeding the State drop-down"
+                                fieldLabel="State Label"
+                                name="./addressstate"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="State"/>
+                            <addresspostalcode
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Address field - zip code"
+                                fieldLabel="Postal Code Label"
+                                name="./addresspostalcode"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Postal Code"/>
+                            <addresscountry
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Label preceeding the country drop-down"
+                                fieldLabel="Country Label"
+                                name="./addresscountry"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Select Country"/>
+                            <createloginheader
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Header text for login section"
+                                fieldLabel="Create Login Header Label"
+                                name="./createloginheader"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Create your login"/>
+                            <emailaddress
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Email field"
+                                fieldLabel="Email Address Label"
+                                name="./emailaddress"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Email Address"/>
+                            <emailaddressvalidation
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Text to indicate mandatory field"
+                                fieldLabel="Email Address Validation Label"
+                                name="./emailaddressvalidation"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Email address is required"/>
+                            <usernamelabel
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="User Name"
+                                fieldLabel="User Name Label"
+                                name="./usernamelabel"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Username"/>
+                            <password
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Password field"
+                                fieldLabel="Password Label"
+                                name="./password"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Password"/>
+                            <passwordverification
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Password verification message"
+                                fieldLabel="Password Verification Label"
+                                name="./passwordverification"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Verify Password"/>
+                            <createaccountbutton
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="CTA button"
+                                fieldLabel="Create Account Button Label"
+                                name="./createaccountbutton"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="CREATE ACCOUNT"/>
+                            <privacylabel
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Privacy Text"
+                                fieldLabel="Privacy Label"
+                                name="./privacylabel"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="We're not sharing your information. See &lt;a href=&quot;#&quot; >Privacy Policy&lt;/a>."/>
+                            <closebuttonlabel
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Close button in top right corner"
+                                fieldLabel="Close button label"
+                                name="./closebuttonlabel"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="Close"/>
+                            <sameusernameerrormessage
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Enter Same Username Error message"
+                                fieldLabel="Same Username Error message"
+                                name="./sameusernameerrormessage"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}false"
+                                value="The user name specified is already in use. Please enter a different user name"/>
+                        </items>
+                    </column>
+                </items>
+            </CreateAccount>
+        </items>
+    </content>
+</jcr:root>

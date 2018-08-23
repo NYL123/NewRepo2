@@ -1,0 +1,113 @@
+.table-pattern-c table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  background: #f3f4f8;
+  border: 1px solid #d7d8d8;
+}
+
+.table-pattern-c tr:nth-child(even) {
+  background-color: #fff
+}
+
+.table-pattern-c td {
+  font-family: 'RideLight';
+  color: #000;
+  line-height: 28px;
+  font-size:22px;
+  text-transform: capitalize;
+}
+
+.table-pattern-c th, td {
+  padding: 24px 0 24px 28px;
+  border: none;
+  text-align: left;
+}
+
+.table-pattern-c th:first-child, td:first-child {
+  max-width: 144px;
+}
+
+.table-pattern-c th {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.table-pattern-c-sub-text {
+  color: #000;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.table-pattern-c-total-paid-lbl {
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.table-pattern-c-mobile-lbl {
+display: none;
+}
+
+.table-pattern-c-mobile-column-section,
+.table-pattern-c p
+{
+  display: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .table-pattern-c table {
+    background: #fff;
+  }
+  th {
+    display: none;
+  }
+  tr {
+  display: block;
+  margin-bottom: 20px;
+  }
+  td {
+  display: block;
+  padding: 24px 0 0 28px;
+  }
+  .table-pattern-c-mobile-lbl {
+    display: inline;
+    color: #000;
+    font-family: 'RideSemibold';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+  .table-pattern-c-mobile-lbl:after {
+    content: ': ';
+  }
+  .mobile-hide-row {
+    display: none;
+  }
+  .table-pattern-c p {
+    display: block;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+
+  .table-pattern-c th:first-child, td:first-child {
+    max-width: 100%;
+  }
+
+  .table-pattern-c-web-section {
+    padding: 25px 22px;
+    background: #fff;
+    border: 1px solid #d7d8d8;
+    color: #000;
+    font-family: 'Ride';
+    font-size: 16px;
+    line-height: 22px;
+    display: block !important;
+    width:100%;
+  } 
+} 

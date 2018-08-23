@@ -1,0 +1,13 @@
+<sly data-sly-use.imageData="com.hertz.digital.platform.use.HeroImageUse">
+<div data-sly-test="${!imageData.imagePath && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please Configure Hero Component.
+</div>
+<sly data-sly-test="${imageData.imagePath}"> 
+<div class='hero-component' title=${imageData.altText} style="background-image: url('${imageData.imagePath @context='unsafe'}');" >
+  <div class='heading'>
+    <span class='tag-line'>${imageData.tagLineText}</span>
+    <span class='sub-tag-line'>${imageData.subTagLineText}</span>
+  </div>
+</div>
+</sly>
+</sly>

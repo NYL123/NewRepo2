@@ -1,0 +1,10 @@
+<p><b>Chat Component</b></p>
+<div data-sly-test="${!properties.chatAltText && wcmmode.edit}" data-sly-unwrap>
+ Please Configure Chat component.
+<br>
+</div>
+<div data-sly-test="${properties.chatAltText}" data-sly-unwrap>
+<!-- <b>Chat Image:</b><sly data-sly-test="${properties.fileReference}">${properties.fileReference}<br><img src="${properties.fileReference}"></sly><br>
+ -->
+<b>Chat Alt Txt:</b>  ${properties.chatAltText}<br>
+</div>

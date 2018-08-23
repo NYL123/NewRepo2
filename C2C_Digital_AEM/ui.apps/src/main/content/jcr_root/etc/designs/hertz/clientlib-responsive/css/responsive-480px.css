@@ -1,0 +1,86 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2012 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+@media (max-width: 480px) {
+
+    /* IE10 Metro Snap View */
+    @-ms-viewport { width: device-width; }
+
+    body {
+        min-width: 320px;
+    }
+
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    h2>span, h3>span {
+        padding: 0 10px 0 10px;
+        font-size: 0.75em;
+    }
+
+    h4 {
+        padding: 10px 0 10px 10px;
+        margin-right: 0px;
+        font-size: 1.75em;
+        line-height: 1.0em;
+    }
+
+    .logo {
+        float: left;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logo.footer-logo {
+        padding-bottom: 0px;
+        float: none;
+    }
+
+    .footer-content {
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    .footer-content ul {
+        list-style: none;
+        float: none;
+        padding-left: 40px;
+    }
+
+    .footer-content li {
+        margin-left: 0;
+        border-left: 1px solid #636363;
+        padding-left: 10px;
+        padding-right: 100px;
+    }
+
+    /* hide the right search results on phone */
+    div.searchRight {
+        display: none;
+    }
+
+    div.search form input {
+        max-width: 50%;
+
+    }
+
+    div.feeds {
+        display: none;
+    }
+
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Language Configuration"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <languageconfiguration
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Language"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                        <languagename
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="Please enter the Language Name."
+                        fieldLabel="Language"
+                        name="./languageName"
+                        required="{Boolean}true"/>
+                        <languagecode
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="Please enter the Language Code."
+                        fieldLabel="Language Code"
+                        name="./languageCode"
+                        required="{Boolean}true"/>
+                        <defaultlanguage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./isDefaultLanguage"
+                        text="Is Default Language?"
+                        uncheckedValue="false"
+                        value="true"/>
+
+
+						<iracLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        disabled="{Boolean}false"
+                        fieldDescription="Please enter Redirect URL"
+                        fieldLabel="Redirect URL"
+                        name="./iracLink"
+                        renderReadOnly="{Boolean}false"
+                        required="{Boolean}false"
+                        value=""/>
+                		</items>
+                    </column>
+                </items>
+            </languageconfiguration>
+        </items>
+    </content>
+</jcr:root>

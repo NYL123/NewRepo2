@@ -1,0 +1,28 @@
+<sly data-sly-test.author="${!properties.heading && !properties.cdpcode && !properties.buttontext && wcmmode.edit}">
+    Please configure the CDP component.
+</sly>
+<sly data-sly-test="${!author}">
+    <div class='cdp-component'>
+        <div class='cdp-component-content'>
+            <div>${properties.heading}</div>
+            <sly data-sly-test="${properties.subheading}">
+                <div>${properties.subheading}</div>
+            </sly>
+            <div class='cdp-code' data-sly-test.isCdpCode="${properties.cdpcode}">${properties.cdpcodeprefix} ${properties.cdpcode}</div>
+			<div class='pc-code' data-sly-test.isPcCode="${properties.pccode}">${properties.pccodeprefix} ${properties.pccode}</div>
+        </div>
+        <div class='cdp-component-button'>
+			<sly data-sly-test.bothValid="${isCdpCode && isPcCode}">
+				<button class='offer-button' data-cdp-code="${properties.cdpcode}" data-pc-code="${properties.pccode}">${properties.buttontext}</button>
+			</sly>
+			<sly data-sly-test="${!bothValid && (isCdpCode || isPcCode)}">
+				<sly data-sly-test="${isPcCode}">
+					<button class='offer-button' data-pc-code="${properties.pccode}">${properties.buttontext}</button>
+				</sly>
+				<sly data-sly-test="${isCdpCode}">
+					<button class='offer-button' data-cdp-code="${properties.cdpcode}">${properties.buttontext}</button>
+				</sly>
+			</sly>			
+        </div>
+    </div>
+</sly>

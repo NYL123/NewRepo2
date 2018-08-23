@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Important Information Links Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <importantinfolinks
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Important Information Links"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                        <linkElementGroup
+                        	jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="Text field for the element group."
+                            fieldLabel="Element Group"
+                            name="./linkElementGroup"/>
+                        <linkElement
+                        	jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="Text field for the element."
+                            fieldLabel="Element"
+                            name="./linkElement"/>
+                        <linkText
+                        	jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="Text field for the link text."
+                            fieldLabel="Link Text"
+                            name="./linkText"/>
+                        <linkAriaLabel
+                        	jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="Text field for the key of link aria label."
+                            fieldLabel="Link Aria Label"
+                            name="./linkAriaLabel"/>
+                        <linkTargetUrl
+                        	jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                            fieldDescription="Field for the target url of the link."
+                            fieldLabel="Target URL"
+                            name="./linkTargetURL"
+                            rootPath="/content"/>
+                        <linkTargetType
+                        	jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                            deleteHint="{Boolean}false"
+                            fieldDescription="Field for the link target type."
+                            name="./linkTargetType"
+                            text="Target Type"
+                            uncheckedValue="false"
+                            value="true"/>								
+                        </items>
+                    </column>
+                </items>
+            </importantinfolinks>
+        </items>
+    </content>
+</jcr:root>

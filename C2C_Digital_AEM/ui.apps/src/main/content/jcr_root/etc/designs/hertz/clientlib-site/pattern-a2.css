@@ -1,0 +1,151 @@
+.content-card-pattern-a2 {
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+.content-card-pattern-a2-link {
+  color: #000;
+}
+.content-card-pattern-a2-link:hover {
+  text-decoration: none;
+}
+.content-card-pattern-a2 .content {
+  color: #fff !important;
+}
+.content-card-pattern-a2 p {
+  color: #fff;
+}
+.content-card-pattern-a2 .content-card-data-section {
+  background-color: #000;
+  flex: 1;
+  min-width: 50%;
+  order: 1;
+  padding: 24px;
+}
+.content-card-pattern-a2 .content-card-data-section .content-card-badge {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 6px;
+  display: inline;
+  padding: 1px 10px;
+  text-align: center;
+}
+.content-card-pattern-a2 .content-card-data-section .badge-details {
+  color: #000;
+  font-family: "RideSemibold";
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+}
+.content-card-pattern-a2 .content-card-data-section .content-card-headline {
+  padding: 4px 0 8px;
+}
+.content-card-pattern-a2 .content-card-data-section .content-card-learn-more-link2 {
+  align-content: center;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  font-family: bold;
+  margin-top: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.content-card-pattern-a2 .content-card-data-section .content-card-learn-more-link2 .icon-direction-arrow-right-thick {
+  font-size: 10px;
+  padding-left: 10px;
+  position: relative;
+  top: 1px;
+}
+.content-card-pattern-a2 .content-card-data-section .content-card-learn-more-link2 .icon-direction-arrow-right-thick:before {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.content-card-pattern-a2 .content-card-data-section .head1 {
+  color: #fc0;
+  text-transform: uppercase;
+}
+.content-card-pattern-a2 .content-card-data-section .head2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.content-card-pattern-a2 .content-card-data-section h1 {
+  padding: 0;
+  padding-bottom: 16px;
+}
+.content-card-pattern-a2 .content-card-image-section {
+  flex: 2;
+  order: 2;
+  overflow: hidden;
+  position: relative;
+}
+.content-card-pattern-a2 .content-card-image-section img {
+  height: 100%;
+}
+.content-card-pattern-a2 .display2 {
+  color: #fc0;
+  font-family: "RideLight";
+  font-size: 3.6rem;
+  letter-spacing: -0.4;
+  line-height: 4.3rem;
+  text-transform: capitalize;
+}
+.content-card-pattern-a2 .content-card-data-section .body2-semibold {
+  color: #fff;
+  font-family: "RideSemibold";
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.grid-col-lg-4 .content-card-pattern-a2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.grid-col-lg-4 .content-card-pattern-a2 .content-card-data-section {
+  order: 2;
+}
+.grid-col-lg-4 .content-card-pattern-a2 .content-card-image-section {
+  order: 1;
+}
+
+.grid-col-lg-8 .content-card-pattern-a2 img,
+.grid-col-lg-12 .content-card-pattern-a2 img {
+  position: absolute;
+  right: 0;
+}
+
+.grid-col-lg-4 .content-card-pattern-a2 img {
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .content-card-pattern-a2 {
+    max-height: none;
+    max-width: 100%;
+  }
+  .content-card-pattern-a2 > a {
+    flex-flow: column;
+  }
+  .content-card-pattern-a2 > a:hover {
+    text-decoration: none;
+  }
+  .content-card-pattern-a2 .content-card-data-section {
+    order: 2;
+  }
+  .content-card-pattern-a2 .content-card-image-section {
+    max-width: 100%;
+    min-height: 200px;
+    order: 1;
+    position: relative;
+  }
+  .content-card-pattern-a2 .content-card-image-section img {
+    position: absolute;
+  }
+}

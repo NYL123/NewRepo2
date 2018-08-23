@@ -1,0 +1,20 @@
+<sly data-sly-use.hertzLinkDropDownLinks="com.hertz.digital.platform.use.HertzLinkDropdownUse" data-sly-unwrap/>
+<div data-sly-test="${!hertzLinkDropDownLinks.valuesList && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please Configure Hertz Link Dropdown Component.
+</div>
+<select onchange="selectChange(this)">
+<option>${properties.pleaseSelectText}</option>
+<div data-sly-test="${hertzLinkDropDownLinks.valuesList}" data-sly-list.items="${hertzLinkDropDownLinks.valuesList}" data-sly-unwrap>
+<sly data-sly-use.url="${'hertzlinkdropdown.js' @ seqId=items.sequenceId,linkType=items.linkType,targetType=items.targetType,cdpCode=items.cdpCode,pcCode=items.pcCode,rqCode=items.rqCode}">
+  <option data-href="${url.resultUrl}">${items.label}</option>
+</sly>
+</div>
+</select>
+<script>
+	var selectChange = function(opt) {
+    var url = opt.options[opt.selectedIndex].getAttribute('data-href');
+  	if (url) {
+      window.location.assign(url)
+    }
+  }
+</script>

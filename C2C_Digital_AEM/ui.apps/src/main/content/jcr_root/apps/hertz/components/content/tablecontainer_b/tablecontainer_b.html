@@ -1,0 +1,39 @@
+<div data-sly-test="${wcmmode.edit || wcmmode.design }" >
+    <pre>Click here to edit Table Header B </pre>
+
+    <div class="container-fluid" >
+    	<div class="row">        
+    <div data-sly-use.grid="gridB.js" >
+    <table>
+          <tr>
+              <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                    <th>
+                                ${item}  &nbsp;&nbsp;&nbsp;
+                    </th>
+                </sly> 
+
+            </tr>
+		</table>
+      	<div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap>
+		</div>
+    
+  </div>
+  </div>
+  </div>
+</div>
+<div data-sly-test="${!(wcmmode.edit || wcmmode.design) }" data-sly-unwrap >
+    <div class='table-pattern-b-web table-pattern-b-web-section' data-sly-use.grid="gridB.js" >
+    <table>
+          <tr>
+              <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                    <th>
+                              <span>${item}</span>
+                    </th>
+                </sly> 
+
+            </tr>
+      	<div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap>
+		</div>
+    </table>
+  </div>
+</div>

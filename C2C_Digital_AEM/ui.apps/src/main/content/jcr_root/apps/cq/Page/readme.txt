@@ -1,0 +1,1 @@
+This overlay is to add custom extensions to the cq:Page. It would facilitate rendering mechanisms to enable direct rendering of the page.selector.json

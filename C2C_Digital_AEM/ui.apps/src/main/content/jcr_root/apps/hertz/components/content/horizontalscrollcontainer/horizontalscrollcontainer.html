@@ -1,0 +1,15 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design}">    
+  	<h2><span>Horizontal Scroll Container component</span></h2>
+    <div class="container-fluid">
+        <div class="rowNew">
+            <sly data-sly-resource="${ @path='horizontalParsys',resourceType='wcm/foundation/components/responsivegrid'}"></sly>               
+        </div>
+    </div>
+</sly>
+<sly data-sly-test="${!author}">    
+    <div class='horizontal-slider'>
+        <div class='horizontal-body'>
+            <sly data-sly-resource="${ @path='horizontalParsys',resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+        </div>
+    </div> 
+</sly> 

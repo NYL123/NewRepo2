@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="cq:Dialog"
+	title=" RAPID Hero" width="800" xtype="dialog">
+   <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <imagetext
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                title="Image Text Tab"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                   <alttext jcr:primaryType="cq:Widget" anchor="100%" dname="heading"
+						fieldLabel="Hero Background Image Alt Text" layout="anchor" name="./alttext" xtype="textfield" />
+					<taglineText jcr:primaryType="cq:Widget" anchor="100%" dname="heading"
+						fieldLabel="Hero Background Image Tagline Text (White)" layout="anchor" name="./taglineText" xtype="textfield" />
+					<subTagLineText jcr:primaryType="cq:Widget" anchor="100%" dname="heading"
+						fieldLabel="Hero Background Image Sub-Tagline Text (Yellow)" layout="anchor" name="./subTagLineText" xtype="textfield" />
+					<descriptionText jcr:primaryType="cq:Widget" anchor="100%" dname="heading"
+						fieldLabel="Hero Background Image Description Text" layout="anchor" name="./descriptionText" xtype="textfield" />
+                </items>
+            </imagetext>
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="{Boolean}false"
+                allowUpload="{Boolean}true"
+                cropParameter="./imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                mapParameter="./imageMap"
+                name="./file"
+                rotateParameter="./imageRotate"
+                title="Hero Background Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="html5smartimage"/>
+        </items>
+    </items>
+</jcr:root>

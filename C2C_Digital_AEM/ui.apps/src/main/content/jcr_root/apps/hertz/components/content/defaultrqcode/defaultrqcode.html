@@ -1,0 +1,12 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.defaultRQcode && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Default RQ Code component.<br>
+        Please include only one Default RQ Code component on this page.
+    </div>
+    <div data-sly-test="${properties.defaultRQcode}" data-sly-unwrap >
+        <b>Default RQ Code: </b><sly data-sly-test="${properties.defaultRQcode}">${properties.defaultRQcode}</sly><br>
+        <b>Available To Use On Web: </b>${properties.availableToUseOnWeb}<br>
+    </div>
+</div>
+

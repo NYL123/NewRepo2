@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Authenticated Flyout Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="dialog-width-50rem">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <authenticatedflyout
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Authenticated Flyout"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="column-full-width">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fieldset
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Authenticated Flyout Configurations"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <navigation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                class="full-width"
+                                                eaem-parent=""
+                                                fieldDescription="Click 'Add Field' to add Flyout and Links."
+                                                fieldLabel="Configure Flyout">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                    eaem-nested=""
+                                                    name="./links">
+                                                    <layout
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                        method="absolute"/>
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <heading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                    fieldDescription="Please enter footer links group heading."
+                                                                    fieldLabel="Text Link"
+                                                                    name="./heading"/>
+                                                                <linkUrlValue
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                                    fieldDescription="Please enter the Target path"
+                                                                    fieldLabel="Target URL"
+                                                                    name="./linkurl"/>
+                                                                <target
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                    fieldDescription="Please select if the link will open in a new window"
+                                                                    fieldLabel="Open Link In New Window"
+                                                                    name="./openURLNewWindow">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <no
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="No"
+                                                                            value="no"/>
+                                                                        <yes
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Yes"
+                                                                            value="yes"/>
+                                                                    </items>
+                                                                </target>
+                                                                <rel
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                    fieldDescription="Please select SEO nofollow tag should be included for this link"
+                                                                    fieldLabel="No Follow"
+                                                                    name="./rel">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <no
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="No"
+                                                                            value="no"/>
+                                                                        <yes
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Yes"
+                                                                            value="yes"/>
+                                                                    </items>
+                                                                </rel>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </navigation>
+                                        </items>
+                                    </column>
+                                </items>
+                            </fieldset>
+                        </items>
+                    </column>
+                </items>
+            </authenticatedflyout>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,19 @@
+<sly data-sly-use.socialLinks="com.hertz.digital.platform.use.SocialLinksUse" data-sly-unwrap/>
+<br>
+    <p><b> Social Links Component</b></p>
+
+<div data-sly-test="${!socialLinks.socialLinksDetails && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please Configure Social Links Component.
+</div>
+<div data-sly-test="${socialLinks.socialLinksDetails}" data-sly-unwrap>
+	<div data-sly-test="${socialLinks.socialLinksDetails}" data-sly-list.items="${socialLinks.socialLinksDetails}" data-sly-unwrap>
+			 <b>Social Icon class:</b><sly data-sly-test="${items.cssClass}">${items.cssClass}</sly><br>
+			 <b>Open link in New Window?:</b>${items.ctaAction}<br>
+             <sly data-sly-test="${items.socialURL}">
+				 <b>Social Link:</b>${items.socialURL}<br>
+			 </sly>
+			<b>Include No Follow attribute:</b>${items.seoNoFollow}<br/>
+		<b>Alt Text:</b><sly data-sly-test="${items.altText}">${items.altText}</sly><br>
+    </div>
+    <b>Social Links Subtitle:</b><sly  data-sly-test="${socialLinks.socialLinksSubtitle}">${socialLinks.socialLinksSubtitle}</sly><br>
+</div>

@@ -1,0 +1,123 @@
+.content-card-pattern-a3 {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 15px;
+  min-height: 278px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.content-card-pattern-a3 .content-card-image {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.content-card-pattern-a3 .content-card-image .card-image {
+  height: 100%;
+}
+.content-card-pattern-a3 p {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+.content-card-pattern-a3 .content-card-data-section {
+  min-height: 278px;
+  padding: 32px 24px;
+  width: 100%;
+  z-index: 2;
+}
+.content-card-pattern-a3 .content-card-data-section .content-card-headline {
+	padding-left: 30px;
+}
+
+.content-card-pattern-a3-link:hover,
+.content-card-gpr-link:hover {
+  color: #000;
+  text-decoration: none !important;
+}
+
+.content-card-pattern-a3 .content-card-data-section .content-card-badge {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 6px;
+  color: #000;
+  display: inline;
+  font-family: "RideSemibold";
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  max-height: 22px;
+  padding: 1px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.content-card-pattern-a3 .content-card-data-section .callout3 {
+	color: #000;
+}
+
+.content-card-pattern-a3 .content-card-data-section .heading {
+  display: inline-block;
+  padding-bottom: 6px;
+  padding: 0;
+}
+
+.grid-col-lg-12 .heading,
+.grid-col-lg-8 .heading,
+.grid-col-lg-6 .heading {
+  color: #fff;
+  font-family: "RideLight";
+  font-size: 4.4rem;
+  letter-spacing: -0.4;
+  line-height: 5.3rem;
+}
+
+.grid-col-lg-4 .heading {
+  color: #fff;
+  font-family: "RideLight";
+  font-size: 3rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+}
+
+.heading-highlight {
+  color: #fc0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.view-gpr {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-direction-arrow-right-thick {
+  font-size: 10px;
+  padding-left: 10px;
+  position: relative;
+  top: 1px;
+}
+.icon-direction-arrow-right-thick:before {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  content: 'X';
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .content-card-pattern-a3 {
+    flex-flow: column;
+  }
+
+  .content-card-pattern-a3 .content-card-image .card-image {
+    height: auto;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}

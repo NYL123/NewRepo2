@@ -1,0 +1,12 @@
+<p><b>Column Container Component</b></p>
+<div>
+<sly data-sly-use.columnContainer="com.hertz.digital.platform.use.ColumnContainerUse" data-sly-unwrap>
+
+<dl data-sly-list="${columnContainer.list}">
+<div>
+<div data-sly-resource="${ 'columnheading{0}' @ format=itemList.count , resourceType='/apps/hertz/components/content/footer/columnheading'}" data-sly-unwrap>
+</div>
+</div>
+</dl>
+</sly>
+   </div>

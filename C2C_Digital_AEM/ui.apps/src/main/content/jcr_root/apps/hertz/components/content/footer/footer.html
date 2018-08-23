@@ -1,0 +1,37 @@
+<p><b>Footer Component</b></p>
+<div data-sly-test="${!properties.legalDescriptionText && wcmmode.edit}" data-sly-unwrap>
+   Please Configure Footer Container Component.
+</div>
+<div data-sly-test="${properties.legalDescriptionText}" data-sly-unwrap>
+   <b>Legal Description Text:</b>
+   <sly  data-sly-test="${properties.legalDescriptionText}">${properties.legalDescriptionText}</sly>
+   <br>
+   <sly data-sly-test="${properties.fileReference}"> <b>Accessibility Icon:</b>${properties.fileReference}<br></sly>   
+   <b>Legal Link Label:</b>
+   <sly  data-sly-test="${properties.firstLegalLinkLabel}">${properties.firstLegalLinkLabel}</sly>
+   <br>
+   <b>Legal Link URL:</b>
+   <sly  data-sly-test="${properties.firstLegalLinkURL}">${properties.firstLegalLinkURL}</sly>
+   <br>
+   <b>Open Legal Link URL in New Window? </b>${properties.openFirstLegalLinkURLInNewWindow}<br>
+   <b>Include No Follow attribute:</b>${properties.rel}<br/>
+   <b>Legal Link Label:</b>
+   <sly  data-sly-test="${properties.secondLegalLinkLabel}">${properties.secondLegalLinkLabel}</sly>
+   <br>
+   <b>Legal Link URL:</b>
+   <sly  data-sly-test="${properties.secondLegalLinkURL}">${properties.secondLegalLinkURL}</sly>
+   <br>
+   <b>Open Legal Link URL in New Window? </b>${properties.openSecondLegalLinkURLInNewWindow}<br>
+   <b>Include No Follow attribute:</b>${properties.rel2}<br/>
+</div>
+<div>
+   <div data-sly-resource="${ @path='sociallinks',resourceType='/apps/hertz/components/content/footer/sociallinks'}" data-sly-unwrap></div>
+</div>
+<div>
+   <div data-sly-resource="${ @path='emailsignup',resourceType='/apps/hertz/components/content/footer/emailsignup'}" data-sly-unwrap></div>
+</div>
+<div>
+<div data-sly-resource="${'footerlinks' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap></div>
+		
+  </div>
+<br>

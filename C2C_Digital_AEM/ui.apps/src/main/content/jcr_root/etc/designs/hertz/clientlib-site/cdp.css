@@ -1,0 +1,45 @@
+.cdp-component{
+    width: 315px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 0.2px solid;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, .08);
+    float: left;
+    margin: 8px 8px 28px 8px;
+}
+
+.cdp-component-content{
+  min-height: 170px;
+  padding: 22px 20px 56px 20px;
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}
+
+.offer-button{
+  height: 56px;
+  width: 100%;
+  padding: 0 32px;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #FFCC00;
+  color: #000000;
+  font-family: 'Ride Semibold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.cdp-component-button{
+  margin: 0 20px 24px 20px;
+}
+
+@media(max-width: 768px) {
+  .cdp-slider{
+    overflow: scroll;
+    width: 1000px;
+  }
+  .cdp-slider::-webkit-scrollbar {
+      display: none;
+    }
+  }

@@ -1,0 +1,129 @@
+.table-pattern-b-web table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #f3f4f8;
+  border: 1px solid #d7d8d8;
+  min-width:100%;
+}
+
+.table-pattern-b-web  tr:nth-child(even){
+  background-color: #fff
+}
+
+.table-pattern-b-web td {
+  border: none;
+  text-align: left;
+  font-family: 'RideLight';
+  color: #000;
+  line-height: 28px;
+  font-size:22px;
+}
+
+.table-pattern-b-web th,  td {
+  padding: 24px 0 24px 28px;
+}
+.table-pattern-b-web th{
+  border: none;
+  text-align: left;
+}
+
+.table-pattern-b-web td span{
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.table-pattern-b-web-section{
+  display: block;
+}
+
+.table-pattern-b-mobile-section{
+  display: none;
+}
+
+.body2-semibold {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .table-pattern-b-mobile-section{
+    display: table;
+  }
+
+  .table-pattern-b-web table{
+    min-width: 335px;
+  }
+
+  .table-pattern-b-web td {
+    font-size: 16px;
+    line-height: 22px;
+    padding-right:10px;
+  }
+
+  .table-pattern-b-web td span{
+    font-family: 'RideLight';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+  }
+
+  .table-pattern-b-web td:first-child, th:first-child{
+    padding: 16px 10px;
+  }
+
+  .table-pattern-b-dropdown{
+    border: 1px solid #d7d8d8;
+    margin-bottom:12px;
+    padding-bottom:8px;
+  }
+
+  .table-pattern-b-dropdown-list{
+    padding-left:16px;
+  }
+
+  .table-pattern-b-dropdown-list p{
+    padding:8px 0 2px 0;
+    margin: 0;
+    font-family: 'Ride';
+    text-transform: capitalize;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+  }
+
+  .table-pattern-b-dropdown-list select{
+    border: 0;
+    color: #000;
+    font-family: 'RideSemibold';
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .table-pattern-b-dropdown-list select:focus{
+    outline: none;
+  }
+  .table-pattern-b-dropdown-arrow{
+    font-family: 'icomoon';
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    bottom: 24px;
+  }
+  .table-pattern-b-dropdown-arrow::before {
+    content: '\e92c';
+  }
+
+  .table-pattern-b-web-section{
+    display: none
+  }
+
+}

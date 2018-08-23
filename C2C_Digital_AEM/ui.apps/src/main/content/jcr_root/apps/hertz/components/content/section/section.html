@@ -1,0 +1,15 @@
+<sly data-sly-use.rqrLinks="com.hertz.digital.platform.use.RQRSectionUse" data-sly-unwrap/>
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.sectionName && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Section Component.
+    </div>
+    <div data-sly-test="${properties.sectionName}" data-sly-unwrap >
+        <b>Section Name: </b><sly data-sly-test="${properties.sectionName}">${properties.sectionName}</sly><br>
+    </div>
+    <div data-sly-test="${rqrLinks.rQRLinksBeanList}" data-sly-list.items="${rqrLinks.rQRLinksBeanList}" data-sly-unwrap>
+			 <b>Link:</b><sly data-sly-test="${items.linkName}">${items.linkName}</sly><br>
+			 <b>URL:</b><sly data-sly-test="${items.linkURL}">${items.linkURL}</sly><br>
+			 <b>Link Alt Text:</b><sly data-sly-test="${items.linkAltText}">${items.linkAltText}</sly><br>
+    </div>
+</div>
+

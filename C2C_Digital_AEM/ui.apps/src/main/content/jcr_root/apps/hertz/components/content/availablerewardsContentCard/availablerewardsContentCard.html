@@ -1,0 +1,21 @@
+<sly data-sly-test="${!properties.text && !properties.fileReference}" data-sly-unwrap="${!wcmmode.edit}">
+	<b>Please configure the Available Rewards Content Card component.</b>
+</sly>
+<sly data-sly-test="${properties.fileReference}">
+<a class="content-card-pattern-a4-link" data-sly-use.data="path.js" href="${data.shortenedPath || '#'}">
+	<div class='content-card-pattern-a4'>
+		<div class='content-card-image'>
+			<img class='card-image' data-path="${currentNode.path}" src="${properties.fileReference @context='unsafe'}" />
+		</div>
+		<div class='content-card-data-section'>
+			<sly data-sly-test="${properties.text || properties.viewText}">
+			    <div class='content-card-headline'>
+                  <p class='heading'>${properties.text}</p>
+                  <p class="heading2">${properties.yellowText}</p>
+                  <p class="view-gpr">${properties.viewText}<span class='icon-direction-arrow-right-thick'></span></p>
+				</div>
+            </sly>
+	  </div>
+	</div>
+</a>
+</sly>

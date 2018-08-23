@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Rapid Image Card"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <image
+                jcr:primaryType="cq:Widget"
+                allowBlank="{Boolean}false"
+                allowUpload="{Boolean}true"
+                cropParameter="./imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                mapParameter="./imageMap"
+                name="./file"
+                rotateParameter="./imageRotate"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="html5smartimage"/>
+            <imagetext
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                title="Image Text Fields"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <alttext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Alt Text"
+                        name="./alttext"
+                        xtype="textfield"/>
+                    <imagetaglinetext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image Tagline Text"
+                        name="./taglineText"
+                        xtype="textfield"/>
+                    <imagedescriptiontext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image Description Text"
+                        name="./descriptionText"
+                        xtype="textfield"/>
+                    <addtoprofiletext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Add to Profile Text"
+                        name="./addToProfileText"
+                        xtype="textfield"/>
+                </items>
+            </imagetext>
+        </items>
+    </items>
+</jcr:root>

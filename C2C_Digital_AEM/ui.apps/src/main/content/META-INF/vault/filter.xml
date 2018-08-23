@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/hertz">
+        <exclude pattern="/apps/hertz/install" />
+    </filter>
+    <filter root="/apps/sling" />
+    <filter root="/apps/cq" />
+	<filter root="/apps/wcm" />
+	<filter root="/apps/dam/gui" />
+	<filter root="/etc/designs/hertz/clientlib"/>
+	<filter root="/etc/designs/hertz/clientlib-all"/>
+	<filter root="/etc/designs/hertz/clientlib-angular"/>
+	<filter root="/etc/designs/hertz/clientlib-responsive"/>
+	<filter root="/etc/designs/hertz/clientlib-site"/>
+	<filter root="/etc/designs/hertz/authoring"/>
+	<filter root="/etc/designs/hertz/fonts"/>
+    <filter root="/etc/workflow/models/dam/update_asset"/>
+	<filter root="/etc/workflow/models/hertz_req_for_activation"/>
+	<filter root="/etc/workflow/models/hertz_req_for_deactivation"/>
+	<filter root="/etc/workflow/models/translation" />
+	
+	<filter root="/home/users/system/mIA90yedcSDcmRTroXRC"/>
+	
+	
+	
+	<filter root="/etc/cloudservices/translation/hertz-translation-configuration"/>
+	
+	
+	
+</workspaceFilter>

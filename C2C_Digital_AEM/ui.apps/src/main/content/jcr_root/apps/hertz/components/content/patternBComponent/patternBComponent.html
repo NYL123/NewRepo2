@@ -1,0 +1,19 @@
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !properties.patternBType}">
+	<p> Please select the pattern B view type</p>
+</sly>
+<sly data-sly-test="${!configured}">
+<sly data-sly-use.patternbobj="patternBComponent.js">
+<sly data-sly-test="${properties.patternBType=='B1'}">
+<a class='content-card-pattern-b-link' href='${patternbobj.shortenedPath}' target='${patternbobj.targetType}'>
+<div class='content-card-pattern-b'>
+    <div class='content-card-data-section'>
+      <h1 class='content-card-headline headline2'>${properties.heading}</h1>
+		<div class='content-card-divider'></div>
+		<p class='content-card-paragrah'>${properties.bodyCopy @context='html'}</p>
+	</div>
+	 </div>
+	</a>
+	</sly>
+ </sly>
+ </sly>
+ 

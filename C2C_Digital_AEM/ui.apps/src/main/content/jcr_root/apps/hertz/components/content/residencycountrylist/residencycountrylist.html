@@ -1,0 +1,12 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.countryCode && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Residency Country List component.<br>
+    </div>
+    <div data-sly-test="${properties.countryCode}" data-sly-unwrap >
+        <b>Country Code: </b><sly data-sly-test="${properties.countryCode}">${properties.countryCode}</sly><br>
+        <b>Country Name: </b><sly data-sly-test="${properties.countryName}">${properties.countryName}</sly><br>
+        <b>Opt in types : </b><sly data-sly-test="${properties.optin}">${properties.optin}</sly><br>
+    </div>
+</div>
+

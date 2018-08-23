@@ -1,0 +1,79 @@
+.accordian-tab {
+  color: #000;
+  overflow: hidden;
+  max-width: 1200px;
+  border: 1px solid #9d9ea3;
+  border-radius: 2px;
+}
+.checkbox {
+  display : none;
+  z-index: -1;
+}
+.accordian-header {
+  position: relative;
+  display: block;
+  padding: 0 0 0 56px;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+  height: 72px;
+  font-size: 1.17em;
+  font-family: 'Ride';
+}
+.accordian-tab-content {
+  max-height: 0;
+  overflow: hidden;
+  font-family: 'Ride';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.accordian-tab-content .accordian-content {
+  margin: 0 0 24px 66px !important;
+}
+/* :checked */
+.checkbox:checked ~ .accordian-tab-content {
+  max-height: 10em;
+}
+
+.checkbox:checked ~ .accordian-header {
+  height: auto;
+  padding: 0 0 0 66px;
+}
+/* Icon */
+.accordian-header::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 4.3em;
+  text-align: center;
+  transition: all .20s;
+  font-family: 'icomoon';
+}
+
+input[type=checkbox] + .accordian-header::after {
+  content: "\E92A";
+}
+
+input[type=checkbox]:checked + .accordian-header::after {
+  transform: rotate(90deg);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .accordian-tab {
+    max-width: 335px;
+  }
+
+  .accordian-header {
+    height: 66px;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: 'RideSemibold';
+    top: 12px;
+  }
+
+  .accordian-tab-content .accordian-content {
+    margin: 12px 0 24px 66px !important;
+  }
+}

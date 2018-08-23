@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Vehicle Result Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="dialog-width-50rem">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+         <common
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Common"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                         class="column-full-width">
+                        <items jcr:primaryType="nt:unstructured">
+                            <vehicleResultsPagePayLaterCTA
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Pay Later"
+                                fieldLabel="Pay Later CTA"
+                                name="./vehicleResultsPagePayLaterCTA"
+                                value=""/>  
+                                <vehicleResultsPagePayLaterTargetURL
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                disabled="{Boolean}false"
+                                fieldDescription="Pay Later Target URL"
+                                fieldLabel="Pay Later CTA Target URL"
+                                name="./vehicleResultsPagePayLaterTargetURL"
+                                value=""/>   
+                                <vehicleResultsPagePayLaterTargetType
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Pay Later Target Type"
+                                fieldLabel="Pay Later CTA Target Type"
+                                name="./vehicleResultsPagePayLaterTargetType"
+                                value=""/>
+                                                                
+                                <vehicleResultsPagePayNowCTA
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Pay Now"
+                                fieldLabel="Pay Now CTA"
+                                name="./vehicleResultsPagePayNowCTA"
+                                value=""/> 
+                                
+                                <vehicleResultsPagePayNowTargetURL
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                disabled="{Boolean}false"
+                                fieldDescription="Pay Now Target URL"
+                                fieldLabel="Pay Now CTA Target URL"
+                                name="./vehicleResultsPagePayNowTargetURL"
+                                value=""/> 
+                                                                
+                                <vehicleResultsPagePayNowTargetType
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Pay Later Target Type"
+                                fieldLabel="Pay Now CTA Target Type"
+                                name="./vehicleResultsPagePayNowTargetType"
+                                value=""/>                       
+                       
+                        </items>
+                    </column>
+                </items>
+            </common>
+           <vehicleblock
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Vehicle Block"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                         class="column-full-width">
+                        <items jcr:primaryType="nt:unstructured">
+                            <vehicleResultsPageCallToBookCTA
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Phone Number"
+                                fieldLabel="Call to Book CTA"
+                                name="./vehicleResultsPageCallToBookCTA"
+                                value=""/>
+                                 <vehicleResultsPageCallToBookTargetURL
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                disabled="{Boolean}false"
+                                fieldDescription="Phone Number Target URL"
+                                fieldLabel="Call to Book CTA Target URL"
+                                name="./vehicleResultsPageCallToBookTargetURL"
+                                value=""/>
+                                  <vehicleResultsPageCallToBookTargetType
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Phone Number Target Type"
+                                fieldLabel="Call to Book CTA Target Type"
+                                name="./vehicleResultsPageCallToBookTargetType"
+                                value=""/>
+                                
+                       
+                        </items>
+                    </column>
+                </items>
+            </vehicleblock>
+            <vehicleresults
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Vehicle Results"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                         class="column-full-width">
+                        <items jcr:primaryType="nt:unstructured">
+                            <vehicleResultsPageMessageSelectYourVehicle
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Select Your Vehicle"
+                                fieldLabel="Select Your Vehicle Message"
+                                name="./vehicleResultsPageMessageSelectYourVehicle"
+                                value=""/>
+                                <vehicleResultsPageMessageCarDetailsDisclaimer
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Car Details Disclaimer"
+                                fieldLabel="Car Details Disclaimer"
+                                name="./vehicleResultsPageMessageCarDetailsDisclaimer"
+                                value=""/>
+                                <vehicleResultsPageFilterIconClassName
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Filter Icon Class name"
+                                fieldLabel="Filter Icon"
+                                name="./vehicleResultsPageFilterIconClassName"
+                                value=""/>
+                                <vehicleResultsPageFilterNoResultsMessage
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="No results message"
+                                fieldLabel="No Results Message"
+                                name="./vehicleResultsPageFilterNoResultsMessage"
+                                value=""/>
+                                <vehicleResultsPageFilterClearFiltersCTA
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Clear Filters"
+                                fieldLabel="Clear Filters Button"
+                                name="./vehicleResultsPageFilterClearFiltersCTA"
+                                value=""/>
+                              
+                       
+                        </items>
+                    </column>
+                </items>
+            </vehicleresults>
+             <vehicledetails
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Vehicle Details"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                         class="column-full-width">
+                        <items jcr:primaryType="nt:unstructured">
+                            <vehicleResultsPageSeatsLabel
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Number of Seats"
+                                fieldLabel="Number of seats text"
+                                name="./vehicleResultsPageSeatsLabel"
+                                value=""/>
+                                 <vehicleResultsPageSuitcasesLabel
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Number of Suitcases"
+                                fieldLabel="Number of Suitcases Text"
+                                name="./vehicleResultsPageSuitcasesLabel"                              
+                                value=""/>
+                                
+                                 <vehicleResultsPageMPGText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Average MPG"
+                                fieldLabel="Average MPG text"
+                                name="./vehicleResultsPageMPGText"                             
+                                value=""/>
+                                
+                                 <vehicleResultsPageNumberofDoorsText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Number of Doors"
+                                fieldLabel="Number of Doors text"
+                                name="./vehicleResultsPageNumberofDoorsText"                             
+                                value=""/>
+                                
+                                 <vehicleResultsPageTransmissionText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Transmission"
+                                fieldLabel="Transmission text"
+                                name="./vehicleResultsPageTransmissionText"                              
+                                value=""/>
+                                
+                                 <vehicleResultsPageDriveTypeText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="DriveType"
+                                fieldLabel="DriveType text"
+                                name="./vehicleResultsPageDriveTypeText"                             
+                                value=""/>
+                                
+                                 <vehicleResultsPageIncludedMileageText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Included Mileage"
+                                fieldLabel="Included Mileage Text"
+                                name="./vehicleResultsPageIncludedMileageText"                          
+                                value=""/>
+                                
+                                 <vehicleResultsPageAdditionalFeaturesText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Additional Features"
+                                fieldLabel="Additional Features text"
+                                name="./vehicleResultsPageAdditionalFeaturesText"                            
+                                value=""/>
+                                
+                                 <vehicleResultsPageVehicleCollectionText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Vehicle Collection"
+                                fieldLabel="Vehicle Collection text"
+                                name="./vehicleResultsPageVehicleCollectionText"                         
+                                value=""/>
+                                
+                                 <vehicleResultsPageVehicleCollectionNoteText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Vehicle Collection Note"
+                                fieldLabel="Vehicle Collection Note Text"
+                                name="./vehicleResultsPageVehicleCollectionNoteText"                           
+                                value=""/>
+                                
+                                 <vehicleResultsPageVehicleRateCodeText
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Vehicle Rate Code"
+                                fieldLabel="Vehicle Rate Code text"
+                                name="./vehicleResultsPageVehicleRateCodeText"                           
+                                value=""/>
+                                
+                       
+                        </items>
+                    </column>
+                </items>
+            </vehicledetails>
+        </items>
+    </content>
+</jcr:root>

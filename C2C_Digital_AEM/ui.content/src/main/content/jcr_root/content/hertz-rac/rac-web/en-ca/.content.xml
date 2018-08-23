@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/hertz"
+        cq:lastModified="{Date}2017-09-06T06:34:39.273-04:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-09-19T02:13:26.299-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastRolledout="{Date}2017-09-06T06:34:39.279-04:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/hertz/templates/localeconfig"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en-ca"
+        jcr:uuid="2e24a5f5-1b58-4cf8-92d3-139dae30425e"
+        sling:resourceType="/apps/hertz/components/pages/localeconfig">
+        <cq:LiveSyncConfig
+            cq:excludedPaths="[registration/step4/communicationspreferences/privacypolicymodal,registration/step4/required/termsandconditionmodal,registration/step4/extraspreferences/siriusxmsatelliteradiomodal,registration/step4/communicationspreferences/hertzereturnmodal,registration/step4/communicationspreferences/datasharingmodal,registration/step4/required/econsentmodal,registration/step4/rentalpreferences/canadapersonalaccidentinsurancepersonaleffectsmodal,registration/step4/extraspreferences/hertzneverlostmodal]"
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/hertz-rac/rac-web/en-us"
+            cq:rolloutConfigs="[/etc/msm/rolloutconfigs/default,/etc/msm/rolloutconfigs/pushonmodify]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+    <header-footer/>
+    <reservations/>
+    <landing/>
+    <itinerary-details/>
+    <checkout/>
+    <ancillaries/>
+    <locationinformation/>
+    <registration/>
+    <login/>
+    <account/>
+    <test/>
+    <reservation-widget-config/>
+    <testspa/>
+    <testrapid/>
+</jcr:root>

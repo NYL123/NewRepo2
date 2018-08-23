@@ -1,0 +1,16 @@
+<sly data-sly-test="${!properties.errorCode}">
+   <h2><span> Please edit the 404- Not Found Component</h2></span>
+</sly>
+<sly data-sly-test="${properties.errorCode}">
+<div class='error-page-container'>
+<img src="${properties.fileReference}" data-path="${currentNode.path}" style='width:100%;'>
+    <div class='error-page-content'>
+    <div class='error-status'>${properties.errorCode}</div>
+      <div class='error-header-1'>${properties.errorMessage}</div>
+    <div class='error-header-2'>${properties.goToHomePage}</div>
+      <div class='error-button'>
+         <a class='go-to-home-button' href="${properties.url}">${properties.buttonText}</a>
+      </div>
+    </div>
+  </div>
+	</sly>

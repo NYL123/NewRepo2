@@ -1,0 +1,36 @@
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.specialNotes && !properties.specialServices && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Location component.
+    </div>
+    <div data-sly-test="${properties.specialNotes}" data-sly-unwrap >
+        <b>Special Notes Heading : </b><sly data-sly-test="${properties.specialNotes}">${properties.specialNotes}</sly><br>
+    </div>
+       <div data-sly-test="${properties.specialNotesDesc}" data-sly-unwrap >
+        <b>Special Notes Description : </b><sly data-sly-test="${properties.specialNotesDesc}">${properties.specialNotesDesc @context='html'}</sly><br>
+    </div>
+          <div data-sly-test="${properties.specialServices}" data-sly-unwrap >
+        <b>Special Services Heading: </b><sly data-sly-test="${properties.specialServices}">${properties.specialServices}</sly><br>
+    </div>
+              <div data-sly-test="${properties.specialServicesDesc}" data-sly-unwrap >
+        <b>Special Services Description: </b><sly data-sly-test="${properties.specialServicesDesc}">${properties.specialServicesDesc @context='html'}</sly><br>
+    </div>
+    
+             <div data-sly-test="${properties.hoursOfOperation1}" data-sly-unwrap >
+        <b>Hours Of Operation : </b><sly data-sly-test="${properties.hoursOfOperation1}">${properties.hoursOfOperation1}</sly><br>
+    </div>
+               <div data-sly-test="${properties.hoursofoperationAriaLabel}" data-sly-unwrap >
+        <b>Hours Of Operation  Aria Label: </b><sly data-sly-test="${properties.hoursofoperationAriaLabel}">${properties.hoursofoperationAriaLabel}</sly><br>
+    </div>
+            <div data-sly-test="${properties.hoursOfOperation2}" data-sly-unwrap >
+        <b>Hours Of Operation 2: </b><sly data-sly-test="${properties.hoursOfOperation2}">${properties.hoursOfOperation2}</sly><br>
+    </div>
+                 <div data-sly-test="${properties.hoursofoperation2AriaLabel}" data-sly-unwrap >
+        <b>Hours Of Operation 2 Aria Label: </b><sly data-sly-test="${properties.hoursofoperation2AriaLabel}">${properties.hoursofoperation2AriaLabel}</sly><br>
+    </div>
+              <div data-sly-test="${properties.hoursOfOperation3}" data-sly-unwrap >
+        <b>Hours Of Operation 3: </b><sly data-sly-test="${properties.hoursOfOperation3}">${properties.hoursOfOperation3}</sly><br>
+    </div>
+                 <div data-sly-test="${properties.hoursofoperation3AriaLabel}" data-sly-unwrap >
+        <b>Hours Of Operation 3 Aria Label: </b><sly data-sly-test="${properties.hoursofoperation3AriaLabel}">${properties.hoursofoperation3AriaLabel}</sly><br>
+    </div>
+</div>

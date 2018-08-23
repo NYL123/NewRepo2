@@ -1,0 +1,83 @@
+.anchor-sliders {
+  height: 120px;
+  padding: 24px 0 16px;
+}
+
+.anchor-container {
+  height: 100px;
+}
+
+.anchor-container-image{
+  opacity: .6;
+}
+
+.anchor-padding {
+  border-radius: 2px;
+  float: left;
+  height: 100px;
+  stroke: #d7d8d8;
+  padding: 0 32px 16px 0;
+}
+
+.anchor-image {
+  height: 100px;
+  width: 230px;
+  border-radius:2px;
+}
+
+.anchor-text-image {
+  color: #fff;
+  font-family: 'RideSemibold';
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  bottom: 100px;
+  display: flex;
+  height: 100px;
+  padding-left: 10px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.anchor-link {
+  color:#365ad8;
+  font-family: 'Ride';
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  float: left;
+  margin:16px 0 10px;
+}
+
+.anchor-link:hover{
+  background: #d7d8d8;
+  cursor: pointer;
+}
+
+.anchor-text-image a{
+text-decoration:none;
+color:#fff;
+}
+
+.anchor-text-image a:hover{
+text-decoration:none;
+} 
+
+@media(max-width: 768px) {
+
+    .anchor-container {
+      width: 850px;
+    }
+
+    .anchor-sliders {
+      height: 150px;
+      overflow: scroll;
+      padding: 24px 0 16px;
+    }
+    .anchor-sliders::-webkit-scrollbar {
+        display: none;
+    }
+}

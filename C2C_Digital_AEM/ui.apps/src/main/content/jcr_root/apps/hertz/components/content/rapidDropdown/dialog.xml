@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="cq:Dialog"
+	title=" RAPID DropDown" width="800" xtype="dialog">
+	<items jcr:primaryType="cq:Widget" xtype="tabpanel">
+		<items jcr:primaryType="cq:WidgetCollection">
+			<tab1 jcr:primaryType="cq:Panel" title="Add">
+				<items jcr:primaryType="cq:WidgetCollection">
+					<label jcr:primaryType="cq:Widget" anchor="100%" dname="heading"
+						fieldLabel="Field Label" layout="anchor" name="./label" xtype="textfield" />
+					<ariaLabel jcr:primaryType="cq:Widget" anchor="100%" dname="heading"
+						fieldLabel="Accessible Label" layout="anchor" name="./ariaLabel" xtype="textfield" />
+					<defaultValue jcr:primaryType="cq:Widget" anchor="100%" dname="heading"
+						fieldLabel="Default Selected Value" layout="anchor" name="./defaultValue" xtype="textfield" />
+					<error jcr:primaryType="cq:Widget" anchor="100%" dname="heading"
+						fieldLabel="Error Message" layout="anchor" name="./error" xtype="textfield" />
+						
+					<options
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="front Carousel field description"
+                        fieldLabel="Options"
+                        name="./optionsList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="true"
+                            hideLabel="true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="carousel-multifield-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="true"
+                                    dName="Value"
+                                    fieldDescription="Enter Option Value"
+                                    fieldLabel="Option Value"
+                                    name="./optionValue"
+                                    xtype="textfield"/>
+                                <displaytext
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="true"
+                                    dName="description"
+                                    fieldDescription="Enter Display text"
+                                    fieldLabel="Option Display text"
+                                    name="./optionDisplayText"
+                                    xtype="textfield"/>                               
+                            </items>
+                        </fieldConfig>
+                    </options>
+				</items>
+			</tab1>
+		</items>
+	</items>
+</jcr:root>

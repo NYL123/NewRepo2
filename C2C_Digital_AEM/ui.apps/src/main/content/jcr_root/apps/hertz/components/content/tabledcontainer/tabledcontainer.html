@@ -1,0 +1,46 @@
+
+<div data-sly-test="${wcmmode.edit || wcmmode.design }">
+   <pre>Click here to edit Table Header D </pre>
+	<div class="container-fluid" >
+    	<div class="row"> 	
+	<div data-sly-use.grid="gridD.js">  	       
+		<table>
+		 <thead>
+			 <tr 'table-pattern-d-accordion-toggle table-pattern-d-accordion-web-section' data-toggle='collapse' data-target='#table-d-accordion'>
+				<sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                    <th>
+                                ${item}  &nbsp;&nbsp;&nbsp;
+                    </th>
+                </sly> 
+			 </tr>
+			 </thead>
+			  <tbody class='table-pattern-d-accordion-body collapse' id='table-d-accordion'>
+			</tbody>
+    	</table>
+		<div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap></div>
+	</div>
+		</div>
+     </div>
+</div>
+
+<div data-sly-test="${!(wcmmode.edit || wcmmode.design) }" data-sly-unwrap >
+<div class='table-pattern-d-accordion'>
+    <div data-sly-use.grid="gridD.js">
+    <table>
+	  <thead>
+          <tr class='table-pattern-d-accordion-toggle table-pattern-d-accordion-web-section' data-toggle='collapse' data-target='#table-d-accordion'>
+              <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                    <th>
+                              <span>${item}</span>
+                    </th>
+                </sly> 
+            </tr>      	
+	   </thead>
+	    <tbody class='table-pattern-d-accordion-body collapse' id='table-d-accordion'>
+		<div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap>
+		</div>
+		</tbody>
+    </table>
+  </div>
+</div>
+</div>

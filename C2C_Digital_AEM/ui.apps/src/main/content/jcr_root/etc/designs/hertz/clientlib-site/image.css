@@ -1,0 +1,8 @@
+.image-component-content{
+  border-radius: 2px;
+  border: 1px solid #f3f4f8;
+}
+
+.image-component-content img{
+  max-width: 100%;
+}

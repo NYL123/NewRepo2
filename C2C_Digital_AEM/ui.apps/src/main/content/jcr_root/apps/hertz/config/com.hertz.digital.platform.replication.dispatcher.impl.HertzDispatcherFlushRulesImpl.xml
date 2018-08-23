@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+
+          prop.replication-action-type="DELETE"
+          prop.rules.hierarchical="[/content/hertz-rac/data/(taxes-config|locationcategories|rate-qualifier-display-rules|reservationconfig|rate-qualifier-display-rules-labels|vehicles-countries|vehicles-labels|rates-config).*=/content/hertz-rac/data/$1,(/content/hertz-rac/.*/header-footer).*=$1,(/content/hertz-rac/.*/headers).*=$1,(/content/hertz-rac/.*/footers).*=$1,/content/hertz-rac/data/(en-us|es-us|en-ca|fr-ca|en|fr|es)(.*)=/content/hertz-rac/data/$1,/(content/hertz-rac)/data/(vehicleimage)/([^/]*)/([^/]*)=/$1/vehicles/vehicle.$2.$3.$4.enscale.large-1x.png&amp;/$1/vehicles/vehicle.$2.$3.$4.enscale.small-2x.png&amp;/$1/vehicles/vehicle.$2.$3.$4.enscale.large-2x.png&amp;/$1/vehicles/vehicle.$2.$3.$4.enscale.small-1x.png,(/content/hertz-rac/.*)/(offers).*=$1/$2.offerlisting.json&amp;$1/$2.categorylisting.json&amp;$1/$2,(/content/hertz-rac)/data/vehicleimage/default.*=$1/vehicles,(/content/hertz-rac)/data/ancillaryimage/default.*=$1/ancillaries,(/content/hertz-rac/.*).*=$1/jcr:content,(/content/hertz-rac/rac-web)/(en-us|es-us|en-ca|fr-ca)/partners/.*=$1/$2/reservations,(/content/hertz-rac/rac-web)/(en-us|es-us|en-ca|fr-ca)/reservation-widget-config.*=$1/$2/reservations,(/content/hertz-rac/.*)/(en-us|es-us|en-ca|fr-ca)/clublinks.*=$1/$2/clublinks,(/content/hertz-rac/.*)/(en-us|es-us|en-ca|fr-ca)/hertzlinks.*=$1/$2/hertzlinks]"     
+    />
+
+

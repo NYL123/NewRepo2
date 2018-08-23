@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Link Pair Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    fileName="_cq_dialog.xml"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"/>
+        <items jcr:primaryType="nt:unstructured">
+            <linkpair
+                cq:showOnCreate="{Boolean}false"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Link Pair "
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <key
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Please enter link url key"
+                                fieldLabel="Link URL Key"
+                                name="./key"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}true"
+                                value=""/>
+                            <content
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                disabled="{Boolean}false"
+                                fieldDescription="Please enter link text"
+                                fieldLabel="Link Text"
+                                name="./content"
+                                renderReadOnly="{Boolean}false"
+                                required="{Boolean}true"
+                                value=""/>
+                            <href
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                disabled="{Boolean}false"
+                                fieldDescription="Please enter link url value"
+                                fieldLabel="Link URL Value"
+                                name="./href"
+                                renderReadOnly="{Boolean}true"
+                                required="{Boolean}true"
+                                value=""/>
+                            <target
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="channel"
+                                cq-msm-lockable="jcr:language"
+                                emptyText="No"
+                                fieldDescription="Please select if the link will open in a new window"
+                                fieldLabel="Open In New Window"
+                                name="./target"
+                                renderReadOnly="{Boolean}true"
+                                translateOptions="{Boolean}false">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value=""/>
+                                    <yes
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Yes"
+                                            value="_blank"/>
+                                </items>
+                            </target>
+                            <rel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="channel"
+                                cq-msm-lockable="jcr:language"
+                                emptyText="No"
+                                fieldDescription="Please select SEO nofollow tag should be included for this link"
+                                fieldLabel="No Follow"
+                                name="./rel"
+                                renderReadOnly="{Boolean}true"
+                                translateOptions="{Boolean}false">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value=""/>
+                                    <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="nofollow"/>
+                                </items>
+                            </rel>
+                        </items>
+                    </column>
+                </items>
+            </linkpair>
+        </items>
+    </content>
+</jcr:root>

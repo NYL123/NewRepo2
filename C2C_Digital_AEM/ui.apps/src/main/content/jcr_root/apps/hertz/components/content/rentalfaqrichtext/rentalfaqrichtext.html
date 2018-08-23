@@ -1,0 +1,10 @@
+<sly data-sly-test="${!properties.textValue}">
+	Please edit the rich text component
+</sly>
+<div class='rental-rewards-faq-body-content'>
+<sly data-sly-test="${properties.textValue}">
+    <div class='rental-rewards-faq-body-intro-msg'>
+        ${properties.textValue @context='html'} 
+    </div>
+</sly>
+</div>

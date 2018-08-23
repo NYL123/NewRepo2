@@ -1,0 +1,31 @@
+<sly data-sly-test.author="${(!properties.heading && !properties.content) && wcmmode.edit}">
+	<h2><span>Please configure Text & Image Component</span></h2>
+</sly>
+<sly data-sly-test="${!author}">
+    <div class='image-text-component'>
+        <sly data-sly-test="${properties.alignment=='left'}">
+            <div class='image-section'>
+                <img src='${properties.fileReference}' data-path="${currentNode.path}" alt='${properties.alt}' />
+            </div>
+        </sly>
+        <div class='text-section'>
+            <div data-sly-test="${properties.heading}" class='text-heading'>
+                ${properties.heading}
+                <sly data-sly-test="${properties.underline=='true'}">
+                <div class='text-heading-divider'></div>
+                </sly>
+            </div>
+            <div data-sly-test="${properties.content}" class='text-content'>
+                ${properties.content @context='html'}
+            </div>
+            <div data-sly-test="${properties.bulletpoints}" class='text-points'>
+                ${properties.bulletpoints @context='html'}
+            </div>
+        </div>
+		<sly data-sly-test="${properties.alignment=='right'}">
+            <div class='image-section'>
+                <img src='${properties.fileReference}' data-path="${currentNode.path}" alt='${properties.alt}' />
+            </div>
+        </sly>
+    </div>
+</sly>

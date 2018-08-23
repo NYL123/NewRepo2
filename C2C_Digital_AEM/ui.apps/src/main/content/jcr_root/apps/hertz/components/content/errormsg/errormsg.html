@@ -1,0 +1,11 @@
+<b>Error Message component</b>
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.errorCode && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Error component.<br>
+    </div>
+    <div data-sly-test="${properties.errorCode}" data-sly-unwrap >
+        <b>Error Code: </b>${properties.errorCode}</sly><br>
+        <b>Error Value: </b>${properties.errorValue}<br>
+    </div>
+</div>
+

@@ -1,0 +1,48 @@
+.well-container-component {
+  width: 994px;
+  min-height: 164px;
+  color: #000;
+  font-family: 'Ride';
+  font-size: 16px;
+  line-height: 22px;
+  padding: 20px 24px 20px 24px;
+  background-color: #f3f4f8;
+}
+
+.well-container-header {
+  font-family: 'Ride';
+  font-size: 18px;
+  line-height: 22px;
+  color: #5c5f66;
+}
+
+.well-container-component a{
+  font-family: 'Ride Regular';
+  font-size: 14px;
+  line-height: 20px;
+  color: #3455db;
+}
+
+.well-container-header {
+  padding-top: 12px;
+}
+
+.well-container-pdf {
+  padding-top: 12px;
+}
+
+@media(max-width: 768px) {
+  .well-container-component {
+    width: 335px;
+    height: 212px;
+    color: #000;
+    font-family: 'RideBold';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    background-color: #f3f4f8;
+    padding: 16px 20px 16px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

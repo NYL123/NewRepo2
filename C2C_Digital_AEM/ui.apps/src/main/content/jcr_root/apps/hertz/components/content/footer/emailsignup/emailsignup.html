@@ -1,0 +1,14 @@
+<br>
+    <p><b> Sign Up for Email Component</b></p>
+<div data-sly-test="${!properties.signupForEmailTitle && wcmmode.edit}" data-sly-unwrap>
+        Please Configure Sign Up for Email Component.
+</div>
+ <div data-sly-test="${properties.signupForEmailTitle}" data-sly-unwrap>
+	    <b>Sign up for Email Title: </b><sly data-sly-test="${properties.signupForEmailTitle}">${properties.signupForEmailTitle}</sly><br>
+		<b>Sign up for Email Subtitle: </b><sly data-sly-test="${properties.signupForEmailSubtitle}">${properties.signupForEmailSubtitle}</sly><br>
+		<b>Sign up for Email Placeholder Text: </b><sly data-sly-test="${properties.signupForEmailPlaceholderText}">${properties.signupForEmailPlaceholderText}</sly><br>
+        <b>Sign up for Email Button Text: </b><sly data-sly-test="${properties.signupForEmailButtonText}">${properties.signupForEmailButtonText}</sly><br>
+		<b>Target URL: </b><sly data-sly-test="${properties.targetURL}">${properties.targetURL}</sly><br>
+		<b>Open Url in New Window? </b>${properties.openURLNewWindow}<br>
+        <b>Include No Follow attribute:</b>${properties.rel}<br/>
+ </div>

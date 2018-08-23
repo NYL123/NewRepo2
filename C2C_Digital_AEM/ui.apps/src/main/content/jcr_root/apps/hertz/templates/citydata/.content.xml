@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Used to author City data pages"
+    jcr:primaryType="cq:Template"
+    jcr:title=" City Data Page"
+    allowedParents="[/apps/hertz/templates/provincedata]"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}101">
+    <jcr:content
+        cq:designPath="/etc/designs/hertz"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="hertz/components/pages/citydata"/>
+</jcr:root>

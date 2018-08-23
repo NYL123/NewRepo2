@@ -1,0 +1,13 @@
+<sly data-sly-test="${!properties.fileReference}">
+  <h2><span> Please configure Anchor Image component</span></h2>
+</sly>
+<sly data-sly-test="${properties.fileReference}">
+<div class= 'anchor-container-image'>
+        <div class= 'anchor-padding'>
+            <img src='${properties.fileReference}' alt='${properties.imageAltText}' data-path="${currentNode.path}" class='anchor-image'/>
+            <div class= 'anchor-text-image'>
+               <a href='#${properties.imageId}'> ${properties.imageAltText} </a>
+            </div>
+        </div>
+    </div>
+</sly>

@@ -1,0 +1,20 @@
+<sly data-sly-use.linkDropdownValues="com.hertz.digital.platform.use.LinkDropdownUse" data-sly-unwrap/>
+    <div data-sly-test="${ !properties.linkId && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Link Dropdown component.
+    </div>
+<sly data-sly-test="${properties.label}" data-sly-unwrap >
+    <div class='link-dropdown'> 
+        <div class='link-dropdown-list'>
+        	<p>${properties.label}</p>
+        	<hertz-authorable-core-select  #linkId>
+       		<select>
+       			<sly data-sly-test="${linkDropdownValues.linkDropdownBeanList}" data-sly-list.items="${linkDropdownValues.linkDropdownBeanList}" data-sly-unwrap>
+       				<option value='${items.order}'>${items.dropdownValue}</option>
+       			</sly>
+       		</select>
+       		</hertz-authorable-core-select>
+       		<span class='link-dropdown-arrow'></span>
+        </div> 
+	</div>
+</sly>
+

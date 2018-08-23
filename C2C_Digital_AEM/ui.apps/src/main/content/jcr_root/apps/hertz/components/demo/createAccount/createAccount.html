@@ -1,0 +1,32 @@
+
+<div class="rowNew" style="margin-top:100px;margin-left:20px">
+    <div data-sly-test="${!properties.lastname && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please Configure Create Account Component.
+    </div>
+    <div data-sly-test="${properties.lastname}" data-sly-unwrap >
+        <b>Personal Info Header Label:</b><sly  data-sly-test="${properties.personalinfoheader}">${properties.personalinfoheader}</sly><br>
+        <b>Personal Info Validation Label:</b><sly data-sly-test="${properties.personalinfovalidation}">${properties.personalinfovalidation}</sly><br>
+        <b>Last Name Label:</b><sly data-sly-test="${properties.lastname}">${properties.lastname}</sly><br>
+        <b>Phone Number Label:</b><sly data-sly-test="${properties.phonenumber}">${properties.phonenumber}</sly><br>
+        <b>Gender Label:</b><sly data-sly-test="${properties.gender}">${properties.gender}</sly><br>
+        <b>Birth Month Label:</b><sly data-sly-test="${properties.birthmonth}">${properties.birthmonth}</sly><br>
+        <b>Birth Day Label:</b><sly data-sly-test="${properties.birthday}">${properties.birthday}</sly><br>
+        <b>Birth Year Label:</b><sly data-sly-test="${properties.birthyear}">${properties.birthyear}</sly><br>
+        <b>Street Address Label:</b><sly data-sly-test="${properties.addressstreet}">${properties.addressstreet}</sly><br>
+        <b>City Label:</b><sly data-sly-test="${properties.addresscity}">${properties.addresscity}</sly><br>
+        <b>State Label:</b><sly data-sly-test="${properties.addressstate}">${properties.addressstate}</sly><br>
+        <b>Postal Code Label:</b><sly data-sly-test="${properties.addresspostalcode}">${properties.addresspostalcode}</sly><br>
+        <b>Country Label:</b><sly data-sly-test="${properties.addresscountry}">${properties.addresscountry}</sly><br>
+        <b>Create Login Header Label:</b><sly data-sly-test="${properties.createloginheader}">${properties.createloginheader}</sly><br>
+        <b>Email Address Label:</b><sly data-sly-test="${properties.emailaddress}">${properties.emailaddress}</sly><br>
+        <b>Email Address Validation Label:</b><sly data-sly-test="${properties.emailaddressvalidation}">${properties.emailaddressvalidation}</sly><br>
+        <b>User Name Label:</b><sly data-sly-test="${properties.usernamelabel}">${properties.usernamelabel}</sly><br>
+        <b>Password Label:</b><sly data-sly-test="${properties.password}">${properties.password}</sly><br>
+        <b>Password Verification Label:</b><sly data-sly-test="${properties.passwordverification}">${properties.passwordverification}</sly><br>
+        <b>Create Account Button Label:</b><sly data-sly-test="${properties.createaccountbutton}">${properties.createaccountbutton}</sly><br>
+        <b>Privacy Label:</b><sly data-sly-test="${properties.privacylabel}">${properties.privacylabel @ context='html'}</sly><br>
+        <b>Close button label:</b><sly data-sly-test="${properties.closebuttonlabel}">${properties.closebuttonlabel}</sly><br>
+        <b>Same Username Error message:</b><sly data-sly-test="${properties.sameusernameerrormessage}">${properties.sameusernameerrormessage}</sly><br>
+    </div>
+</div>
+

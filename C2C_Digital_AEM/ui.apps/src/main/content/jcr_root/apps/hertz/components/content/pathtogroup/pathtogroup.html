@@ -1,0 +1,11 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.sitepath && !properties.groupname && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Path to Group component.
+    </div>
+    <div data-sly-test="${properties.sitepath || properties.groupname}" data-sly-unwrap >
+        <b>sitepath: </b><sly data-sly-test="${properties.sitepath}">${properties.sitepath}</sly><br>
+        <b>groupname: </b><sly>${properties.groupname}</sly><br>
+    </div>
+</div>
+

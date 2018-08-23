@@ -1,0 +1,84 @@
+<div data-sly-test="${wcmmode.edit || wcmmode.design }" data-sly-unwrap>
+    <div class="container">
+
+
+
+    <pre>Double click here to edit Reward Table Header  </pre>
+
+<div class='location-heading'>
+		 ${properties.heading}
+    </div>
+    <div data-sly-use.grid="gridR.js" data-sly-unwrap >
+    <table>
+          <tr>
+              <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                    <th>
+                                ${item}  &nbsp;&nbsp;&nbsp;
+                    </th>
+                </sly> 
+
+         </tr>
+	 </table>
+      	<div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" >
+		</div>
+    
+
+  </div>
+</div>
+
+</div>
+
+<div data-sly-test="${!(wcmmode.edit || wcmmode.design) }" data-sly-unwrap >
+<div class='location'><a name="${properties.anchorid}"></a>
+  <sly data-sly-test=${properties.heading}>
+<div class='location-heading location-heading-margin'>
+		${properties.heading} 
+    </div></sly>
+
+     <div class='row-heading' data-sly-use.grid="gridR.js">
+
+         <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+			<sly data-sly-test="${itemList.count == 1}">
+                            <span class='title'> ${item}/ 
+
+                </sly>
+
+             <sly data-sly-test="${itemList.count == 2}">
+                             ${item} / </span>
+
+               </sly>
+             <sly data-sly-test="${itemList.count == 3}">
+                          <span class='title'>   ${item} - 
+
+              </sly>
+
+             <sly data-sly-test="${itemList.count == 4}">
+                             ${item} </span>
+
+               </sly>
+
+
+
+      </div>
+
+    <div class='table-pattern-c'> 
+    <div class="table-pattern-c-web-section" data-sly-use.grid="gridR.js" >
+    <table>
+          <tr>
+              <sly data-sly-list="${grid.headers}" data-sly-unwrap>
+                    <th>
+                              ${item}
+                    </th>
+                </sly> 
+
+
+
+      	<div data-sly-resource="${'tablePar' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap>
+
+		</div>
+
+    </table>
+  </div>
+
+</div>
+</div>

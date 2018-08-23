@@ -1,0 +1,12 @@
+<p><b>Country Language Component</b></p>
+<div data-sly-test="${!properties.countryLabel && wcmmode.edit}" data-sly-unwrap>
+	Please Configure Country Language Component.
+</div>
+<div data-sly-test="${properties.countryLabel}" data-sly-unwrap>								
+	<b>Country Dropdown Label:</b> ${properties.countryLabel}<br>
+	<b>Language Dropdown Label:</b> ${properties.languageLabel} <br>
+	<b>Update CTA Label:</b> ${properties.buttonLabel} <br>
+	<b>Update Message:</b> ${properties.updateMessage} <br>
+	<b>No Results Message:</b> ${properties.noresultsMessage}<br>
+  
+</div>

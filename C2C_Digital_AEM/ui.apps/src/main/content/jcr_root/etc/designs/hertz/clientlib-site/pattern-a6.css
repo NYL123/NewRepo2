@@ -1,0 +1,22 @@
+.content-card-pattern-a6 {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.content-card-pattern-a6 .content-card-pattern-a6-link {
+  text-decoration: none;
+}
+.content-card-pattern-a6 .content-card-text {
+  font-family: "Ride";
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  padding: 26px 32px;
+}
+.content-card-pattern-a6 .content-a6-image {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  overflow: hidden;
+}

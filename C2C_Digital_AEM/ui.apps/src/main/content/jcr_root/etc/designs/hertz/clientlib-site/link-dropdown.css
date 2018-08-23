@@ -1,0 +1,48 @@
+  .link-dropdown{
+    width: 335px;
+    border: 1px solid #d7d8d8;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, .06);
+  }
+
+  .link-dropdown-list{
+    padding-left:16px; 
+  }
+
+  .link-dropdown-list p{
+    padding:8px 0 2px 0; 
+    margin: 0;
+    font-family: 'Ride';
+    text-transform: capitalize;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+  }
+
+  .link-dropdown-list select{
+    border: 0;
+    color: #000;
+    font-family: 'RideSemibold';
+    font-size: 16px;
+    line-height: 22px; 
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-bottom:6px; 
+  }
+
+  .link-dropdown-list select:focus{
+    outline: none;
+  } 
+  .link-dropdown-arrow{
+    font-family: 'icomoon';
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    bottom:24px;
+  }
+  .link-dropdown-arrow::before {
+    content: '\e912';
+  }
+
+  

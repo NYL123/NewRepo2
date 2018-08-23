@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="SPA Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,cq.siteadmin.admin.properties]"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="cq-dialog-content-page">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container"
+                class="dialog-width-50rem"
+                rel="cq-siteadmin-admin-properties-tabs">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <metadata
+                        cq:showOnCreate="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Metadata Attributes"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container"
+                                class="column-full-width">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fieldset
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <poscountries
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="Please enter the POS countries."
+                                                        fieldLabel="POS Countries"
+                                                        name="./posCountries"/>
+                                                    <channel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        class="channel"
+                                                        cq-msm-lockable="jcr:language"
+                                                        emptyText="Select"
+                                                        fieldLabel="Channel"
+                                                        name="./channel"
+                                                        translateOptions="{Boolean}true">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <web
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Web"
+                                                                value="web"/>
+                                                            <nativemobile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Native Mobile"
+                                                                value="nativeMobile"/>
+                                                            <both
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Both"
+                                                                value="both"/>
+                                                        </items>
+                                                    </channel>
+                                                    <cpcode
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="Please enter alpha-numeric CP Code"
+                                                        fieldLabel="CP Code"
+                                                        name="./cpCode"/>
+                                                    <membertype
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        class="channel"
+                                                        cq-msm-lockable="jcr:language"
+                                                        emptyText="Select"
+                                                        fieldLabel="Member Type"
+                                                        name="./memberType"
+                                                        translateOptions="{Boolean}false">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <nonmember
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Non Member"
+                                                                value="non-member"/>
+                                                            <no1club
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="#1 Club"
+                                                                value="#1-club"/>
+                                                            <goldmember
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Gold Member"
+                                                                value="gold-member"/>
+                                                            <platinummember
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Platinum Member"
+                                                                value="platinum-member"/>
+                                                            <travelagent
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Travel Agent"
+                                                                value="travel-agent"/>
+                                                        </items>
+                                                    </membertype>
+                                                    <indexpagestartdate
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                        displayedFormat="MM-DD-YYYY"
+                                                        emptyText="Enter Date"
+                                                        fieldDescription="Select The Date "
+                                                        fieldLabel="Index Page Start Date"
+                                                        name="./indexPageStartDate"
+                                                        type="date"
+                                                        valueFormat="YYYY-MM-DD"/>
+                                                    <indexpageexpirydate
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                        displayedFormat="MM-DD-YYYY"
+                                                        emptyText="Enter Date"
+                                                        fieldDescription="Select The Index Page Expiry Date "
+                                                        fieldLabel="Index Page Expiry Date"
+                                                        name="./indexPageExpiryDate"
+                                                        type="date"
+                                                        valueFormat="YYYY-MM-DD"/>
+                                                    <contentexpirydate
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                        displayedFormat="MM-DD-YYYY"
+                                                        emptyText="Enter Date"
+                                                        fieldDescription="Select The content expiry date "
+                                                        fieldLabel="Content Expiry Date"
+                                                        name="./contentExpiryDate"
+                                                        type="date"
+                                                        valueFormat="YYYY-MM-DD"/>
+                                                    <cdprestriction
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="CDP Restriction"
+                                                        name="./cdpRestriction"/>
+                                                </items>
+                                            </column>
+                                        </items>
+                                    </fieldset>
+                                </items>
+                            </column>
+                        </items>
+                    </metadata>
+                    <display
+                        cq:showOnCreate="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Display Attributes"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container"
+                                class="column-full-width">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fieldset
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <newBurstStartDate
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                        displayedFormat="MM-DD-YYYY"
+                                                        emptyText="Enter Date"
+                                                        fieldDescription="Select The new burst start date "
+                                                        fieldLabel="New Burst Start Date"
+                                                        name="./newBurstStartDate"
+                                                        type="date"
+                                                        valueFormat="YYYY-MM-DD"/>
+                                                    <newBurstEndDate
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                        displayedFormat="MM-DD-YYYY"
+                                                        emptyText="Enter Date"
+                                                        fieldDescription="Select The new burst end Date "
+                                                        fieldLabel="New Burst End Date"
+                                                        name="./newBurstEndDate"
+                                                        type="date"
+                                                        valueFormat="YYYY-MM-DD"/>
+                                                </items>
+                                            </column>
+                                        </items>
+                                    </fieldset>
+                                </items>
+                            </column>
+                        </items>
+                    </display>
+                    <offer
+                        cq:showOnCreate="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Offer Attributes"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container"
+                                class="column-full-width">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fieldset
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <categoryPath
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                        fieldDescription="Click 'Add Field' button to add category path."
+                                                        fieldLabel="Categories">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                            name="./categoryPath"
+                                                            required="{Boolean}true"/>
+                                                    </categoryPath>
+                                                    <rank
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="Rank"
+                                                        name="./rank"/>
+                                                    <pccode
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="PC Code"
+                                                        name="./pcCode"/>
+                                                    <cdpcode
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="CDP Code"
+                                                        name="./cdpCode"/>
+                                                    <widgettodisplay
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                                        class="channel"
+                                                        cq-msm-lockable="jcr:language"
+                                                        emptyText="No"
+                                                        fieldLabel="Widget to Display"
+                                                        name="./widgetToDisplay"
+                                                        translateOptions="{Boolean}false">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <reservation
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Reservation"
+                                                                value="Reservation"/>
+                                                            <aaa-zipcode
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="AAA Zip Code Lookup"
+                                                                value="AAA Zip Code Lookup"/>
+                                                            <partnerprogram
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Partner Program Lookup"
+                                                                value="Partner Program Lookup"/>
+                                                        </items>
+                                                    </widgettodisplay>
+                                                    <partnermultivaluepair
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                                        class="full-width"
+                                                        fieldDescription="Click 'Add Field' button to add partner program."
+                                                        fieldLabel="Partner Program">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                            eaem-nested=""
+                                                            name="./configurablePartnerMultiValue">
+                                                            <layout
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                                margin="{Boolean}false"/>
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <column
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <partnername
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                            fieldDescription="Label field for the partner name."
+                                                                            fieldLabel="Partner Name"
+                                                                            name="./partnerName"/>
+                                                                        <partnercdpcode
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                            fieldDescription="Text Label field for the partner cdp code."
+                                                                            fieldLabel="Partner CDP Code"
+                                                                            name="./partnerProgramCdpCode"/>
+                                                                    </items>
+                                                                </column>
+                                                            </items>
+                                                        </field>
+                                                    </partnermultivaluepair>
+                                                </items>
+                                            </column>
+                                        </items>
+                                    </fieldset>
+                                </items>
+                            </column>
+                        </items>
+                    </offer>
+                    <offercard
+                        cq:showOnCreate="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Offer Card Attributes"
+                        sling:orderBefore="thumbnail"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container"
+                                class="column-full-width">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fieldset
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <headline
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="Please enter headline text for the first line."
+                                                        fieldLabel="Headline (First Line)"
+                                                        name="./headline"/>
+                                                    <headlinesecond
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="Please enter headline text for the second line."
+                                                        fieldLabel="Headline (Second Line)"
+                                                        name="./headlineSecondLine"/>
+                                                    <subhead
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="Sub Head"
+                                                        name="./subhead"/>
+                                                    <image
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                                        autoStart="{Boolean}false"
+                                                        class="cq-droptarget"
+                                                        fieldDescription="Image field"
+                                                        fieldLabel="Image"
+                                                        fileNameParameter="./image/fileName"
+                                                        fileReferenceParameter="./image/fileReference"
+                                                        mimeTypes="[image]"
+                                                        multiple="{Boolean}false"
+                                                        name="./image/file"
+                                                        title="Image"
+                                                        uploadUrl="${suffix.path}"
+                                                        useHTML5="{Boolean}true"/>
+                                                    <ctalabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="CTA Label"
+                                                        name="./ctaLabel"
+                                                        required="{Boolean}true"/>
+                                                    <ctaUrl
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                        fieldDescription="Please enter cta link url value"
+                                                        fieldLabel="CTA Link URL"
+                                                        name="./ctaHref"
+                                                        required="{Boolean}true"/>
+                                                    <logo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                                        autoStart="{Boolean}false"
+                                                        class="cq-droptarget"
+                                                        fieldDescription="File upload field for the logo."
+                                                        fieldLabel="Logo"
+                                                        fileNameParameter="./logo/fileName"
+                                                        fileReferenceParameter="./logo/fileReference"
+                                                        mimeTypes="[image]"
+                                                        multiple="{Boolean}false"
+                                                        name="./logo/file"
+                                                        title="Logo"
+                                                        uploadUrl="${suffix.path}"
+                                                        useHTML5="{Boolean}true"/>
+                                                    <badge
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                                        autoStart="{Boolean}false"
+                                                        class="cq-droptarget"
+                                                        fieldDescription="File upload field for the badge."
+                                                        fieldLabel="Badge"
+                                                        fileNameParameter="./badge/fileName"
+                                                        fileReferenceParameter="./badge/fileReference"
+                                                        mimeTypes="[image]"
+                                                        multiple="{Boolean}false"
+                                                        name="./badge/file"
+                                                        title="Badge"
+                                                        uploadUrl="${suffix.path}"
+                                                        useHTML5="{Boolean}true"/>
+                                                </items>
+                                            </column>
+                                        </items>
+                                    </fieldset>
+                                </items>
+                            </column>
+                        </items>
+                    </offercard>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

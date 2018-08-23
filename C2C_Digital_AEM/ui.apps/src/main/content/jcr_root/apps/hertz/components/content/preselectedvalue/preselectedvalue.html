@@ -1,0 +1,10 @@
+
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.preselectedValue && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Preselected Value component.<br>
+    </div>
+    <div data-sly-test="${properties.preselectedValue}" data-sly-unwrap >
+        <b>Preselected Value: </b><sly data-sly-test="${properties.preselectedValue}">${properties.preselectedValue}</sly><br>
+    </div>
+</div>
+

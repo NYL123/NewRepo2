@@ -1,0 +1,50 @@
+.missing-points-content{
+    border: 1px solid #d7d8d8;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, .08);
+    max-width: 536px;
+    max-height: 278px;
+    padding: 24px 24px 36px;
+}
+
+.missing-points-heading{
+    border-bottom: 1px solid #d7d8d8;
+    font-family: 'RideLight';
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000;
+    padding-bottom: 8px; 
+}
+
+.missing-points-content-section{
+    margin: 12px 0 16px;
+    font-family: 'Ride';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+
+.missing-points-button{
+    padding: 16px;
+    background: #fff;
+    color: #000;
+    font-family: 'RideSemiBold';
+    border: 2px solid #000;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.missing-points-button:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .10);
+}
+
+.missing-points-button a{
+    text-decoration: none;
+    color: #000;
+}
+
+.missing-points-button a:hover{
+    text-decoration: none;
+}

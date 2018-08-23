@@ -1,0 +1,107 @@
+.table-pattern-a table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  min-width: 730px;
+  background: #f3f4f8;
+  border: 1px solid #d7d8d8;
+}
+
+.table-pattern-a tr:nth-child(even){
+  background-color: #fff
+}
+
+.table-pattern-a td {
+  font-family: 'RideLight';
+  color: #000;
+  line-height: 28px;
+  font-size:22px; 
+}
+
+.table-pattern-a th, td{
+  padding: 24px 28px;
+  border: none;
+  text-align: left;
+} 
+
+.table-pattern-a th:first-child, td:first-child {
+  max-width: 425px;
+}
+
+.table-pattern-a th {
+  color: #000;
+  font-family: 'RideSemibold';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.table-pattern-a-usd-lbl{
+  color: #000;
+  font-family: 'Ride';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.table-pattern-a-total-paid-lbl{
+  color: #000;
+  font-family: 'RideLight';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.table-pattern-a-mobile-section{
+  display: none;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .table-pattern-a-mobile-section{
+    display: table;
+    min-width: 324px;
+    max-width: 324px;
+    padding: 16px 0 16px 10px;
+    background: #f3f4f8;
+    border-left: 1px solid #d7d8d8;
+    border-top: 1px solid #d7d8d8;
+    border-right: 1px solid #d7d8d8;
+    color: #000;
+    font-family: 'RideSemibold';
+    font-size: 16px;
+    line-height: 22px;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+  }
+
+  .table-pattern-a-web-section{
+    display: none;
+  }
+
+  .table-pattern-a table{
+    min-width: 0;
+    max-width: 335px;
+    border-radius: 2px;
+    border-left: 1px solid #d7d8d8;
+    border-bottom: 1px solid #d7d8d8;
+    border-right: 1px solid #d7d8d8;
+    border-top: 0;   
+    border-bottom-left-radius:2px;   
+    border-bottom-right-radius:2px;   
+  }
+
+  .table-pattern-a td {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .table-pattern-a th, td{
+    padding: 16px 10px;
+    border: none;
+    text-align: left;
+  } 
+
+  .table-pattern-a th, td:first-child {
+    max-width: 180px;
+  }
+
+  .table-pattern-a-usd-lbl{
+    font-family: 'RideLight';
+  }
+}

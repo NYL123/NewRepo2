@@ -1,0 +1,58 @@
+<div class="container" data-sly-test="${(wcmmode.edit || wcmmode.design)}">
+            <pre>Click here to edit Table  row  </pre>
+            <sly  data-sly-use.row="rewardRowsComp.js">
+                    <div class="row">
+                        <div data-sly-use.rows="rewardRowsComp.js" data-sly-unwrap>
+                          <div class="col-md-3">${properties.city}</div>
+                          <div class="col-md-3">${properties.linkTitle}</div>
+                          <div class="col-md-3">${rows.startDate}</div>
+                          <div class="col-md-3">${rows.endDate}</div>
+
+                        </div>
+                    </div>
+             </sly>
+</div>
+<div data-sly-test="${!(wcmmode.edit || wcmmode.design)}" data-sly-unwrap>
+
+<sly  data-sly-use.rows="rewardRowsComp.js">
+<sly data-sly-test="${!properties.city}">
+
+				<div class='table-mobile-row ${properties.cssIdentifier}'>
+                  <div class='location-style mobile-location' >${properties.linkTitle}</div>
+
+				  <sly data-sly-test="${rows.endDate}">
+                  <div class='mobile-date' >
+                    <span class='title city-style'>${rows.startDate} -  ${rows.endDate}</span>
+
+                  </div>
+                  </sly>
+                  <sly data-sly-test="${!rows.endDate}">
+                  <div class='mobile-date'>
+                    <span class='title city-style'>${rows.startDate}</span>
+
+                  </div>
+                  </sly>
+
+                  </div>
+
+</sly>
+<tr class="${properties.cssIdentifier}"> 
+          <td> ${properties.city} </td>
+          <td class="location-style"> <a href="${properties.linkPath}"> ${properties.linkTitle} </a> </td>
+          <td class="data-style"> ${rows.startDate} </td>
+          <td class="data-style"> ${rows.endDate} </td>
+</tr>
+<sly data-sly-test="${properties.city}">
+        <div class='table-mobile-row ${properties.cssIdentifier}'>
+                  <div class='city-style mobile-city'>${properties.city}</div>
+                  <div class='location-style mobile-location'>${properties.linkTitle}</div>
+                  <div  class='mobile-date'>
+                    <span class='title city-style'>${rows.startDate} -  ${rows.endDate}</span>
+
+                  </div>
+         </div>
+<sly>
+
+ </sly>
+
+</div> 

@@ -1,0 +1,12 @@
+<p><b>Country-Language</b></p>
+<div data-sly-test="${!properties.countryName && wcmmode.edit}" data-sly-unwrap>
+	Please Configure Country-Language.
+</div>
+<div data-sly-test="${properties.countryName}" data-sly-unwrap>								
+	<b>Country Name:</b> ${properties.countryName}<br>
+	<b>Country Code:</b> ${properties.countryCode} <br>
+	<b>Language Name:</b> ${properties.languageName} <br>
+	<b>Language Code:</b> ${properties.languageCode}<br>
+	<b>Language Prefix:</b> ${properties.languagePrefix} <br>
+	<b>Hostname:</b> ${properties.countryHostname} <br>
+</div>

@@ -1,0 +1,10 @@
+<b>Service Name component</b>
+<div class="rowNew" style="margin-top:10px;margin-left:20px">
+    <div data-sly-test="${ !properties.serviceName && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the Service Name component.<br>
+    </div>
+    <div data-sly-test="${properties.serviceName}" data-sly-unwrap >
+        <b>Service Name: </b>${properties.serviceName}</sly>
+    </div>
+</div>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudserviceconfigs="[/etc/cloudservices/translation/hertz-translation-configuration]"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2017-09-06T07:37:09.117-04:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-09-07T09:47:43.022-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/hertz/templates/productconfig"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="hertz-rac"
+        jcr:uuid="5a0bdcad-897b-4dc4-a484-8e423663ae81"
+        sling:resourceType="hertz/components/pages/productconfig"
+        product="rac"/>
+    <rac-web/>
+    <data/>
+    <rac-mobile/>
+    <importexcel/>
+</jcr:root>

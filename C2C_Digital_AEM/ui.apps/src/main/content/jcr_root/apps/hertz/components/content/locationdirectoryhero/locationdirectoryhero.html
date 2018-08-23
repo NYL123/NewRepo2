@@ -1,0 +1,14 @@
+<div class="container-fluid">
+<div class="rowNew">
+<sly data-sly-use.imageData="com.hertz.digital.platform.use.LocationDirectoryHeroImageUse">  
+        <sly data-sly-test="${!imageData.imagePath}" data-sly-unwrap="${!wcmmode.edit}">
+                Please configure the Hero component.
+         </sly>
+        <sly data-sly-test="${imageData.imagePath}">
+					Image Path: ${imageData.imagePath @ context='uri'}<br>
+					Image Alt Text : ${imageData.altText}<br>
+        </sly>
+</sly>
+</div>
+</div>
+

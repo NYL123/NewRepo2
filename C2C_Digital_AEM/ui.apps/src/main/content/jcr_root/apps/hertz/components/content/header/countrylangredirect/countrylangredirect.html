@@ -1,0 +1,10 @@
+<p><b>Country Language Login Redirect Component</b></p>
+<div data-sly-test="${!(properties.redirectMessage||properties.redirectHeading||properties.cancelButton||properties.continueButton) && wcmmode.edit}" data-sly-unwrap>
+	Please Configure Country Language Login Redirect Component.
+</div>
+<div data-sly-test="${properties.redirectMessage||properties.redirectHeading||properties.cancelButton||properties.continueButton}" data-sly-unwrap>								
+	<b>Redirect Heading :</b> ${properties.redirectHeading} <br>
+    <b>Redirect Message :</b> ${properties.redirectMessage}<br>
+    <b>Cancel Button Text:</b> ${properties.cancelButton} <br>
+	<b>Continue Button Text:</b> ${properties.continueButton} 
+</div>

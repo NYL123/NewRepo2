@@ -1,0 +1,7 @@
+.list .card-page .main .info-scheduledtime {
+  font-weight: bold;
+  color: #333333;
+  padding: 0 0.3125rem;
+  border: 1px solid #bbbbbb;
+  background: #cccccc;
+}

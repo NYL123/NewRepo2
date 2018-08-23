@@ -1,0 +1,9 @@
+    <div data-sly-test="${ !properties.isPeriodicRateDisplay && !properties.isApproximateTotalRateDisplay && !properties.isMileage && wcmmode.edit}" data-sly-unwrap="${!wcmmode.edit}">
+        Please configure the RQ Code Display component.
+    </div>
+    <div data-sly-test="${properties.isPeriodicRateDisplay || properties.isApproximateTotalRateDisplay || properties.isMileage}" data-sly-unwrap >
+        <b>Periodic Rate Display (Yes/No): </b>${properties.isPeriodicRateDisplay}<br>
+        <b>Approximate Total Rate Display (Yes/No): </b>${properties.isApproximateTotalRateDisplay}<br>
+        <b>Mileage (Yes/No): </b>${properties.isMileage}<br>
+    </div>
+

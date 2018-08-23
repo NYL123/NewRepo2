@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <sly data-sly-test="${(wcmmode.edit || wcmmode.design) && !properties.patternchoice}">
+    <div class="row">
+      <p> Please select the desired pattern choice.</p>
+	</div>
+    </sly>
+    <sly data-sly-test="${properties.patternchoice}">
+     <sly data-sly-use.fixedslot="fixedcontentslot.js" />
+        <div class="row">
+          	 <div data-sly-resource="${ @path=properties.patternchoice,resourceType=fixedslot.resourcepath}" data-sly-unwrap></div>
+        </div>
+    </sly>
+</div>
